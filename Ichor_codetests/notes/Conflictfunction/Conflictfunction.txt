@@ -1,0 +1,6 @@
+it'll be a turn based fighting system.
+I am currently unsure if i want to have the conflicts play out like undertale's, or pokemon. 
+
+if I get a spark i'll come up with somthing diffrent. 
+
+I plan to have 'afflictions' these are temporary conditions that'll effect the player in conflict.

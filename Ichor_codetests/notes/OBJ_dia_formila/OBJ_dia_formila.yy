@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"OBJ_dia_formila",
+  "name":"OBJ_dia_formila",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

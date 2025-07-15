@@ -1,0 +1,73 @@
+\\Create event//
+
+message = [];
+current_message = -1;
+current_char = 0;
+draw_message = "";
+
+char_speed = 0.25;
+input_key = vk_enter;
+
+gui_w = display_get_gui_width();
+gui_h = display_get_gui_height();
+
+\\step\\
+
+if (current_message <0) exit; 
+    
+var _str = message[current_message].msg;
+
+if (current_char < string_length(_str))
+    
+{
+    current_char += char_speed * (1 + keyboard_check(vk_enter))
+    var draw_messages = string_copy (_str, 0, current_char);
+}
+else if (keyboard_check_pressed(vk_enter))
+    
+{
+    current_message ++;
+    if (current_message >= array_length(message))
+{
+    instance_destroy(obj_dia);
+}
+    else 
+{
+    current_char = 0;
+}
+}
+
+\\drawgui\\
+
+var dx = 0;
+var dy = gui_h * 0.7;
+var box_w = gui_w;
+var box_h =gui_h -_dy;
+
+draw_sprite_stretched(dialog_backdrop, 0, dx, dy, box_w, box_h);
+
+_dx += 12;
+_dy += 12;
+
+draw_set_font(Yoster);
+
+var _name = message [current_message].name;
+draw_text(dx, dy, _name);
+
+_dy += 35;
+
+draw_text_ext(dx, dy, draw_messages, -1, box_w - dx * 2);
+
+//Diacall function\\
+
+function Dialogcall(message) 
+
+{
+if (instance_exists(OBJDiaSystem)) return;
+    
+    var _inst = instance_create_depth(0,0,0 OBJDiaSystem);
+    var _inst.message = message;
+    var _inst.current_message = 0;
+}
+
+

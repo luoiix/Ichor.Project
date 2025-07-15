@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"castlestone",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":23,
+    "SerialiseWidth":57,
+    "TileCompressedData":[
+      -79,5,1,4,-91,5,1,0,-54,5,-3,0,-54,5,-3,0,-54,5,-174,0,-54,1,-3,0,-54,1,-3,0,-54,1,-3,0,-54,1,-3,0,-54,
+      1,-3,0,-54,1,-117,0,-54,1073741825,-3,0,-54,1073741825,-3,0,-54,1073741825,-3,0,-54,1073741825,-3,0,
+      -54,1073741825,-3,0,-54,1073741825,-2,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"castlestone",
+  "out_columns":4,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"cavern_",
+    "path":"sprites/cavern_/cavern_.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"texturegroup1",
+    "path":"texturegroups/texturegroup1",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":16,
+}

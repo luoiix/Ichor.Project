@@ -1,0 +1,65 @@
+//player base stats//
+
+Player_hp = 90, 
+Player_Defense = 3,
+Player_attack = 1'
+Player_lV = 0
+Player_EXP = 0
+ 
+//
+
+HP/stamina *how may points of damage the player can endure until game over prompts and is returned to last save point*
+
+defense/resistance *how many points of damage are taken off the total damage out put of a bullet*
+
+attack/damage output *how many points of damage are added to the base damage output* (base damage output starts at 10)
+
+EXP *how many points an entity is worth upon killing, and how many points are needed to level up*
+
+LV *increases stats when a certan EXP value is reached*
+
+LV 0 = 0 EXP. 
+LV 1 = 100 EXP. 
+LV 2 = 200 EXP. 
+LV 3 = 300 EXP. 
+LV 4 = 400 EXP.
+LV 5 = 500 EXP.
+LV 6 = 600 EXP.
+LV 7 = 700 EXP.
+LV 8 = 800 EXP.
+LV 9 = 900 EXP.
+LV 10 = 1000 EXP.
+LV 11 = 1100 EXP.
+LV 12 = 1200 EXP.
+LV 13 = 1300 EXP.
+LV 14 = 1400 EXP.
+LV 15 = 1500 EXP.
+LV 16 = 1600 EXP.
+LV 17 = 1700 EXP.
+LV 18 = 1800 EXP.
+LV 19 = 1900 EXP.
+LV 20 = 2000 EXP.
+
+//stat increase//
+
+attack goes up by +1, defense goes up +3, Hitpoints go up +3,
+this increase takes effect per LV
+
+//
+Player
+LV 7
+EXP 800 (get to next LV)
+//
+base      LV increase     total
+attack, 10 (+8)            Attack = 18
+defense, 3 (+14)           Defense = 21
+Hitpoints, 90 (+21)        HP = 111
+//
+Equipment will add on benifical bonus conditions to the player.
+consumable items will restore HP points to the player.
+
+The higher the player's level, the few more conflict encounters there will be. however conflict encounters will become more difficult. 
+suddenly stoping a violent play through will NOT return the game back to a peacful playthrough.The damage player has caused remains
+(in turn, main characters become weary, agressive or outright avoid player)
+
+*God, this is just becoming another undertale inspired RPG,RNG blue print isn''t it -_-*

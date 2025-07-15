@@ -1,0 +1,32 @@
+Room spects//
+
+small 180 x 320, or 320 x 160
+med 360 x 640, or 640 x 360
+Large 720 x 1280, or 1280 x 720
+
+
+veiwport properties//
+
+set camera portview 0 to = 250 x 250
+Set camraport 0, to follow Player
+set camra view port to the X,Y cordnates where player is placed.
+
+Room layers//
+
+Folder1//
+
+1.Overlay_ assests // *assest layer*
+2. interact_obj // *instance layer*
+3. Player // *instance layer*
+4. underlay assets// *asset layer*
+
+Folder2//
+
+Asset layer// *assst layer* 
+Tilelayer// *tile layer*
+Tilelayer// *tile layer
+
+Folder3//
+
+backround // *background layer*
+Warp_walls// *instance layer*
