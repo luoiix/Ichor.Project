@@ -1,0 +1,26 @@
+Menu//mechanics
+
+Set menu to a GUI layer
+make OBJs buttons
+
+OBJ_item*
+OBJ_Stats*
+
+Set buttons to configure to there appropreate atrabutes
+
+Item == string *shows Items the player has inventory*
+*Equipment, food, drink, healing, etc*
+
+Stats == number *shows players current stats* 
+*Stats of the player will change depending on equipped Items and level
+
+//stats menu// 
+
+Shows the Level and EXP of the player.
+
+Defense: will depend on player's equipped Item = apparal 
+Attack: will depend on player's equipped Item = wepon
+HP: will depend on player's LV 
+
+LV depends on EXP.
+EXP depends on how many entities you've killed.

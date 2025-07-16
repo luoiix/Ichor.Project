@@ -29,3 +29,18 @@
     {"x":64.0,"y":64.0,},
     {"x":0.0,"y":64.0,},
   ],
+  "physicsStartAwake":true,
+  "properties":[],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":true,
+  "spriteId":{
+    "name":"Nimbus_levetate_front",
+    "path":"sprites/Nimbus_levetate_front/Nimbus_levetate_front.yy",
+  },
+  "spriteMaskId":{
+    "name":"Nimbus_levetate_front",
+    "path":"sprites/Nimbus_levetate_front/Nimbus_levetate_front.yy",
+  },
+  "visible":true,
+}

@@ -1,0 +1,14 @@
+//Camera veiw port//
+
+camera veiwport is always view port 0
+
+camera width = 250
+camra hight = 250
+
+horizontal border = 128
+vertical border = 128
+
+horizontal speed = -1
+vertical speed = -1
+
+
