@@ -1,0 +1,29 @@
+player||<mechanics> 
+
+//step-event//
+
+*set instant's image index speed to = 0
+*set a fixed direction.
+*set player sprite to the image index that coralates to the direction the player is meant to be facing and move.
+ 
+*if keys down' are 'A' and or 'D,' set the instance's movement to be horizontal speed = 1, and vertical speed = 0
+*if keys down' are 'W' and or 'S,' set the instance's movement to be vertical speed = 1, and horizontal speed = 0
+
+//end-step//
+*set instance image speed to = 0
+*set fixed direction to = stop movement.
+*set player sprite to the frame that coralates to the direction player is meant to stop.
+
+*if keys down are 'A' and or 'D' set the instance's movement to be horizontal speed = 0, and vertical speed = 0
+*if keys down are 'W' and or 'S' set the instance's movement to be vertical speed = 0, and horizontal speed = 0
+
+//pick up and interactions//
+
+If key vk_enter is pressed, 
+The object ,sequence, script, etc, should confirm and prompt.
+
+Player OBJ should always = collidable and = persestant across all rooms. 
+Persestant OBJs transfer X,Y, information from one room to another.
+Collideable means, the player obj will collide with anyother obj's' that have the 'solid'box cehecked off, or  is coded to collide with player's collision mask.
+
+*still need to figure out how tile collision works. I know that's part of the wonky camrea issue when transitioning rooms*
