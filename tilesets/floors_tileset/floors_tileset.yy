@@ -1,0 +1,48 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"floors_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":36,
+    "SerialiseWidth":52,
+    "TileCompressedData":[
+      -157,0,-40,7,-12,0,-40,7,-12,0,-40,7,-12,0,-40,7,-12,0,-40,7,-12,0,-40,7,-12,0,-40,7,-12,0,-40,7,-106,
+      0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,
+      0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,
+      0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,
+      0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,
+      0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,-43,0,-9,1073741831,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"floors_tileset",
+  "out_columns":4,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Floortilespris",
+    "path":"sprites/Floortilespris/Floortilespris.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"animation_1","frames":[6,2,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":0.5,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":16,
+}
