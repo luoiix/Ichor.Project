@@ -1,0 +1,28 @@
+//Design requiremnt for Items, Armors, Wepons and Trinkets//
+
+Has to be a simple desgin
+No more than five diffrent colors in the color pallet:(This doesn't include diffrent shades of the same color.)
+Can be drawn in a 16x16, 32x32, 64x64 or 128x128 pixel grid.
+
+//
+
+Has to have an effect (A buff, and a de-buff) in conflict when equipped to the player.
+
+//
+
+Specify what catagory the item belongs too.
+
+Armor: Necklaces, pendants, scarfs, chestplates, boots, gloves, masks. etc (Things that can be equipted to the player's attire.)
+Wepons: Swords, knives, knuckles, firearms, flails, etc. (Things that can be used for the player to fight with)
+Trinkets: general misculanious things.
+
+Items: consumibles (These are exlusive to shops.)
+
+Armor, Wepons and trinkets can either be static spawns. (meaning they will always spawn in a given location.)
+
+or 
+
+Armor, Wepons and trinkets can be RNG spawns. (meaning they'll only spawn in a specfifc location when a specific interger (whole number val) is selected in the RNG_index)
+I.E. these will need an 'RNG_val' varible 
+
+the RNG_index will have a range from 1-999; (The RNG range '0' is reserved for the 'afflicted' assests. )

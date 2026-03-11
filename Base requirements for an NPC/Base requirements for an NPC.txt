@@ -1,0 +1,21 @@
+//NPC design requiremnts//
+
+Has to be a simple desgin
+No more than five diffrent colors in the color pallet:(This doesn't include diffrent shades of the same color.)
+Can be drawn in a 16x16, 32x32, 64x64 or 128x128 pixel grid.
+
+//Function//
+
+They either have to have a line or lines of dialog:(It can be unique.)
+
+or
+
+A side quest for the player.
+
+//
+
+NPCs can be static: (Which means always present in a location)
+
+or 
+
+Part of an RNG value: (Appear at a location based on a specific interger (whole number) value with in the randomize index.)

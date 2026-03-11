@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Items_Weps_Arms_Trnks",
+  "name":"Items_Weps_Arms_Trnks",
+  "parent":{
+    "name":"RNG_functions",
+    "path":"folders/Notes/RNG_functions.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,16 @@
+//Key Charcter design requiremnets//
+
+Has to be a simple desgin
+No more than five diffrent colors in the color pallet:(This doesn't include diffrent shades of the same color.)
+Can be drawn in a 16x16, 32x32, 64x64 or 128x128 pixel grid.
+
+They have to serve a key role.
+
+//
+They have to have personality traits: (Both good, and bad.)
+They have to have at least one character strentgh, and one character weakness.//
+
+//extra//
+
+You can iclude character likes, and dislikes.
+You can include charater quirks: (I.E. Unique speech pattern, a niche for collecting certain things. etc of that nature)
