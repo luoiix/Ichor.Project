@@ -10,6 +10,7 @@
     
     ini_write_string("global.WHPlayerEXP", "Exeperince", "0");
     ini_write_string("global.WHPlayerLV", "Level", "0");
+     ini_write_string("global.WHPlayerSHA", "Shards", "0");
     
     ini_write_string ("global.WHPlayerVit", "Vitality", "5");
     ini_write_string ("global.WHPlayerSta", "Stamina", "9");
@@ -17,7 +18,9 @@
     
     ini_write_string("global.playerx", "X", "X");
     ini_write_string("global.playery", "Y", "Y");
-   
+    
+     buffer_create(1,1,1);
+    
      ini_close();
 }
 
@@ -39,5 +42,5 @@ global.WHPlayerVit = 5;
 global.WHPlayerSta = 5;
 global.WHPlayerEnd = 5;
 
-global.WHplayerX = x;
-global.WHplayery = y;
+global.WHplayerX = x or 0;
+global.WHplayery = y or 0;
