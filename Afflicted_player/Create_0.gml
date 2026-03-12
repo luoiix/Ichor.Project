@@ -10,14 +10,16 @@
     
     ini_write_string("global.afflictedPlayerEXP", "Exeperince", "0");
     ini_write_string("global.afflictedPlayerLV", "Level", "0");
+    ini_write_string("global.afflictedPlayerSHA", "Shards", "0");
     
     ini_write_string ("global.afflictedPlayerVit", "Vitality", "9" );
     ini_write_string ("global.afflictedPlayerSta", "Stamina", "3" );
     ini_write_string ("global.afflictedPlayerEnd", "Endurance", "0" );
     
-    
-     ini_write_string("global.playerx", "X", "X");
+    ini_write_string("global.playerx", "X", "X");
     ini_write_string("global.playery", "Y", "Y");
+    
+     buffer_create(1,1,1);
     
     ini_close();
 }
@@ -40,5 +42,5 @@ global.afflictedPlayerVit = 9;
 global.afflictedPlayerSta = 3;
 global.afflictedPlayerEnd = 0;
 
-global.afflictedplayerX = x;
-global.afflictedplayery = y;
+global.afflictedplayerX = x or 0;
+global.afflictedplayery = y or 0;

@@ -1,25 +1,24 @@
-var l3DC10B27_0;
-l3DC10B27_0 = keyboard_check(vk_down);
-if (l3DC10B27_0)
+var Sliver;
+
+Sliver = keyboard_check(vk_down);
+if (Sliver)
 {
 	vspeed = 1;
-
 	hspeed = 0;
-
+    
 	direction = 270;
-
 	image_speed = 1.5;
-
-	sprite_index = Afflictedplayer_down;
+    
+	sprite_index = Afflictedplayer_down_spr;
 	image_index += 0;
 }
 
-l3DC10B27_0 = keyboard_check(vk_shift);
-if (l3DC10B27_0)
+Sliver = keyboard_check(vk_shift);
+if (Sliver)
  {
-  hspeed = 0;
-  vspeed = 3;
- 
+    hspeed = 0;
+    vspeed = 3;
+    
     image_speed = 2;
     direction = 270;
 }

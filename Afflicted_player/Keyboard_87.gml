@@ -1,23 +1,23 @@
-var l46DFAC26_0;
-l46DFAC26_0 = keyboard_check(ord("W"));
-if (l46DFAC26_0)
+var Sliver;
+
+Sliver = keyboard_check(ord("W"));
+if (Sliver)
 {
 	vspeed = 1;
-
 	hspeed = 0;
-
+    
 	direction = 90;
-
 	image_speed = 1.5;
-	sprite_index = Afflictedplayer_up;
+    
+	sprite_index = Afflictedplayer_up_spr;
 	image_index += 0;
 }
 
-l46DFAC26_0 = keyboard_check(vk_shift);
-if (l46DFAC26_0)
+Sliver = keyboard_check(vk_shift);
+if (Sliver)
  {
-  hspeed = 0;
-  vspeed = 3;
+    hspeed = 0;
+    vspeed = 3;
  
     image_speed = 2;
     direction =90;
