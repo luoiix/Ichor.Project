@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Afflictedplayer_Globalvars",
+  "%Name":"AFL_shard_count",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Afflictedplayer_Globalvars",
+  "name":"AFL_shard_count",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player.Globalstats",
-    "path":"folders/CTLobj's/GlobalstatsCTLobjs/Player.Globalstats.yy",
+    "name":"Global.PlayerShards",
+    "path":"folders/CTLobj's/GlobalstatsCTLobjs/Player.Globalstats/Global.PlayerShards.yy",
   },
   "parentObjectId":null,
   "persistent":true,
