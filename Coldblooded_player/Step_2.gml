@@ -1,3 +1,7 @@
+
+
+///
+
 var CB_player;
 
 CB_player = keyboard_check_released(ord("W")) or keyboard_check_released(vk_up);
@@ -7,7 +11,7 @@ if (CB_player)
 	hspeed = 0;
     
 	image_speed = 0;
-	sprite_index = Player_idle_coolhue_spr;
+	sprite_index = coolhue_idle_spr;
     
 	image_index = 2;
 	speed = 0;
@@ -22,7 +26,7 @@ if (CB_player)
 	hspeed = 0;
     
 	image_speed = 0;
-	sprite_index = Player_idle_coolhue_spr;
+	sprite_index = coolhue_idle_spr;
     
 	image_index = 4;
 	speed = 0;
@@ -36,7 +40,7 @@ if (CB_player)
 	vspeed = 0;
     image_speed = 0;
 	
-    sprite_index = Player_idle_coolhue_spr;
+    sprite_index = coolhue_idle_spr;
     image_index = 1;
     
 	speed = 0;
@@ -49,7 +53,7 @@ if (CB_player)
 	hspeed = 0;
 	vspeed = 0;
     
-	sprite_index = Player_idle_coolhue_spr;
+	sprite_index = coolhue_idle_spr;
 	image_index = 3;
     
 	image_speed = 0;
@@ -57,12 +61,13 @@ if (CB_player)
 	direction = 0;
 }
 
+///
+
 CB_player = keyboard_check_released (vk_shift)
 if (CB_player) 
 {
     hspeed = 0;
     vspeed = 0;
-    
+    speed = 0;
     image_speed = 0;
-    direction = 0;
 }

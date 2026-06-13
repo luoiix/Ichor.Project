@@ -3,6 +3,7 @@
   "%Name":"dew_kittyPrpOBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Coldblooded_player","path":"objects/Coldblooded_player/Coldblooded_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -10,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"DewkitOBJs",
-    "path":"folders/Objects/NPCs/AsierNPCS/DewkitOBJs.yy",
+    "path":"folders/Objects/NPC_OBJs/AsierNPCS/DewkitOBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
