@@ -11,6 +11,9 @@
     ini_write_real("global.afflictedPlayerEXP", "Exeperince", 0);
     ini_write_real("global.afflictedPlayerLV", "Level", 0);
     ini_write_real("global.afflictedPlayerSHA", "Shards", 0);
+    ini_write_string("global.afflictedPlayerEXP", "Exeperince", "0");
+    ini_write_string("global.afflictedPlayerLV", "Level", "0");
+    ini_write_string("global.afflictedPlayerSHA", "Shards", "0");
     
     ini_write_real ("global.afflictedPlayerVIT", "Vitality", 9);
     ini_write_real ("global.afflictedPlayerSTA", "Stamina", 3);
@@ -42,6 +45,10 @@
     ini_write_real("global.afflictedplayery", "Y", y);
     
      debug_input_save("saveprog.ini");
+     buffer_create(1,1,1);
+    ini_write_string("global.playerx", "X", "X");
+    ini_write_string("global.playery", "Y", "Y");
+    
      buffer_create(1,1,1);
     
     ini_close();
@@ -95,3 +102,5 @@ global.white_g_shars = 0;
 global.plat_shars = 0;
 global.rhod_shars = 0;
 global.osm_shars = 0;
+global.afflictedplayerX = x or 0;
+global.afflictedplayery = y or 0;

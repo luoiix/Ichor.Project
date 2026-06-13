@@ -7,7 +7,8 @@ if (Sliver)
 	hspeed = 0;
 	direction = 90;
 	image_speed = 1.5;
-	sprite_index = Afflictedplayer_up_spr_1;
+	
+  sprite_index = Afflictedplayer_up_spr;
 	image_index += 0;
 }
 

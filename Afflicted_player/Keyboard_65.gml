@@ -9,7 +9,7 @@ if (Sliver)
 	direction = 180;
 	image_speed = 2;
     
-	sprite_index = Afflictedplayer_stepleft_spr_1;
+	sprite_index = Afflictedplayer_stepleft_spr;
 	image_index += 0;
 }
 

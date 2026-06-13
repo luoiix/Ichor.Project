@@ -1,7 +1,7 @@
-var WH_player;
-WH_player = keyboard_check(ord("A"));
+var CB_player;
 
-if (WH_player)
+CB_player = keyboard_check(vk_left);
+if (CB_player)
 {
 	hspeed = 2;
 	vspeed = 0;
@@ -9,12 +9,12 @@ if (WH_player)
 	direction = 180;
 	image_speed = 2;
     
-	sprite_index = player_stepleft_warmhue_spr;
+	sprite_index = Player_stepleft_coolhue_spr;
 	image_index += 0;
 }
 
-WH_player = keyboard_check(vk_shift);
-if (WH_player) 
+CB_player = keyboard_check(vk_shift);
+if (CB_player) 
 {
     hspeed = 3;
     vspeed = 0;
