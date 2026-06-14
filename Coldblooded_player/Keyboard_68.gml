@@ -9,7 +9,7 @@ if (CB_player)
     direction = 0;
     image_speed = 2;
     
-    sprite_index = Player_stepright_coolhue_spr;
+    sprite_index = coolhue_stepright_spr;
 	image_index += 0;
 }
 

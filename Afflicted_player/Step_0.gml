@@ -49,3 +49,50 @@ if (Sliver)
 	sprite_index = Afflictedplayer_down_spr;
 	image_index += 0;
 }
+
+///Stamina timer vars///
+
+var sprint = keyboard_check(vk_shift);
+var rest = keyboard_check_released(vk_shift)
+
+var walkspeed = 2;
+var runspeed = 3;
+
+var stamina = 3;
+
+var max_stamina = 3;
+
+var stamina_recover = 1;
+var stamina_deplete = 1.5;
+
+var current_stamia = max_stamina;
+
+var can_sprint = true;
+
+///
+
+if (sprint)
+{
+    walkspeed = runspeed;
+    stamina -= stamina_deplete;
+    
+    stamina = max (5, stamina);
+    
+    if (stamina <= 0)  
+    {
+        can_sprint = false;
+    }
+}
+    
+if (rest)
+{
+    runspeed = walkspeed;
+    stamina += stamina_recover;
+    
+    stamina = min (max_stamina, stamina);
+    
+     if (stamina >= 2)
+    {
+        can_sprint = true
+    }
+}
