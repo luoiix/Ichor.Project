@@ -1,74 +1,61 @@
-var l30310A46_0;
-l30310A46_0 = keyboard_check_released(ord("W")) or keyboard_check_released(vk_up);
-if (l30310A46_0)
+var Sliver;
+
+Sliver = keyboard_check_released(ord("W")) or keyboard_check_released(vk_up);
+if (Sliver)
 {
 	vspeed = 0;
-
 	hspeed = 0;
-
 	image_speed = 0;
-
-	sprite_index = Afflictedplayer_idle;
+	sprite_index = Afflictedplayer_idle_spr;
 	image_index = 2;
-
 	speed = 0;
 	direction = 0;
 }
 
-var l5337F4A1_0;
-l5337F4A1_0 = keyboard_check_released(ord("S")) or keyboard_check_released(vk_down);
-if (l5337F4A1_0)
+Sliver = keyboard_check_released(ord("S")) or keyboard_check_released(vk_down);
+if (Sliver)
 {
 	vspeed = 0;
-
 	hspeed = 0;
-
 	image_speed = 0;
-
-	sprite_index = Afflictedplayer_idle;
+	sprite_index = Afflictedplayer_idle_spr;
 	image_index = 4;
-
 	speed = 0;
 	direction = 0;
 }
 
-var l2280B9DC_0;
-l2280B9DC_0 = keyboard_check_released(ord("A")) or keyboard_check_released(vk_left);
-if (l2280B9DC_0)
+Sliver = keyboard_check_released(ord("A")) or keyboard_check_released(vk_left);
+if (Sliver)
 {
 	hspeed = 0;
-
 	vspeed = 0;
-
 	image_speed = 0;
-
-	sprite_index = Afflictedplayer_idle;
+	sprite_index = Afflictedplayer_idle_spr;
 	image_index = 1;
-
 	speed = 0;
 	direction = 0;
 }
 
-var l5CD33455_0;
-l5CD33455_0 = keyboard_check_released(ord("D")) or keyboard_check_released(vk_right);
-if (l5CD33455_0)
+Sliver = keyboard_check_released(ord("D")) or keyboard_check_released(vk_right);
+if (Sliver)
 {
 	hspeed = 0;
-
 	vspeed = 0;
-
-	sprite_index = Afflictedplayer_idle;
+    
+	sprite_index = Afflictedplayer_idle_spr;
 	image_index = 3;
-
 	image_speed = 0;
-
+    
 	speed = 0;
 	direction = 0;
 }
 
-if keyboard_check_released (vk_shift) {
- hspeed = 0;
- vspeed = 0;
- image_speed = 0;
- direction = 0;
+Sliver = keyboard_check_released (vk_shift) 
+if (Sliver) 
+{
+    hspeed = 0;
+    vspeed = 0;
+    
+    image_speed = 0;
+    direction = 0;
 }

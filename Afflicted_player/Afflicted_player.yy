@@ -13,13 +13,14 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":39,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":38,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":40,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Afflicted_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player_obj",
-    "path":"folders/Objects/Player_obj.yy",
+    "name":"Player_OBJs",
+    "path":"folders/Objects/Player_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -45,12 +46,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Afflictedplayer_idle_spr",
-    "path":"sprites/Afflictedplayer_idle_spr/Afflictedplayer_idle_spr.yy",
+    "name":"Afflictedplayer_idle_spr_1",
+    "path":"sprites/Afflictedplayer_idle_spr_1/Afflictedplayer_idle_spr_1.yy",
   },
   "spriteMaskId":{
-    "name":"Afflictedplayer_idle_spr",
-    "path":"sprites/Afflictedplayer_idle_spr/Afflictedplayer_idle_spr.yy",
+    "name":"Afflictedplayer_idle_spr_1",
+    "path":"sprites/Afflictedplayer_idle_spr_1/Afflictedplayer_idle_spr_1.yy",
   },
   "visible":true,
 }
