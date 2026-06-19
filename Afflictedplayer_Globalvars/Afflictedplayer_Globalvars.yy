@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player.Globalstats",
-    "path":"folders/CTLobj's/GlobalstatsCTLobjs/GlobalandLocalvaribles/Player.Globalstats.yy",
+    "path":"folders/CTLobj's/GlobalstatsCTLobjs/Player.Globalstats.yy",
   },
   "parentObjectId":null,
   "persistent":true,

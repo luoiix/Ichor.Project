@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Bupplesobjs",
-    "path":"folders/Objects/Envirementobjs/buildings/Bupplesobjs.yy",
+    "path":"folders/Objects/building_OBJs/Bupplesobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,12 +32,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"bupples_spr",
-    "path":"sprites/bupples_spr/bupples_spr.yy",
+    "name":"bupples_building_spr",
+    "path":"sprites/bupples_building_spr/bupples_building_spr.yy",
   },
   "spriteMaskId":{
-    "name":"bupples_spr",
-    "path":"sprites/bupples_spr/bupples_spr.yy",
+    "name":"bupples_building_spr",
+    "path":"sprites/bupples_building_spr/bupples_building_spr.yy",
   },
   "visible":true,
 }
