@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"NimbusAnimations",
-    "path":"folders/Sprites/Objspris/Maincharacters/Nimbus/NimbusAnimations.yy",
+    "path":"folders/Sprites/Obj_sprs/Maincharacters_sprs/Nimbus_sprs/NimbusAnimations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -72,8 +72,6 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
-    "seqHeight":25.0,
-    "seqWidth":12.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
