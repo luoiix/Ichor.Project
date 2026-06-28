@@ -1,8 +1,6 @@
-
+var CB_player;
 
 ///
-
-var CB_player;
 
 CB_player = keyboard_check_released(ord("W")) or keyboard_check_released(vk_up);
 if (CB_player)
@@ -65,6 +63,18 @@ if (CB_player)
 
 CB_player = keyboard_check_released (vk_shift)
 if (CB_player) 
+{
+    hspeed = 0;
+    vspeed = 0;
+    speed = 0;
+    image_speed = 0;
+}
+
+///
+
+global.Playermenu = mainmenu;
+
+if (global.Playermenu = true)
 {
     hspeed = 0;
     vspeed = 0;
