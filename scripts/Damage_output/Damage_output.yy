@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Damage_output",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Damage_output",
+  "parent":{
+    "name":"Encounter_scripts",
+    "path":"folders/scripts/Encounter_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
