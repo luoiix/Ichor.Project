@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Reset_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Reset_game",
+  "parent":{
+    "name":"Mainmenu_scripts",
+    "path":"folders/scripts/Menu_scripts/Mainmenu_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

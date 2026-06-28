@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Conflict_function",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Conflict_function",
+  "parent":{
+    "name":"Encounter_scripts",
+    "path":"folders/scripts/Encounter_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

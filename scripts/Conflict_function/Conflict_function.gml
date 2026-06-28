@@ -1,0 +1,4 @@
+function Conflict_function()
+{
+
+}
