@@ -1,13 +1,19 @@
-var main_menu
+var main_menu = 
+[
+    "Newgame",
+    "Continue",
+    "Restart"
+];
 
-main_menu[0] = "Newgame"
-main_menu[1] = "Continue"
-main_menu[2] = "Restart"
+// Index of the currently selected option
+var cursor = 0;
 
-var menu_list = array_length(main_menu);
+ var choice = main_menu[cursor];
+ var menu_list = array_length(main_menu);
 
-var i = 0;
-var spacing = 32;
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i_y = 560;
-var i_x = 600;
+var menu_x = 550;
+var menu_y = 550;

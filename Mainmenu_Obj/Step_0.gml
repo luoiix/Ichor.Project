@@ -1,67 +1,56 @@
-var main_menu;
+// Menu options stored in an array
+var main_menu = 
+[
+    "Newgame",
+    "Continue",
+    "Restart"
+];
 
-main_menu[0] = "Newgame";
-main_menu[1] = "Continue";
-main_menu[2] = "Restart";
+// Index of the currently selected option
+var cursor = 0;
 
-var menu_list = array_length(main_menu);
+ var choice = main_menu[cursor];
+ var menu_list = array_length(main_menu);
 
-// Track the currently selected menu index
-var i = 0;
-var spacing = 32;
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i_y = 560;
-var i_x = 600;
-
-///Navagate///
-
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var SELECT = keyboard_check_pressed(vk_enter);
-
-var MOVE = DOWN - UP;
+var menu_x = 550;
+var menu_y = 550;
 
 ///
-UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+
+var UP = keyboard_check_pressed(vk_up);
+var DOWN = keyboard_check_pressed(vk_down);
+var CONFIRM = keyboard_check_pressed(vk_enter);
+
+// Navigate menu
+if (DOWN) 
+{
+    cursor++;
+}
 
 if (UP)
 {
-	i++;
-	
-	if (i >= 0)
-	i = menu_list;
+    cursor--;
 }
 
-///
-DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-
-if (DOWN)
+// Select option
+if (CONFIRM) 
 {
-	i--;
-	
-	if (i >= menu_list)
-	i = 0;
-}
-
-///
-SELECT = keyboard_check_pressed(vk_enter);
-
-if (keyboard_check_pressed(vk_enter)) 
-{
-	switch (SELECT) 
-	
+    switch (choice) 
 	{
         case "Newgame":
-            show_message("Starting game...");
-           
-		  break;
+
+            break;
         
 		case "Continue":
-            show_message("transfusing files...");
+
             break;
         
 		case "Restart":
-            game_end();
+		
             break;
     }
 }

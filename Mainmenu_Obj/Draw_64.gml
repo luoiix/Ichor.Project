@@ -1,108 +1,103 @@
-var main_menu;
+// Menu options stored in an array
+var main_menu = 
+[
+    "Newgame",
+    "Continue",
+    "Restart"
+];
 
-main_menu[0] = "Newgame";
-main_menu[1] = "Continue";
-main_menu[2] = "Restart";
+// Index of the currently selected option
+var cursor = 0;
 
-var menu_list = array_length(main_menu);
+ var choice = main_menu[cursor];
+ var menu_list = array_length(main_menu);
 
-// Track the currently selected menu index
-var i = 0;
-var spacing = 32;
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i_y = 560;
-var i_x = 600;
-
-///Navagate///
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var SELECT = keyboard_check_pressed(vk_enter);
-
-var MOVE = DOWN - UP;
+var menu_x = 550;
+var menu_y = 550;
 
 ///
-UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+
+var UP = keyboard_check_pressed(vk_up);
+var DOWN = keyboard_check_pressed(vk_down);
+var CONFIRM = keyboard_check_pressed(vk_enter);
+
+// Navigate menu
+if (DOWN) 
+{
+    cursor++;
+}
 
 if (UP)
 {
-	i++;
-	
-	if (i >= 0)
+    cursor--;
+}
+
+///
+
+draw_set_font(menu_font);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+///
+
+for (var i = 0; i < menu_list; i++) 
+{
+    var text = main_menu[i];
+    var option = menu_y + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
 	{
-	   i = menu_list;
-	}
-}
-
-///
-DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-
-if (DOWN)
-{
-	i--;
-	
-	if (i >= menu_list)
+        draw_set_color(c_yellow);
+        draw_text(menu_x, option, text);
+    } 
+	else 
 	{
-	    i = 0;
-	}
-	
-}
-
-/// Draw Event ///
-draw_set_font(publicpixel_menu);
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-///
-
-for (i = 0; i < menu_list; i ++)
-
-{ 
-	if (i = 0)
-{
-	draw_set_color(c_yellow);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(i_x, i_y + (i * spacing), main_menu[i]);
+        draw_set_color(c_white);
+        draw_text(menu_x, option, text);
+    }
 }
 
 ///
 
-for (i = 1; i < menu_list; i ++) 
+for (var i = 1; i < menu_list; i++) 
 {
-     if (i = 1)
-{
-	draw_set_color(c_yellow);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(i_x, i_y + (i * spacing), main_menu[i]);
+    var text = main_menu[i];
+    var option = menu_y + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_x, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_x, option, text);
+    }
 }
 
 ///
 
-for (i = 0; i < menu_list; i ++)
+for (var i = 0; i < menu_list; i++) 
 {
-       if (i = 2)
-{
-	draw_set_color(c_red);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(i_x, i_y + (i * spacing), main_menu[i]);
+    var text = main_menu[i];
+    var option = menu_y + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_x, option, text);
+    } 
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_x, option, text);
+    }
 }
