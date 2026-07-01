@@ -1,78 +1,62 @@
-global.Playermenu = false;
+var player_menu = 
+[
+    "Items",
+    "Stats",
+    "Equip"
+];
 
-var player_menu;
+// Index of the currently selected option
+var cursor = 0;
 
-player_menu[0] = "Items";
-player_menu[1] = "Equipment";
-player_menu[2] = "Stats";
-
+var choice = player_menu[cursor];
 var menu_list = array_length(player_menu);
 
-//
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i = 0;
-
-var menu_X = 55;
-var menu_Y = 55;
-
-var spacing = 32;
+var menu_x = 5;
+var menu_y = 5;
 
 ///
 
-var playermenu = keyboard_check_pressed(vk_tab);
-
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var UP = keyboard_check_pressed(vk_up);
+var DOWN = keyboard_check_pressed(vk_down);
 var CONFIRM = keyboard_check_pressed(vk_enter);
 
-var MOVE = DOWN - UP;
+// Navigate menu
+DOWN = keyboard_check_pressed(vk_down);
+
+if (DOWN) 
+{
+    cursor++;
+}
 
 ///
-MOVE = DOWN - UP
+UP = keyboard_check_pressed(vk_up);
 
-if (MOVE != 0)
+if (UP)
 {
-	i += MOVE;
-
-if (i < 0) 
-{
-	i = menu_list = 0;
+    cursor--;
 }
 
-else if (i >= menu_list) 
-{
-	i = 0
-}
-}
+// Select option
+CONFIRM = keyboard_check_pressed(vk_enter);
 
-//Menu loop//
-
-//CONFIRM function//
-
-if (CONFIRM)
+if (CONFIRM) 
 {
-switch (i) 
-{
-    
-    case "Item": 
+    switch (choice) 
 	{
-       instance_destroy(player_mainmenu);
-	   instance_create_layer(menu_X, menu_Y, "cam_menu", player_inventory);
-	   break;
+        case "Items":
+
+            break;
+        
+		case "Stats":
+
+            break;
+        
+		case "Equip":
+		
+            break;
     }
-	
-	case "Stats": 
-	{
-	    instance_destroy(player_mainmenu);
-	    instance_create_layer(menu_X, menu_Y, "cam_menu", player_stats);
-	    break;
-	}
-	
-	case "Equipment": 
-	{
-	   instance_destroy(player_mainmenu);
-	   instance_create_layer(menu_X, menu_Y, "cam_menu", player_equipment);
-	   break;
-	} 
-	}
-	}
+}

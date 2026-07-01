@@ -1,20 +1,19 @@
-global.Playermenu = false;
+var player_menu = 
+[
+    "Items",
+    "Stats",
+    "Equip"
+];
 
-var player_menu;
+// Index of the currently selected option
+var cursor = 0;
 
-player_menu[0] = "Items";
-player_menu[1] = "Stats";
-player_menu[2] = "Equipment";
-
+var choice = player_menu[cursor];
 var menu_list = array_length(player_menu);
 
-//
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i = 0;
-
-var menu_X = 55;
-var menu_Y = 55;
-
-var spacing = 32;
-
-///
+var menu_x = 5;
+var menu_y = 5;

@@ -28,7 +28,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"Player_test_menu_","filters":[],"listItems":[
+        "\"Items\"",
+        "\"Stats\"",
+        "\"Equipment\"",
+      ],"multiselect":false,"name":"Player_test_menu_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Items\"","varType":6,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
