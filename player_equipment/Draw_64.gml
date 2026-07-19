@@ -1,113 +1,148 @@
-var player_equ;
+// Menu options stored in an array//
+var player_equip = 
+[
+    "Wepon",
+    "Armor",
+    "Trinket"
+];
 
-player_equ[0] = "Armor";
-player_equ[1] = "Wepon";
-player_equ[2] = "Trinket";
+// Index of the currently selected option
+var cursor = 0;
 
-var equip_list = array_length(player_equ);
+var choice = player_equip[cursor];
+var menu_list = array_length(player_equip);
 
-///
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
 
-var i = 0
-var spacing = 32;
+///x,y, pos of spr and menu options///
 
-var menu_X = 55;
-var menu_Y = 55;
+var menu_spr_x = 5;
+var menu_spr_y = 5;
+
+var menu_x = 70
+var menu_y = 25
 
 ///
 
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-
 var CONFIRM = keyboard_check_pressed(vk_enter);
-var BACK = keyboard_check_pressed (vk_backspace);
 
-//
+// Navigate menu
+DOWN = keyboard_check_pressed(vk_down);
 
-//UP function//
-
-UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-
-if (UP) 
+if (DOWN) 
 {
-    i --;
-    if (i < 0) 
+    cursor++;
+	
+	if (cursor > menu_list)
 	{
-        i = equip_list;
+		cursor = 0;
+	}
+}
+
+///
+UP = keyboard_check_pressed(vk_up);
+
+if (UP)
+{
+    cursor--;
+	
+if (cursor > 0)
+	{
+		cursor = menu_list;
+	}
+}
+
+// Select option
+CONFIRM = keyboard_check_pressed(vk_enter);
+
+if (CONFIRM) 
+{
+    switch (choice) 
+	{
+        case "Items":
+
+            break;
+        
+		case "Stats":
+
+            break;
+        
+		case "Equipment":
+		
+            break;
     }
 }
 
-//DOWN function//
-if (DOWN)
+///
+
+draw_set_font(menu_font);
+draw_set_halign(fa_top);
+draw_set_valign(fa_left);
+
+///
+
+draw_sprite_stretched(player_equipmenu_spr, 0, menu_spr_x, menu_spr_y, 225, 180);
+
+///
+
+for (var i = 0; i < menu_list; i++) 
 {
-    i ++;
-    if (i = equip_list) 
+    var text = player_equip[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
 	{
-        i = 0;
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
     }
 }
 
 ///
 
-draw_sprite(player_equipmenu_spr, 0, menu_X, menu_Y);
-
-///
-
-draw_set_font(publicpixel_menu);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
-///
-
-for (i = 0; i < equip_list; i ++)
-
-{ 
-	if (i == 0)
+for (var i = 1; i < menu_list; i++) 
 {
-	draw_set_color(c_yellow);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(menu_X, menu_Y + (i * spacing), player_equ[i]);
+    var text = player_equip[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+    }
 }
 
 ///
 
-for (i = 1; i < equip_list; i ++) 
+for (var i = 2; i < menu_list; i++) 
 {
-     if (i == 1)
-{
-	draw_set_color(c_yellow);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(menu_X, menu_Y + (i * spacing), player_equ[i]);
-}
-
-///
-
-for (i = 0; i < equip_list; i ++)
-{
-       if (i == 2)
-{
-	draw_set_color(c_yellow);
-}
-
-else
-
-{ 
-	draw_set_colour(c_white);
-}
-
-draw_text(menu_X, menu_Y + (i * spacing), player_equ[i]);
+    var text = player_equip[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_red);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+    }
 }

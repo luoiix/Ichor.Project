@@ -1,22 +1,31 @@
-var player_inv = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-var inv_count = array_length(player_inv);
+var player_items = 
+[
+    "",
+    "",
+    "",
+	
+	"",
+	"",
+	"",
+	
+	"",
+	"",
+	""
+];
 
-var i = 0;
+//Index of the currently selected option and space between options//
+var cursor = 0;
+var menu_spacing = 32;
 
-var menu_X = 55;
-var menu_Y = 55;
+///list and selection varibles///
 
-var selection_color = c_yellow;
-var main_color = c_white;
+var choice = player_items[cursor];
+var menu_list = array_length(player_items);
 
-clamp(i, menu_X, menu_Y + 228);
+///x,y, pos of spr and menu options///
 
-///
+var menu_spr_x = 5;
+var menu_spr_y = 5;
 
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-
-var BACK = keyboard_check_pressed(vk_backspace);
-var CONFIRM = keyboard_check_pressed(vk_enter);
-
-///
+var menu_x = 70
+var menu_y = 25

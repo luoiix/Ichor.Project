@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"player_equipment",
+  "%Name":"Player_StorPit",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"player_equipment",
+  "name":"Player_StorPit",
   "overriddenProperties":[],
   "parent":{
-    "name":"test_menus",
-    "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
+    "name":"ItemOBJS",
+    "path":"folders/Objects/InventoryOBJs/ItemOBJS.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -27,17 +27,17 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"Player_test_menu_","filters":[],"listItems":[
-        "\"Items\"",
-        "\"Stats\"",
-        "\"Equipment\"",
-      ],"multiselect":false,"name":"Player_test_menu_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Items\"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"storage_pit_spr",
+    "path":"sprites/storage_pit_spr/storage_pit_spr.yy",
+  },
+  "spriteMaskId":{
+    "name":"storage_pit_spr",
+    "path":"sprites/storage_pit_spr/storage_pit_spr.yy",
+  },
   "visible":true,
 }

@@ -1,17 +1,24 @@
-var player_equ
+// Menu options stored in an array//
+var player_equip = 
+[
+    "Wepon",
+    "Armor",
+    "Trinket"
+];
 
-player_equ[0] = "Armor";
-player_equ[1] = "Wepon";
-player_equ[2] = "Trinket";
+//Index of the currently selected option and space between options//
+var cursor = 0;
+var menu_spacing = 32;
 
-var equip_list = array_length(player_equ);
+///list and selection varibles///
 
-///
+var choice = player_equip[cursor];
+var menu_list = array_length(player_equip);
 
-var i = 0
-var spacing = 32;
+///x,y, pos of spr and menu options///
 
-var menu_X = 55;
-var menu_Y = 55;
+var menu_spr_x = 5;
+var menu_spr_y = 5;
 
-///
+var menu_x = 70
+var menu_y = 25

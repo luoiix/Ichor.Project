@@ -11,7 +11,7 @@ var spacing = 16;
 var AfflictedArdor = Afflicted_player;
 var ColdBlooded = Coldblooded_player;
 var WarmHearted = Warmhearted_player;
-var Test = Playerobj_tests;
+var Test = Test_player;
 
 //
 

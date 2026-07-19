@@ -14,7 +14,7 @@
     "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,7 +27,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"Player_test_menu_","filters":[],"listItems":[
+        "\"Items\"",
+        "\"Stats\"",
+        "\"Equipment\"",
+      ],"multiselect":false,"name":"Player_test_menu_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Items\"","varType":6,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
