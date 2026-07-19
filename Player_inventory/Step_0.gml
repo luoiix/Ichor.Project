@@ -1,115 +1,65 @@
-var menu_open = keyboard_check(vk_tab);
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var player_inv = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+var inv_count = array_length(player_inv);
+
+var i = 0;
+
+var menu_X = 55;
+var menu_Y = 55;
+
+var selection_color = c_yellow;
+var main_color = c_white;
+
+clamp(i, menu_X, menu_Y);
+
+///
+
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
-var plrinv = ["","","","","","","","",""]
+var BACK = keyboard_check_pressed(vk_backspace);
+var CONFIRM = keyboard_check_pressed(vk_enter);
 
-var menu_count = array_length(plrinv);
-
-var selection_index = 0; 
-var arrspacing = 4;
-
-var selectioncurser = playersoulspr;
-
-visible = false;
-
-//UP function//
-
-if (UP) 
+//UP//
+if i = UP
 {
-    selection_index --;
-    if (selection_index < 0) {
-        selection_index = plrinv;
-    }
+	i++;
 }
 
-//DOWN function//
-
-if (DOWN)
+//DOWN//
+if i = DOWN
 {
-    selection_index ++;
-    if (selection_index = plrinv) {
-        selection_index = 0;
-    }}
-
-//SELECT function//
-
-if (SELECT)[0]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
+	i--;
 }
 
-if (SELECT)[1]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
+//loop//
+if (i = 0)
+{
+	i = player_inv;
 }
 
-if (SELECT)[2]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
+if (i = player_inv)
+{
+	i = 0;
 }
-if (SELECT)[3]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
+	
+//CONFIRM funtion//
+
+if(CONFIRM) 
+
+switch(i) 
+{
+	case 0:
+	{
+		
+	}
+	break;
 }
 
-if (SELECT)[4]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
-}
 
-if (SELECT)[5]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
-}
-if (SELECT)[6]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
-}
 
-if (SELECT)[7]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
-}
-
-if (SELECT) [8]
-switch (selection_index) {
-    
-    case "": {
-        //Imput code//
-    }
-    break;
+//BACK function//
+if (BACK)
+{
+	instance_destroy(player_inventory);
+	instance_create_layer(menu_X, menu_Y, "cam_menu", player_mainmenu);
 }

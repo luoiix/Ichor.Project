@@ -1,15 +1,20 @@
-var menu_open = keyboard_check(vk_tab);
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+global.Playermenu = false;
 
-var plropts = ["Items","Stats","Equipment"]
+var player_menu;
 
-var menu_count = array_length(plropts);
+player_menu[0] = "Items";
+player_menu[1] = "Stats";
+player_menu[2] = "Equipment";
 
-var selection_index = 0; 
-var arrspacing = 4;
+var menu_list = array_length(player_menu);
 
-var selectioncurser = playersoulspr;
+//
 
-visible = false;
+var i = 0;
+
+var menu_X = 55;
+var menu_Y = 55;
+
+var spacing = 32;
+
+///

@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Player_equipment",
+  "%Name":"player_equipment",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player_equipment",
+  "name":"player_equipment",
   "overriddenProperties":[],
   "parent":{
-    "name":"playermenuCTLobjs",
-    "path":"folders/CTLobj's/playermenuCTLobjs.yy",
+    "name":"test_menus",
+    "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
   },
   "parentObjectId":null,
   "persistent":true,

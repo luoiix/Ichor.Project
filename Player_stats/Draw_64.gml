@@ -1,31 +1,35 @@
-draw_sprite_stretched(player_statmenu_spr, 1, 25, 25, 240, 150);
+var text_menuX = 30;
+var text_menuY = 30;
 
-draw_text(x,y, "Player name")
-draw_text(x, y, "HP");
-draw_text (x, y, "ATK");
-draw_text (x, y, "DEF");
+var menu_w = 200;
+var menu_h = 200;
 
-draw_text(x, y, "VIT");
-draw_text (x, y, "STA");
-draw_text (x, y, "END");
+var spacing = 16;
 
-draw_text(x, y, "SHA");
-draw_text (x, y, "EXP");
-draw_text (x, y, "LV");
+///
 
-draw_text_colour(x, y, "HP", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(x, y, "ATK", c_white, c_white, c_white, c_white, 1);
-draw_text_colour(x, y, "DEF", c_white, c_white, c_white, c_white, 2);
+var Test = Playerobj_tests;
 
-draw_text_colour(x, y, "VIT", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(x, y, "STA", c_white, c_white, c_white, c_white, 1);
-draw_text_colour(x, y, "END", c_white, c_white, c_white, c_white, 2);
+//
 
-draw_text_colour(x, y, "SHA", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(x, y, "EXP", c_white, c_white, c_white, c_white, 1);
-draw_text_colour(x, y, "LV", c_white, c_white, c_white, c_white, 2);
+draw_set_font(publicpixel_chasel);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
+//
 
-draw_set_font(publicpixel);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+if (global.Playerselected = Test)
+{
+	draw_text (text_menuX, text_menuY, "HP" + global.testPlayerlayerHP); //Hitpoints
+    draw_text (text_menuX, text_menuY * spacing, "DEF" + global.testPlayerDEF); //Defense
+    draw_text (text_menuX, text_menuY * spacing, "ATK" + global.testPlayerATK); //Attack
+
+    draw_text (text_menuX, text_menuY * spacing, "VIT" + global.testPlayerVIT); //Vitality
+    draw_text (text_menuX, text_menuY * spacing, "STA" + global.testPlayerSTA); //Stamina
+    draw_text (text_menuX, text_menuY * spacing, "END" + global.testPlayerEND); //Endurance
+	
+	draw_text (text_menuX, text_menuY * spacing, "EXP" + global.testPlayerEXP); //TotalEXP
+    draw_text (text_menuX, text_menuY * spacing, "LV" + global.testPlayerLV); //Level
+}
+
+draw_sprite_stretched_ext(player_statmenu_spr, 0, text_menuX, text_menuY, menu_w, menu_h, c_white, 1);

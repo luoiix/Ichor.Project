@@ -1,14 +1,17 @@
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var player_equ
 
-var plrequ = ["Armor","Wepon","Trinket"]
+player_equ[0] = "Armor";
+player_equ[1] = "Wepon";
+player_equ[2] = "Trinket";
 
-var menu_count = array_length(plrequ);
+var equip_list = array_length(player_equ);
 
-var selection_index = 0; 
-var arrspacing = 4;
+///
 
-var selectioncurser = playersoulspr;
+var i = 0
+var spacing = 32;
 
-visible = false;
+var menu_X = 55;
+var menu_Y = 55;
+
+///

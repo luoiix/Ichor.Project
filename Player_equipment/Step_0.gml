@@ -1,62 +1,79 @@
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var player_equ
 
-var plrequ = ["Armor","Wepon","Trinket"]
+player_equ[0] = "Armor";
+player_equ[1] = "Wepon";
+player_equ[2] = "Trinket";
 
-var menu_count = array_length(plrequ);
-
-var selection_index = 0; 
-var arrspacing = 4;
-
-var selectioncurser = playersoulspr;
-
-visible = false;
+var equip_list = array_length(player_equ);
 
 ///
 
+var i = 0
+var spacing = 32;
+
+var menu_X = 55;
+var menu_Y = 55;
+
+///
+
+var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+
+var CONFIRM = keyboard_check_pressed(vk_enter);
+var BACK = keyboard_check_pressed (vk_backspace);
+
+//
+
 //UP function//
+
+UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 
 if (UP) 
 {
-    selection_index --;
-    if (selection_index < 0) {
-        selection_index = plrequ;
+    i --;
+    if (i < 0) 
+	{
+        i = equip_list;
     }
 }
 
 //DOWN function//
+DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
 if (DOWN)
 {
-    selection_index ++;
-    if (selection_index = plrequ) {
-        selection_index = 0;
-    }}
+    i ++;
+    if (i = equip_list) 
+	{
+        i = 0;
+    }
+}
+	
+//CONFIRM funtion//
+CONFIRM = keyboard_check_pressed(vk_enter);
 
-//SELECT function//
+if (CONFIRM)
+{
+	switch i 
+	{
+		case "Armor":
+		{
+			
+		}
+		break;
+		
+		case "Wepon":
+		{
+			
+		}
+		break;
+		
+		case "Trinket":
+		{
+			
+		}
+		break;
+	}
+	}
 
-if (SELECT)
-switch (selection_index) {
-    
-    case "Armor": {
-        //Imput code//
-    }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Wepon": {
-        //Imput code//
-    }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Trinket": {
-        //Imput code//
-    }
-    break;
-}
+
