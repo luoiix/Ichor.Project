@@ -1,73 +1,76 @@
-var menu_open = keyboard_check(vk_tab);
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var player_menu = 
+[
+    "Items",
+    "Stats",
+    "Equipment"
+];
+
+//Index of the currently selected option and space between options//
+var cursor = 0;
+var menu_spacing = 32;
+
+///list and selection varibles///
+
+var choice = player_menu[cursor];
+var menu_list = array_length(player_menu);
+
+///x,y, pos of spr and menu options///
+
+var menu_spr_x = 5;
+var menu_spr_y = 5;
+
+var menu_x = 70;
+var menu_y = 25;
+
+///navagation varibles///
+
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var CONFIRM = keyboard_check_pressed(vk_enter);
 
-var plropts = ["Items","Stats","Equipment"]
+///menu navagation///
+DOWN = keyboard_check_pressed(vk_down);
 
-var menu_count = array_length(plropts);
-
-var selection_index = 0; 
-var arrspacing = 4;
-
-var selectioncurser = playersoulspr;
-
-visible = false;
+if (DOWN) 
+{
+    cursor++;
+	
+	if (cursor > 0)
+	{
+		cursor = menu_list;
+	}
+}
 
 ///
+UP = keyboard_check_pressed(vk_up);
 
-if (menu_open)
-   
+if (UP)
 {
-     visible = true;
-     hspeed = 0;
-     vspeed = 0;
-    
-    
+    cursor--;
+	
+	if (cursor > menu_list)
+	{
+		cursor = 0;
+	}
 }
 
-//UP function//
+// Select option
+CONFIRM = keyboard_check_pressed(vk_enter);
 
-if (UP) 
+if (CONFIRM) 
 {
-    selection_index --;
-    if (selection_index < 0) {
-        selection_index = plropts;
-    }
-}
+    switch (choice) 
+	{
+        case "Items":
 
-//DOWN function//
+            break;
+        
+		case "Stats":
 
-if (DOWN)
-{
-    selection_index ++;
-    if (selection_index = plropts) {
-        selection_index = 0;
-    }}
-
-//SELECT function//
-
-if (SELECT)
-switch (selection_index) {
-    
-    case "Items": {
-        //Imput code//
+            break;
+        
+		case "Equipment":
+		
+            break;
     }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Stats": {
-        //Imput code//
-    }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Equipment": {
-        //Imput code//
-    }
-    break;
 }

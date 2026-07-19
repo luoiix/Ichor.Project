@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Player_equipment",
+  "%Name":"player_equipment",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player_equipment",
+  "name":"player_equipment",
   "overriddenProperties":[],
   "parent":{
-    "name":"playermenuCTLobjs",
-    "path":"folders/CTLobj's/playermenuCTLobjs.yy",
+    "name":"test_menus",
+    "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -27,11 +27,17 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"Player_test_menu_","filters":[],"listItems":[
+        "\"Items\"",
+        "\"Stats\"",
+        "\"Equipment\"",
+      ],"multiselect":false,"name":"Player_test_menu_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Items\"","varType":6,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

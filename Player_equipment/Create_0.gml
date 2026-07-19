@@ -1,14 +1,24 @@
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+// Menu options stored in an array//
+var player_equip = 
+[
+    "Wepon",
+    "Armor",
+    "Trinket"
+];
 
-var plrequ = ["Armor","Wepon","Trinket"]
+//Index of the currently selected option and space between options//
+var cursor = 0;
+var menu_spacing = 32;
 
-var menu_count = array_length(plrequ);
+///list and selection varibles///
 
-var selection_index = 0; 
-var arrspacing = 4;
+var choice = player_equip[cursor];
+var menu_list = array_length(player_equip);
 
-var selectioncurser = playersoulspr;
+///x,y, pos of spr and menu options///
 
-visible = false;
+var menu_spr_x = 5;
+var menu_spr_y = 5;
+
+var menu_x = 70
+var menu_y = 25

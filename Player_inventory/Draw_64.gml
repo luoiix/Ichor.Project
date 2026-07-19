@@ -1,37 +1,280 @@
-draw_sprite_stretched(player_inventory_spr, 1, 25, 25, 240, 150);
+// Menu options stored in an array
+var player_items = 
+[
+    "",
+    "",
+    "",
+	
+	"",
+    "",
+    "",
+	
+	"",
+    "",
+    "",
+];
 
-draw_set_font(publicpixel_menu);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+// Index of the currently selected option
+var cursor = 0;
+
+var choice = player_items[cursor];
+var menu_list = array_length(player_items);
+
+// Font and spacing settings
+var menu_font = publicpixel_menu; // default font
+var menu_spacing = 32;
+
+///x,y, pos of spr and menu options///
+
+var menu_spr_x = 5;
+var menu_spr_y = 5;
+
+var menu_x = 70
+var menu_y = 25
 
 ///
 
-draw_text(75, 40, "Player");
+var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var CONFIRM = keyboard_check_pressed(vk_enter);
 
-draw_text(50, 75, "");
-draw_text (50, 105, "");
-draw_text (50, 135, "");
+// Navigate menu
+DOWN = keyboard_check_pressed(vk_down);
 
-draw_text(50, 75, "");
-draw_text (50, 105, "");
-draw_text (50, 135, "");
+if (DOWN) 
+{
+    cursor++;
+	
+	if (cursor > menu_list)
+	{
+		cursor = 0;
+	}
+}
 
-draw_text(50, 75, "");
-draw_text (50, 105, "");
-draw_text (50, 135, "");
+///
+UP = keyboard_check_pressed(vk_up);
+
+if (UP)
+{
+    cursor--;
+	
+if (cursor > 0)
+	{
+		cursor = menu_list;
+	}
+}
+
+// Select option
+CONFIRM = keyboard_check_pressed(vk_enter);
+
+if (CONFIRM) 
+{
+    switch (choice) 
+	{
+        case "":
+
+            break;
+    }
+}
 
 ///
 
-draw_text_colour(70, 35, "Player", c_yellow, c_yellow, c_yellow, c_yellow, 0);
+draw_set_font(menu_font);
+draw_set_halign(fa_top);
+draw_set_valign(fa_left);
 
-draw_text_colour(45, 70, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 100, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 125, "", c_white, c_white, c_white, c_white, 0);
+///
 
-draw_text_colour(45, 70, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 100, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 125, "", c_white, c_white, c_white, c_white, 0);
+draw_sprite_stretched(player_inventory_spr, 0, menu_spr_x, menu_spr_y, 275, 375);
 
-draw_text_colour(45, 70, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 100, "", c_white, c_white, c_white, c_white, 0);
-draw_text_colour(45, 125, "", c_white, c_white, c_white, c_white, 0);
+///
+
+for (var i = 0; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 1; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 2; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+
+///
+
+for (var i = 3; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 4; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 5; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+
+///
+
+for (var i = 6; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 7; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+
+///
+
+for (var i = 8; i < menu_list; i++) 
+{
+    var text = player_items[i];
+    var option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, option, text);
+    } 
+	else 
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, option, text);
+		draw_text(menu_x - 25, menu_y, "INVENTORY");
+    }
+}
+

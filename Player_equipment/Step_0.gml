@@ -1,62 +1,77 @@
-var SELECT = keyboard_check_pressed(vk_enter);
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+// Menu options stored in an array//
+var player_equip = 
+[
+    "Wepon",
+    "Armor",
+    "Trinket"
+];
+
+//Index of the currently selected option and space between options//
+var cursor = 0;
+var menu_spacing = 32;
+
+///list and selection varibles///
+
+var choice = player_equip[cursor];
+var menu_list = array_length(player_equip);
+
+///x,y, pos of spr and menu options///
+
+var menu_spr_x = 5;
+var menu_spr_y = 5;
+
+var menu_x = 70
+var menu_y = 25
+
+///navagation varibles///
+
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var CONFIRM = keyboard_check_pressed(vk_enter);
 
-var plrequ = ["Armor","Wepon","Trinket"]
+///menu navagation///
+DOWN = keyboard_check_pressed(vk_down);
 
-var menu_count = array_length(plrequ);
-
-var selection_index = 0; 
-var arrspacing = 4;
-
-var selectioncurser = playersoulspr;
-
-visible = false;
+if (DOWN) 
+{
+    cursor++;
+	
+	if (cursor > 0)
+	{
+		cursor = menu_list;
+	}
+}
 
 ///
+UP = keyboard_check_pressed(vk_up);
 
-//UP function//
-
-if (UP) 
+if (UP)
 {
-    selection_index --;
-    if (selection_index < 0) {
-        selection_index = plrequ;
-    }
+    cursor--;
+	
+	if (cursor > menu_list)
+	{
+		cursor = 0;
+	}
 }
 
-//DOWN function//
+// Select option
+CONFIRM = keyboard_check_pressed(vk_enter);
 
-if (DOWN)
+if (CONFIRM) 
 {
-    selection_index ++;
-    if (selection_index = plrequ) {
-        selection_index = 0;
-    }}
+    switch (choice) 
+	{
+        case "Items":
 
-//SELECT function//
+            break;
+        
+		case "Stats":
 
-if (SELECT)
-switch (selection_index) {
-    
-    case "Armor": {
-        //Imput code//
+            break;
+        
+		case "Equipment":
+		
+            break;
     }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Wepon": {
-        //Imput code//
-    }
-    break;
-}
-if (SELECT)
-switch (selection_index) {
-    
-    case "Trinket": {
-        //Imput code//
-    }
-    break;
 }
