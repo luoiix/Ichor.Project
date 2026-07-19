@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"Warmhearted_player",
+  "%Name":"Test_player",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":87,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -16,7 +16,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Warmhearted_player",
+  "name":"Test_player",
   "overriddenProperties":[],
   "parent":{
     "name":"Player_OBJs",
@@ -46,12 +46,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"warmhue_idle_spr",
-    "path":"sprites/warmhue_idle_spr/warmhue_idle_spr.yy",
+    "name":"testplayer_idle_spr",
+    "path":"sprites/testplayer_idle_spr/testplayer_idle_spr.yy",
   },
   "spriteMaskId":{
-    "name":"warmhue_idle_spr",
-    "path":"sprites/warmhue_idle_spr/warmhue_idle_spr.yy",
+    "name":"testplayer_idle_spr",
+    "path":"sprites/testplayer_idle_spr/testplayer_idle_spr.yy",
   },
   "visible":true,
 }

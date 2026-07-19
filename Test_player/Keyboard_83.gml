@@ -1,27 +1,25 @@
-var Sliver_up;
-var STRIDE;
+var Player_down;
+var STRIDE
 
-///
-
-Sliver_up = keyboard_check(vk_up);
-if (Sliver_up)
+Player_down = keyboard_check(ord("S"));
+if (Player_down)
 {
 	vspeed = 2;
 	hspeed = 0;
     
-	direction = 90;
+	direction = 270;
 	image_speed = 1.5;
     
-	sprite_index = warmhue_up_spr;
+	sprite_index = testplayer_down_spr;
 	image_index += 0;
 }
 
 STRIDE = keyboard_check(vk_shift);
 if (STRIDE)
- {
+{
     hspeed = 0;
     vspeed = 3;
-	
+    
     image_speed = 2;
-    direction = 90;
+    direction =270;
 }

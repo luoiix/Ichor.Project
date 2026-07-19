@@ -12,7 +12,7 @@ if (Player_left)
 	direction = 180;
 	image_speed = 2;
     
-	sprite_index = warmhue_stepleft_spr;
+	sprite_index = testplayer_stepleft_spr;
 	image_index += 0;
 }
  

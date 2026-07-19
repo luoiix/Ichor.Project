@@ -21,7 +21,7 @@ if (UP_LEFT)
 	direction = 135;
     
 	image_speed = 1.5;
-	sprite_index = coolhue_up_spr;
+	sprite_index = testplayer_up_spr;
 	image_index += 0;
 }
 
@@ -37,7 +37,7 @@ if (UP_RIGHT)
 	direction = 45;
     
 	image_speed = 1.5;
-	sprite_index = coolhue_up_spr;
+	sprite_index = testplayer_up_spr;
 	image_index += 0;
 }
 
@@ -52,7 +52,7 @@ if (DOWN_RIGHT)
 	direction = 315;
     
 	image_speed = 1.5;
-	sprite_index = coolhue_down_spr;
+	sprite_index = testplayer_down_spr;
 	image_index += 0;
 }
 
@@ -67,6 +67,6 @@ if (DOWN_LEFT)
 	direction = 225;
 	image_speed = 1.5;
     
-	sprite_index = coolhue_down_spr;
+	sprite_index = testplayer_down_spr;
 	image_index += 0;
 }

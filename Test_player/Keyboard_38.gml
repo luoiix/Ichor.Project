@@ -1,10 +1,10 @@
-var Sliver_up;
+var Player_up;
 var STRIDE;
 
 ///
 
-Sliver_up = keyboard_check(vk_up);
-if (Sliver_up)
+Player_up = keyboard_check(vk_up);
+if (Player_up)
 {
 	vspeed = 2;
 	hspeed = 0;
@@ -12,7 +12,7 @@ if (Sliver_up)
 	direction = 90;
 	image_speed = 1.5;
     
-	sprite_index = warmhue_up_spr;
+	sprite_index = testplayer_up_spr;
 	image_index += 0;
 }
 

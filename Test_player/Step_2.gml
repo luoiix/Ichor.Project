@@ -10,7 +10,7 @@ if (Player_stop)
 	vspeed = 0;
     
 	image_speed = 0;
-	sprite_index = coolhue_idle_spr;
+	sprite_index = testplayer_idle_spr;
     
 	image_index = 2;
 	direction = 0;
@@ -25,7 +25,7 @@ if (Player_stop)
 	vspeed = 0;
     
 	image_speed = 0;
-	sprite_index = coolhue_idle_spr;
+	sprite_index = testplayer_idle_spr;
     
 	image_index = 4;
 	direction = 0;
@@ -40,7 +40,7 @@ if (Player_stop)
 	vspeed = 0;
     
 	image_speed = 0;
-	sprite_index = coolhue_idle_spr;
+	sprite_index = testplayer_idle_spr;
     
 	image_index = 1;
 	speed = 0;
@@ -55,7 +55,7 @@ if (Player_stop)
 	hspeed = 0;
 	vspeed = 0;
     
-	sprite_index = coolhue_idle_spr;
+	sprite_index = testplayer_idle_spr;
 	image_index = 3;
 	image_speed = 0;
     

@@ -1,24 +1,27 @@
-var Sliver;
+var Sliver_down;
+var STRIDE;
 
-Sliver = keyboard_check(vk_down);
-if (Sliver)
+///
+
+Sliver_down = keyboard_check(vk_down);
+if (Sliver_down)
 {
-	vspeed = 1;
+	vspeed = 2;
 	hspeed = 0;
     
 	direction = 270;
 	image_speed = 1.5;
     
-	sprite_index = Afflictedplayer_down_spr;
+	sprite_index = warmhue_down_spr;
 	image_index += 0;
 }
 
-Sliver = keyboard_check(vk_shift);
-if (Sliver)
- {
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE)
+{
     hspeed = 0;
-    vspeed = 3;
+    vspeed = 3; 
     
     image_speed = 2;
-    direction = 270;
+    direction =270;
 }

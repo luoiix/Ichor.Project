@@ -1,7 +1,8 @@
-var CB_player;
+var Player_up;
+var STRIDE;
 
-CB_player = keyboard_check(ord("W"));
-if (CB_player)
+Player_up = keyboard_check(ord("W"));
+if (Player_up)
 {
 	vspeed = 2;
 	hspeed = 0;
@@ -13,8 +14,8 @@ if (CB_player)
 	image_index += 0;
 }
 
-CB_player = keyboard_check(vk_shift);
-if (CB_player)
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE)
  {
     hspeed = 0;
     vspeed = 3;
