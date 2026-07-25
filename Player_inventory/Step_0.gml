@@ -1,4 +1,4 @@
-var player_items = 
+global.player_items = 
 [
     ""
 ];
@@ -10,7 +10,7 @@ var i;
 
 ///list and selection varibles///
 
-var choice = player_items[cursor];
+var choice = player_items[i];
 var menu_list = array_length(player_items);
 
 ///x,y, pos of spr and menu options///
