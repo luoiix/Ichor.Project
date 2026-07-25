@@ -16,6 +16,7 @@ global.player_items =
 //Index of the currently selected option and space between options//
 var cursor = 0;
 var menu_spacing = 32;
+var i;
 
 ///list and selection varibles///
 
