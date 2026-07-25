@@ -1,13 +1,19 @@
 var Conflict_menu = ["ACT", "FIGHT", "ITEMS"];
 var Conflict_opts = array_length(Conflict_menu);
 
+///
+
 var menu_x = room_width /2.5;
 var menu_y = 700;
 
-var i = 0
+///
+
+var cursor = 0;
 var array_spacing = 64;
 
-clamp(i, 0, 700);
+///
+
+var i;
 
 ///
 
