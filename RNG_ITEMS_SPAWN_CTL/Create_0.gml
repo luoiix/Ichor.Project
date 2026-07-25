@@ -1,3 +1,2 @@
 randomize();
-random_get_seed();
-irandom(100);
+irandom_range(0,100);
