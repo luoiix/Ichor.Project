@@ -10,6 +10,7 @@ var array_spacing = 64;
 ///
 
 var i;
+var CHOICE = Conflict_opts[i];
 
 ///
 
@@ -21,7 +22,7 @@ var BACK = keyboard_check_pressed(vk_backspace);
 
 ///
 
-draw_set_font(publicpixel_chasel);
+draw_set_font(publicpixel_menu);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
