@@ -1,5 +1,5 @@
 // Menu options stored in an array
-var player_items = 
+global.player_items = 
 [
     "",
     "",
@@ -17,8 +17,8 @@ var player_items =
 // Index of the currently selected option
 var cursor = 0;
 
-var choice = player_items[cursor];
-var menu_list = array_length(player_items);
+var choice = global.player_items[i];
+var menu_list = array_length(global.player_items);
 
 // Font and spacing settings
 var menu_font = publicpixel_menu; // default font
