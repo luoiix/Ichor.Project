@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Thimble_global_vars",
+  "%Name":"Tier1_angel_globalstats",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Thimble_global_vars",
+  "name":"Tier1_angel_globalstats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Thimble.Global.local.vars",
-    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Thimble.Global.local.vars.yy",
+    "name":"Angel.globalstats",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Angel.globalstats.yy",
   },
   "parentObjectId":null,
   "persistent":false,

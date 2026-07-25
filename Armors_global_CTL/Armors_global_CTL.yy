@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Thimble_global_vars",
+  "%Name":"Armors_global_CTL",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Thimble_global_vars",
+  "name":"Armors_global_CTL",
   "overriddenProperties":[],
   "parent":{
-    "name":"Thimble.Global.local.vars",
-    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Thimble.Global.local.vars.yy",
+    "name":"Item.globalstats",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Item.globalstats.yy",
   },
   "parentObjectId":null,
   "persistent":false,

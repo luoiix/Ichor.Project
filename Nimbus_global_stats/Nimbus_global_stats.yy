@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Thimble_global_vars",
+  "%Name":"Nimbus_global_stats",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Thimble_global_vars",
+  "name":"Nimbus_global_stats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Thimble.Global.local.vars",
-    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Thimble.Global.local.vars.yy",
+    "name":"Nimbus.Global.local.vars",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Nimbus.Global.local.vars.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

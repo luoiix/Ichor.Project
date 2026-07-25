@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Thimble_global_vars",
+  "%Name":"CBplayer_globalvars",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Thimble_global_vars",
+  "name":"CBplayer_globalvars",
   "overriddenProperties":[],
   "parent":{
-    "name":"Thimble.Global.local.vars",
-    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Thimble.Global.local.vars.yy",
+    "name":"Player.Globalstats",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Player.Globalstats.yy",
   },
   "parentObjectId":null,
   "persistent":false,
