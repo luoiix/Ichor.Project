@@ -27,6 +27,6 @@ function Entity_AFL_output(AFL_INF, Entity_AFL, Player_VIT, Player_END)
   if (Entity_AFL = true)
   {
     Player_END - Entity_AFL
-    max(1, Player_END)
+    return max(1, Player_END)
   }
-}
+}}
