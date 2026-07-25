@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Current_Inventory",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Current_Inventory",
+  "parent":{
+    "name":"Player_menu_scripts",
+    "path":"folders/scripts/Menu_scripts/Player_menu_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

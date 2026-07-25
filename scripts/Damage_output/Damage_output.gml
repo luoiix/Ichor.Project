@@ -1,0 +1,4 @@
+function Damage_output()
+{
+
+}

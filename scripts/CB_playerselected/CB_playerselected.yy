@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CB_playerselected",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CB_playerselected",
+  "parent":{
+    "name":"Selected_player_scripts",
+    "path":"folders/scripts/Menu_scripts/Selected_player_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

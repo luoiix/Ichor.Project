@@ -13,13 +13,14 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":39,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":38,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":40,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Warmhearted_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player_obj",
-    "path":"folders/Objects/Player_obj.yy",
+    "name":"Player_OBJs",
+    "path":"folders/Objects/Player_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +32,7 @@
   "physicsLinearDamping":0.1,
   "physicsObject":false,
   "physicsRestitution":0.1,
-  "physicsSensor":false,
+  "physicsSensor":true,
   "physicsShape":1,
   "physicsShapePoints":[
     {"x":0.0,"y":0.0,},
@@ -45,9 +46,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Player_idle_warmhue_spr",
-    "path":"sprites/Player_idle_warmhue_spr/Player_idle_warmhue_spr.yy",
+    "name":"warmhue_idle_spr",
+    "path":"sprites/warmhue_idle_spr/warmhue_idle_spr.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"warmhue_idle_spr",
+    "path":"sprites/warmhue_idle_spr/warmhue_idle_spr.yy",
+  },
   "visible":true,
 }

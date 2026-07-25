@@ -1,90 +1,35 @@
-{
-    ini_open("saveprog.ini");
-    
-    ini_write_real("global.Playerselected", "Afflicted_player", 0);
-    ini_write_string("global.afflictedPlayername", "Sliver", "Sliver");
-    
-    ini_write_real("global.afflictedPlayerHP", "Health", 90);
-    ini_write_real("global.afflictedPlayerATK", "Attack", .75);
-    ini_write_real("global.afflictedPlayerDEF", "Defense", 5);
-    
-    ini_write_real("global.afflictedPlayerEXP", "Exeperince", 0);
-    ini_write_real("global.afflictedPlayerLV", "Level", 0);
-    ini_write_real("global.afflictedPlayerSHA", "Shards", 0);
-    ini_write_string("global.afflictedPlayerEXP", "Exeperince", "0");
-    ini_write_string("global.afflictedPlayerLV", "Level", "0");
-    ini_write_string("global.afflictedPlayerSHA", "Shards", "0");
-    
-    ini_write_real ("global.afflictedPlayerVIT", "Vitality", 9);
-    ini_write_real ("global.afflictedPlayerSTA", "Stamina", 3);
-    ini_write_real ("global.afflictedPlayerEND", "Endurance", 0);
-    
-     ///
-    
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-    
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-    
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-     ini_write_string("afflictedplayerinv", "Inventory", "");
-    
-    ///
-    
-    ini_write_string("afflictedplayerArmor", "Armor", OBSpendant );
-    ini_write_string("afflictedplayerWepon", "Wepon", Duelchainedblades);
-    ini_write_string("afflictedplayerTrinket", "Trinket", Mirrorshard );
-    
-    ///
-    
-    ini_write_real("global.afflictedplayerx", "X", x);
-    ini_write_real("global.afflictedplayery", "Y", y);
-    
-     debug_input_save("saveprog.ini");
-     buffer_create(1,1,1);
-    ini_write_string("global.playerx", "X", "X");
-    ini_write_string("global.playery", "Y", "Y");
-    
-     buffer_create(1,1,1);
-    
-    ini_close();
-}
+//Gloabal.vars//
+
+global.Playerselection = 0;
+global.AFLplayername = "Sliver";
+
+global.AFLplayerHP = 90;
+global.AFLplayerATK = 1;
+global.AFLplayerDEF = 9;
+
+global.AFLplayerVIT = 9;
+global.AFLplayerSTA = 3;
+global.AFLplayerEND = 1;
+
+global.AFLPositiveEXP = 0;
+global.AFLNegitiveEXP = 0;
+global.AFLplayerEXP = 0;
+
+global.AFLplayerLV = 0;
+global.AFLplayerSha = 0;
 
 ///
 
-global.playerselected = 0;
-global.afflictedPlayername = "Sliver";
+global.AFLplayerX = 0;
+global.AFLplayery = 0;
 
-global.afflictedPlayerHP = 90;
-global.afflictedPlayerATK = .75;
-global.afflictedPlayerDEF = 5;
+//testplayer arrays//
 
-global.afflictedPositiveEXP = 0;
-global.afflictedNegitiveEXP = 0;
-global.afflictedPlayerEXP = 0;
-
-global.afflictedPlayerLV = 0;
-global.afflictedPlayerSha = 0;
-
-global.afflictedPlayerVIT = 9;
-global.afflictedPlayerSTA = 3;
-global.afflictedPlayerEND = 0;
-
-global.afflictedplayerX = x;
-global.afflictedplayery = y;
-
-//afflictedPlayer arrays//
 global.Playermenu = player_mainmenu;
+global.testPlayerinventory = player_inventory;
+global.testPlayerequipment = player_equipment;
 
-global.CBPlayerinventory = player_inventory;
-global.CBPlayerequipment = player_equipment;
-global.CBPlayerstats = player_stats;
-
-//afflictedplayer shards//
+//testplayer shards//
 
 global.brass_shars = 0; 
 global.bronze_shars = 0;
@@ -102,5 +47,54 @@ global.white_g_shars = 0;
 global.plat_shars = 0;
 global.rhod_shars = 0;
 global.osm_shars = 0;
-global.afflictedplayerX = x or 0;
-global.afflictedplayery = y or 0;
+
+//testPlayer ini.data//
+
+{
+    ini_open("saveprog.ini");
+    
+    ini_write_real("global.Playerselection", "Afflicted_player", 0);
+    ini_write_string("global.AFLplayername", "Sliver", "Sliver")
+    
+    ini_write_real("global.AFLplayerHP", "Health", 90);
+    ini_write_real("global.AFLplayerATK", "Attack", 1);
+    ini_write_real("global.AFLplayerDEF", "Defense", 9);
+    
+    ini_write_real("global.AFLplayerEXP", "Exeperince", 0);
+    ini_write_real("global.AFLplayerLV", "Level", 0); 
+    ini_write_real("global.AFLplayerSHA", "Shards", 0);
+    
+    ini_write_real ("global.AFLplayerVIT", "Vitality", 9);
+    ini_write_real ("global.AFLplayerSTA", "Stamina", 3);
+    ini_write_real ("global.AFLplayerEND", "Endurance", 1);
+    
+     ///
+    
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    ini_write_string("AFLplayerinv", "Inventory", "");
+    
+    ///
+    
+    ini_write_string("AFLplayerArmor", "Armor", "OBSpendant" );
+    ini_write_string("AFLplayerWepon", "Wepon", "Duelchainedblades" );
+    ini_write_string("AFLplayerTrinket", "Trinket", "Mirrorfragment" );
+    
+    ///
+    
+    ini_write_real("global.AFLplayerx", "X", x);
+    ini_write_real("global.AFLplayery", "Y", y);
+    
+     debug_input_save("saveprog.ini");
+     buffer_create(1,1,1);
+    
+     ini_close();
+}

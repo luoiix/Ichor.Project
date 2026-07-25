@@ -1,108 +1,72 @@
+var player_UP = keyboard_check(ord("W")) && keyboard_check(vk_up);
+var player_DOWN = keyboard_check(ord("S")) && keyboard_check(vk_down);
+var player_LEFT = keyboard_check(ord("A")) && keyboard_check(vk_left);
+var player_RIGHT = keyboard_check(ord("D")) && keyboard_check(vk_right);
 
 ///
 
-var CB_player;
+var UP_LEFT = keyboard_check(ord("W")) && keyboard_check(ord("A")) or keyboard_check(vk_left) && keyboard_check(vk_up);
+var UP_RIGHT = keyboard_check(ord("W")) && keyboard_check(ord("D")) or keyboard_check(vk_right) && keyboard_check(vk_up);
+var DOWN_LEFT = keyboard_check(ord("S")) && keyboard_check(ord("A")) or keyboard_check(vk_left) && keyboard_check(vk_down);
+var DOWN_RIGHT  = keyboard_check(ord("S")) && keyboard_check(ord("D")) or keyboard_check(vk_right) && keyboard_check(vk_down);
 
-CB_player = keyboard_check(ord("W")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_up)
-if (CB_player)
+///UP + LEFT///
+
+UP_LEFT = keyboard_check(ord("W")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_up);
+if (UP_LEFT)
 {
-	vspeed = 3;
-	hspeed = 3;
-    speed = 3;
+    hspeed = 2;
+	vspeed = 2;
     
 	direction = 135;
-	image_speed = 1.5;
     
+	image_speed = 1.5;
 	sprite_index = coolhue_up_spr;
 	image_index += 0;
 }
 
 
-CB_player = keyboard_check(ord("W")) and keyboard_check(ord("D"))or keyboard_check(vk_right) and keyboard_check(vk_up)
-if (CB_player)
+///UP + RIGHT///
+
+UP_RIGHT = keyboard_check(ord("W")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_up);
+if (UP_RIGHT)
 {
-	vspeed = 3;
-	hspeed = 3;
-    speed = 3;
+    hspeed = 2;
+	vspeed = 2;
     
 	direction = 45;
-	image_speed = 1.5;
     
+	image_speed = 1.5;
 	sprite_index = coolhue_up_spr;
 	image_index += 0;
 }
 
-CB_player = keyboard_check(ord("S")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_down)
-if (CB_player)
+///DOWN + RIGHT///
+
+DOWN_RIGHT = keyboard_check(ord("S")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_down);
+if (DOWN_RIGHT)
 {
-	vspeed = 3;
-	hspeed = 3;
-    speed = 3;
+	hspeed = 2;
+	vspeed = 2;
     
 	direction = 315;
-	image_speed = 1.5;
     
+	image_speed = 1.5;
 	sprite_index = coolhue_down_spr;
 	image_index += 0;
 }
 
-CB_player = keyboard_check(ord("S")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_down)
-if (CB_player)
+///DOWN + LEFT///
+
+DOWN_LEFT = keyboard_check(ord("S")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_down);
+if (DOWN_LEFT)
 {
-	vspeed = 3;
-	hspeed = 3;
-    speed = 3;
+	hspeed = 2;
+	vspeed = 2;
     
 	direction = 225;
 	image_speed = 1.5;
     
 	sprite_index = coolhue_down_spr;
 	image_index += 0;
-}
-
-///Stamina timer vars///
-
-var sprint = keyboard_check(vk_shift);
-var rest = keyboard_check_released(vk_shift)
-
-var walkspeed = 2;
-var runspeed = 3;
-
-var stamina = 5;
-
-var max_stamina = 5;
-
-var stamina_recover = 0.5;
-var stamina_deplete = 1;
-
-var current_stamia = max_stamina;
-
-var can_sprint = true;
-
-///
-
-if (sprint)
-{
-    walkspeed = runspeed;
-    stamina -= stamina_deplete;
-    
-    stamina = max (5, stamina);
-    
-    if (stamina <= 0)  
-    {
-        can_sprint = false;
-    }
-}
-    
-if (rest)
-{
-    runspeed = walkspeed;
-    stamina += stamina_recover;
-    
-    stamina = min (max_stamina, stamina);
-    
-     if (stamina >= 3.5)
-    {
-        can_sprint = true
-    }
 }

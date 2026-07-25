@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Azazel_dialog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Azazel_dialog",
+  "parent":{
+    "name":"Dialog_scripts",
+    "path":"folders/scripts/Dialog_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

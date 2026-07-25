@@ -1,7 +1,8 @@
-var WH_player;
-WH_player = keyboard_check(vk_left);
+var Player_left;
+var STRIDE;
 
-if (WH_player)
+Player_left = keyboard_check(vk_left); 
+if (Player_left)
 {
 	hspeed = 2;
 	vspeed = 0;
@@ -9,16 +10,16 @@ if (WH_player)
 	direction = 180;
 	image_speed = 2;
     
-	sprite_index = player_stepleft_warmhue_spr;
+	sprite_index = warmhue_stepleft_spr;
 	image_index += 0;
 }
-
-WH_player = keyboard_check(vk_shift);
-if (WH_player) 
+ 
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE) 
 {
-     hspeed = 3;
-     vspeed = 0;
+    hspeed = 3;
+    vspeed = 0;
     
     image_speed = 3;
-    direction =180;
+    direction = 180;
 }

@@ -1,98 +1,72 @@
-var Sliver;
-
-Sliver = keyboard_check(ord("W")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_up);
-if (Sliver)
-{
-	vspeed = 1;
-	hspeed = 1;
-    
-	direction = 135;
-	image_speed = 1.5;
-    
-	sprite_index = Afflictedplayer_up_spr;
-	image_index += 0;
-}
-
-Sliver = keyboard_check(ord("W")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_up);
-if (Sliver)
-{
-	vspeed = 1;
-	hspeed = 1;
-    
-	direction = 45;
-	image_speed = 1.5;
-    
-	sprite_index = Afflictedplayer_up_spr;
-	image_index += 0;
-}
-
-Sliver = keyboard_check(ord("S")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_down);
-if (Sliver)
-{
-	vspeed = 1;
-	hspeed = 1;
-    
-	direction = 315;
-	image_speed = 1.5;
-    
-	sprite_index = Afflictedplayer_down_spr;
-	image_index += 0;
-}
-
-Sliver = keyboard_check(ord("S")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_down);
-if (Sliver)
-{
-	vspeed = 1;
-	hspeed = 1;
-	direction = 225;
-	image_speed = 1.5;
-	sprite_index = Afflictedplayer_down_spr;
-	image_index += 0;
-}
-
-///Stamina timer vars///
-
-var sprint = keyboard_check(vk_shift);
-var rest = keyboard_check_released(vk_shift)
-
-var walkspeed = 2;
-var runspeed = 3;
-
-var stamina = 3;
-
-var max_stamina = 3;
-
-var stamina_recover = 1;
-var stamina_deplete = 1.5;
-
-var current_stamia = max_stamina;
-
-var can_sprint = true;
+var Sliver_UP = keyboard_check(ord("W")) && keyboard_check(vk_up);
+var Sliver_DOWN = keyboard_check(ord("S")) && keyboard_check(vk_down);
+var Sliver_LEFT = keyboard_check(ord("A")) && keyboard_check(vk_left);
+var Sliver_RIGHT = keyboard_check(ord("D")) && keyboard_check(vk_right);
 
 ///
 
-if (sprint)
+var UP_LEFT = keyboard_check(ord("W")) && keyboard_check(ord("A")) or keyboard_check(vk_left) && keyboard_check(vk_up);
+var UP_RIGHT = keyboard_check(ord("W")) && keyboard_check(ord("D")) or keyboard_check(vk_right) && keyboard_check(vk_up);
+var DOWN_LEFT = keyboard_check(ord("S")) && keyboard_check(ord("A")) or keyboard_check(vk_left) && keyboard_check(vk_down);
+var DOWN_RIGHT  = keyboard_check(ord("S")) && keyboard_check(ord("D")) or keyboard_check(vk_right) && keyboard_check(vk_down);
+
+///UP + LEFT///
+
+UP_LEFT = keyboard_check(ord("W")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_up);
+if (UP_LEFT)
 {
-    walkspeed = runspeed;
-    stamina -= stamina_deplete;
+    hspeed = 2;
+	vspeed = 2;
     
-    stamina = max (5, stamina);
+	direction = 135;
     
-    if (stamina <= 0)  
-    {
-        can_sprint = false;
-    }
+	image_speed = 1.5;
+	sprite_index = Afflicted_up_spr;
+	image_index += 0;
 }
-    
-if (rest)
+
+
+///UP + RIGHT///
+
+UP_RIGHT = keyboard_check(ord("W")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_up);
+if (UP_RIGHT)
 {
-    runspeed = walkspeed;
-    stamina += stamina_recover;
+    hspeed = 2;
+	vspeed = 2;
     
-    stamina = min (max_stamina, stamina);
+	direction = 45;
     
-     if (stamina >= 2)
-    {
-        can_sprint = true
-    }
+	image_speed = 1.5;
+	sprite_index = Afflicted_up_spr;
+	image_index += 0;
+}
+
+///DOWN + RIGHT///
+
+DOWN_RIGHT = keyboard_check(ord("S")) and keyboard_check(ord("D")) or keyboard_check(vk_right) and keyboard_check(vk_down);
+if (DOWN_RIGHT)
+{
+	hspeed = 2;
+	vspeed = 2;
+    
+	direction = 315;
+    
+	image_speed = 1.5;
+	sprite_index = Afflicted_down_spr;
+	image_index += 0;
+}
+
+///DOWN + LEFT///
+
+DOWN_LEFT = keyboard_check(ord("S")) and keyboard_check(ord("A")) or keyboard_check(vk_left) and keyboard_check(vk_down);
+if (DOWN_LEFT)
+{
+	hspeed = 2;
+	vspeed = 2;
+    
+	direction = 225;
+	image_speed = 1.5;
+    
+	sprite_index = Afflicted_down_spr;
+	image_index += 0;
 }

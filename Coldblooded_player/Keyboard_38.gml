@@ -1,7 +1,10 @@
-var CB_player;
+var Player_up;
+var STRIDE;
 
-CB_player = keyboard_check(vk_up);
-if (CB_player)
+///
+
+Player_up = keyboard_check(vk_up);
+if (Player_up)
 {
 	vspeed = 2;
 	hspeed = 0;
@@ -13,12 +16,12 @@ if (CB_player)
 	image_index += 0;
 }
 
-CB_player = keyboard_check(vk_shift);
-if (CB_player)
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE)
  {
     hspeed = 0;
     vspeed = 3;
-    
+	
     image_speed = 2;
-    direction =90;
+    direction = 90;
 }

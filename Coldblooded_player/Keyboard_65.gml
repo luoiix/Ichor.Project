@@ -1,10 +1,13 @@
-var CB_player;
+var Player_left;
+var STRIDE;
 
-CB_player = keyboard_check(ord("A"));
-if (CB_player)
+///
+
+Player_left = keyboard_check(ord("A")); 
+if (Player_left)
 {
 	hspeed = 2;
-    vspeed = 0;
+	vspeed = 0;
     
 	direction = 180;
 	image_speed = 2;
@@ -12,13 +15,13 @@ if (CB_player)
 	sprite_index = coolhue_stepleft_spr;
 	image_index += 0;
 }
-
-CB_player = keyboard_check(vk_shift);
-if (CB_player) 
+ 
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE) 
 {
-    hspeed = 3;
+     hspeed = 3;
     vspeed = 0;
     
     image_speed = 3;
-    direction =180;
+    direction = 180;
 }

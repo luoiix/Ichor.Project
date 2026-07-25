@@ -1,0 +1,4 @@
+function NPC_dialog()
+{
+	
+}

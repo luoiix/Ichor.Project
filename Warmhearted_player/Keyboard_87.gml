@@ -1,23 +1,24 @@
-var WH_player;
-WH_player = keyboard_check(ord("W"));
+var Player_up;
+var STRIDE;
 
-if (WH_player)
+Player_up = keyboard_check(ord("W"));
+if (Player_up)
 {
 	vspeed = 2;
 	hspeed = 0;
     
 	direction = 90;
-	image_speed = 2;
+	image_speed = 1.5;
     
-	sprite_index = player_up_warmhue_spr;
+	sprite_index = warmhue_up_spr;
 	image_index += 0;
 }
 
-WH_player = keyboard_check(vk_shift);
-if (WH_player)
+STRIDE = keyboard_check(vk_shift);
+if (STRIDE)
  {
-     hspeed = 0;
-     vspeed = 3;
+    hspeed = 0;
+    vspeed = 3;
     
     image_speed = 2;
     direction =90;

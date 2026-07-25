@@ -32,7 +32,7 @@
   "physicsLinearDamping":0.1,
   "physicsObject":false,
   "physicsRestitution":0.1,
-  "physicsSensor":false,
+  "physicsSensor":true,
   "physicsShape":1,
   "physicsShapePoints":[
     {"x":0.0,"y":0.0,},
@@ -46,12 +46,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Afflictedplayer_idle_spr_1",
-    "path":"sprites/Afflictedplayer_idle_spr_1/Afflictedplayer_idle_spr_1.yy",
+    "name":"Afflicted_idle_spr",
+    "path":"sprites/Afflicted_idle_spr/Afflicted_idle_spr.yy",
   },
   "spriteMaskId":{
-    "name":"Afflictedplayer_idle_spr_1",
-    "path":"sprites/Afflictedplayer_idle_spr_1/Afflictedplayer_idle_spr_1.yy",
+    "name":"Afflicted_idle_spr",
+    "path":"sprites/Afflicted_idle_spr/Afflicted_idle_spr.yy",
   },
   "visible":true,
 }

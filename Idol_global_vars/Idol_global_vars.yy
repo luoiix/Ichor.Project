@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Idol.Global.local.vars",
-    "path":"folders/CTLobj's/GlobalstatsCTLobjs/GlobalandLocalvaribles/Maincharacter.Globalstats/Idol.Global.local.vars.yy",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Idol.Global.local.vars.yy",
   },
   "parentObjectId":null,
   "persistent":false,

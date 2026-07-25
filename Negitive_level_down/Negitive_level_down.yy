@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Negitive_level_down",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Negitive_level_down",
+  "parent":{
+    "name":"Player_level_scripts",
+    "path":"folders/scripts/Player_level_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
