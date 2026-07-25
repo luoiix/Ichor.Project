@@ -17,8 +17,8 @@ var i;
 
 ///
 
-var LEFT = keyboard_check_pressed(vk_left) or keyboard_check_pressed (ord("D"));
-var RIGHT = keyboard_check_pressed(vk_right) or keyboard_check_pressed (ord("A"));
+var LEFT = keyboard_check_pressed(vk_left) and keyboard_check_pressed (ord("D"));
+var RIGHT = keyboard_check_pressed(vk_right) and keyboard_check_pressed (ord("A"));
 
 var SELECT = keyboard_check_pressed(vk_enter);
 var BACK = keyboard_check_pressed(vk_backspace);
