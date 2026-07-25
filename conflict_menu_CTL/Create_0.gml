@@ -13,6 +13,7 @@ var array_spacing = 64;
 
 ///
 
+var CHOICE = Conflict_opts[i]; (or cursor)
 var i;
 
 ///
