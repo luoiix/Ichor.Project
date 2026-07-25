@@ -1,4 +1,4 @@
-var player_items = 
+global.player_items = 
 [
     "",
     "",
@@ -19,8 +19,8 @@ var menu_spacing = 32;
 
 ///list and selection varibles///
 
-var choice = player_items[cursor];
-var menu_list = array_length(player_items);
+var choice = global.player_items[i];
+var item_list = array_length(global.player_items);
 
 ///x,y, pos of spr and menu options///
 
