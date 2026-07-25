@@ -1,10 +1,8 @@
 randomize();
 irandom_range(0,100)
-
 ///
 
-var cursor = 0
-var i;
+var cursor = 0;
 
 ///
 
@@ -27,6 +25,18 @@ var Arm_select = array_length(RNG_Arm_arry);
 var Wep_select = array_length(RNG_Wep_arry);
 var Trn_select = array_length(RNG_Trn_arry);
 
+///
+
+var i;
+var CHOICE;
+
+///
+
+CHOICE = Arm_select[i];
+CHOICE = Wep_select[i];
+CHOICE = Trn_select[i];
+
+///
 
 ///random armor inter value index///
 if irandom(0)
