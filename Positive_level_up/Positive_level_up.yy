@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Positive_level_up",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Positive_level_up",
+  "parent":{
+    "name":"Player_level_scripts",
+    "path":"folders/scripts/Player_level_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

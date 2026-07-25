@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_damage_output",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_damage_output",
+  "parent":{
+    "name":"Damage_output_scripts",
+    "path":"folders/scripts/Conflict_function_scripts/Damage_output_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

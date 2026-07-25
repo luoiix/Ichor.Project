@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Entity_AFL_output",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Entity_AFL_output",
+  "parent":{
+    "name":"Affliction_infliction_scripts",
+    "path":"folders/scripts/Conflict_function_scripts/Affliction_infliction_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

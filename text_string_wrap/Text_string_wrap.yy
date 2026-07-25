@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Text_string_wrap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Text_string_wrap",
+  "parent":{
+    "name":"Dialog_scripts",
+    "path":"folders/scripts/Dialog_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
