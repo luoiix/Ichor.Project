@@ -12,7 +12,7 @@ var menu_spacing = 32;
 
 ///list and selection varibles///
 
-var choice = player_menu[i];
+var choice = player_menu[cursor];
 var menu_list = array_length(player_menu);
 
 ///x,y, pos of spr and menu options///
