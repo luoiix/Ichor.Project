@@ -21,8 +21,8 @@ var menu_list = array_length(player_menu);
 var menu_spr_x = 5;
 var menu_spr_y = 5;
 
-var menu_w = 225;
-var menu_h = 180;
+var menu_spr_w = 225;
+var menu_spr_h = 180;
 
 var menu_x = 70;
 var menu_y = 25;
