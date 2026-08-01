@@ -36,9 +36,7 @@ if (DOWN)
     cursor++;
 	
 	if (cursor > 0)
-	{
-		cursor = menu_list;
-	}
+	cursor = menu_list;
 }
 
 ///
@@ -49,9 +47,7 @@ if (UP)
     cursor--;
 	
 	if (cursor > menu_list)
-	{
-		cursor = 0;
-	}
+	cursor = 0;
 }
 
 // Select option
