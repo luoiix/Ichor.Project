@@ -6,24 +6,28 @@ var player_menu =
     "Equipment"
 ];
 
-// Index of the currently selected option
+//Index of the currently selected option and space between options//
 var cursor = 0;
+var margin = -10;
+var menu_spacing = 32;
+
+///list and selection varibles///
 
 var choice = player_menu[cursor];
 var menu_list = array_length(player_menu);
 
-// Font and spacing settings
-var menu_font = publicpixel_menu; // default font
-var menu_spacing = 32;
-
-///x,y, pos of spr and menu options///
+///x,y,w,h pos of spr and menu options///
 
 var menu_spr_x = 5;
 var menu_spr_y = 5;
 
+var menu_spr_w = 225;
+var menu_spr_h = 180;
+
 var menu_x = 70;
 var menu_y = 25;
 
+///
 ///
 
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
@@ -82,7 +86,7 @@ draw_set_valign(fa_left);
 
 ///
 
-draw_sprite_stretched(player_mainmenu_spr, 0, menu_spr_x, menu_spr_y, 225, 180);
+draw_sprite_stretched(player_mainmenu_spr, 0, menu_spr_x, menu_spr_y, menu_spr_w, menu_spr_h);
 
 ///
 
