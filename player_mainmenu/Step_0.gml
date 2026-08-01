@@ -11,7 +11,7 @@ var menu_spacing = 32;
 
 ///list and selection varibles///
 
-var choice = player_menu[i];
+var choice = player_menu[cursor];
 var menu_list = array_length(player_menu);
 
 ///x,y, pos of spr and menu options///
@@ -26,7 +26,9 @@ var menu_y = 25;
 
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+
 var CONFIRM = keyboard_check_pressed(vk_enter);
+var BACKSPACE = keyboard_check_pressed(vk_backspace);
 
 ///menu navagation///
 DOWN = keyboard_check_pressed(vk_down);
@@ -35,10 +37,9 @@ if (DOWN)
 {
     cursor++;
 	
-	if (cursor > 0)
-	{
-		cursor = menu_list;
-	}
+	if (cursor < 0) 
+  cursor = menu_list;
+
 }
 
 ///
@@ -49,9 +50,8 @@ if (UP)
     cursor--;
 	
 	if (cursor > menu_list)
-	{
-		cursor = 0;
-	}
+	cursor = 0;
+
 }
 
 // Select option
