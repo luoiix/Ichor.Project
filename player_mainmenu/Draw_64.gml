@@ -26,8 +26,8 @@ var menu_y = 25;
 
 ///
 
-var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
-var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+var UP = keyboard_check_pressed(vk_up) && keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) && keyboard_check_pressed(ord("S"));
 
 var CONFIRM = keyboard_check_pressed(vk_enter);
 var BACKSPACE = keyboard_check_pressed(vk_backspace);
@@ -79,6 +79,8 @@ if (CONFIRM)
 }
 
 ///
+
+var menu_font = publicpixel_menu;
 
 draw_set_font(menu_font);
 draw_set_halign(fa_top);
