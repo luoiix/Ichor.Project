@@ -1,20 +1,20 @@
 // Menu options stored in an array
-var main_menu = 
-[
-    "Newgame",
-    "Continue",
-    "Restart"
-];
+var main_menu; 
+
+main_menu[0] = "Newgame"
+main_menu[1] = "Continue"
+main_menu[2] = "Restart"
 
 // Index of the currently selected option
 var cursor = 0;
-
- var choice = main_menu[cursor];
- var menu_list = array_length(main_menu);
-
-// Font and spacing settings
-var menu_font = publicpixel_menu; // default font
+var margin = -10
 var menu_spacing = 32;
+
+///
+
+var menu_list = array_length(main_menu);
+
+///
 
 var menu_x = 550;
 var menu_y = 550;
@@ -23,28 +23,64 @@ var menu_y = 550;
 
 var UP = keyboard_check_pressed(vk_up);
 var DOWN = keyboard_check_pressed(vk_down);
-var CONFIRM = keyboard_check_pressed(vk_enter);
 
-// Navigate menu
+var CONFIRM = keyboard_check_pressed(vk_enter);
+var BACK = keyboard_check_pressed(vk_backspace);
+
+/// Handle menu navigation
+DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
+
 if (DOWN) 
 {
     cursor++;
+    
+	if (cursor >= array_length(main_menu)) 
+    cursor = 0; // Wrap to first item
 }
 
-if (UP)
+
+///
+UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+
+if (UP) 
 {
-    cursor--;
+    cursor --;
+    
+	if (cursor < 0) 
+	cursor = array_length(main_menu) - 1; // Wrap to last item
+}
+
+// Select option
+
+if (CONFIRM) 
+{
+    switch (cursor) 
+	{
+        case "Newgame":
+
+            break;
+        
+		case "Continue":
+
+            break;
+        
+		case "Restart":
+		
+            break;
+    }
 }
 
 ///
 
-draw_set_font(menu_font);
+draw_set_font(Publicpixel_menu);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 ///
 
-for (var i = 0; i < menu_list; i++) 
+var i;
+
+for (i = 0; i < menu_list; i++) 
 {
     var text = main_menu[i];
     var option = menu_y + (i * menu_spacing);
@@ -53,7 +89,7 @@ for (var i = 0; i < menu_list; i++)
     if (i == cursor) 
 	{
         draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_text(menu_x + margin, option, text);
     } 
 	else 
 	{
@@ -64,7 +100,7 @@ for (var i = 0; i < menu_list; i++)
 
 ///
 
-for (var i = 1; i < menu_list; i++) 
+for (i = 1; i < menu_list; i++) 
 {
     var text = main_menu[i];
     var option = menu_y + (i * menu_spacing);
@@ -73,7 +109,7 @@ for (var i = 1; i < menu_list; i++)
     if (i == cursor) 
 	{
         draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_text(menu_x + margin, option, text);
     } 
 	else 
 	{
@@ -84,7 +120,7 @@ for (var i = 1; i < menu_list; i++)
 
 ///
 
-for (var i = 0; i < menu_list; i++) 
+for (i = 2; i < menu_list; i++) 
 {
     var text = main_menu[i];
     var option = menu_y + (i * menu_spacing);
@@ -92,8 +128,8 @@ for (var i = 0; i < menu_list; i++)
     // Highlight selected option
     if (i == cursor) 
 	{
-        draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_set_color(c_red);
+        draw_text(menu_x + margin, option, text);
     } 
 	else
 	{
