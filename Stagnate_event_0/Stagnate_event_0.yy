@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
+  "%Name":"Stagnate_event_0",
   "eventList":[],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"Stagnate_event_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"Stagnate_event_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Stagnate_event_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

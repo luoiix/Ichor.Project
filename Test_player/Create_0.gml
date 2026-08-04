@@ -1,6 +1,6 @@
 //Gloabal.vars//
 
-global.Playerselected = 3;
+global.playerselection = 4;
 global.testPlayername = "";
 
 global.testPlayerHP = 90;
@@ -29,6 +29,12 @@ global.Playermenu = player_mainmenu;
 global.testPlayerinventory = player_inventory;
 global.testPlayerequipment = player_equipment;
 
+// testPlayer's current equipment//
+
+global.testPlayerWEP = noone;
+global.testPlayerARM = noone;
+global.testPlayerTRINK = noone;
+
 //testplayer shards//
 
 global.brass_shars = 0; 
@@ -47,6 +53,11 @@ global.white_g_shars = 0;
 global.plat_shars = 0;
 global.rhod_shars = 0;
 global.osm_shars = 0;
+
+///
+
+global.player_pause = hspeed + vspeed + speed = 0;
+
 
 //testPlayer ini.data//
 

@@ -1,0 +1,1 @@
+var RNG_NPC_val = 0;

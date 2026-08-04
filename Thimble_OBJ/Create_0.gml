@@ -1,1 +1,1 @@
-var thimble = Thimble_OBJ.id
+var thimble = Thimble_OBJ;

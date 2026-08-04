@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
+  "%Name":"Soda_fridge",
   "eventList":[],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"Soda_fridge",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"Bupplesobjs",
+    "path":"folders/Objects/building_OBJs/Bupplesobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"sodafridge_spr",
+    "path":"sprites/sodafridge_spr/sodafridge_spr.yy",
   },
   "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"sodafridge_spr",
+    "path":"sprites/sodafridge_spr/sodafridge_spr.yy",
   },
   "visible":true,
 }

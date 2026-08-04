@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Surviorssuppliesobj",
+  "%Name":"RNG_Trinket_CTL_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Surviorssuppliesobj",
+  "name":"RNG_Trinket_CTL_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"Suvivorsupobj",
-    "path":"folders/Objects/building_OBJs/Suvivorsupobj.yy",
+    "name":"RNG_equipment_CTL_OBJs",
+    "path":"folders/CTL_OBJs/RNG_CTL_OBJs/RNG_equipment_CTL_OBJs.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -28,11 +29,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"SurvivorsSupplys_spr",
-    "path":"sprites/SurvivorsSupplys_spr/SurvivorsSupplys_spr.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
-  "eventList":[],
+  "%Name":"Tine_Nox",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"Tine_Nox",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"PrismabyssNPCS",
+    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +28,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"TineNox",
+    "path":"sprites/TineNox/TineNox.yy",
   },
   "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"TineNox",
+    "path":"sprites/TineNox/TineNox.yy",
   },
   "visible":true,
 }

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
+  "%Name":"Playersoul_pulse",
   "eventList":[],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"Playersoul_pulse",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"Testplayer's_soul",
+    "path":"folders/Objects/Player_OBJs/BattleandSave/Playersoulobjs/Testplayer's_soul.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,12 +28,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"playersoulspr_BPM_ani",
+    "path":"sprites/playersoulspr_BPM_ani/playersoulspr_BPM_ani.yy",
   },
   "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
+    "name":"playersoulspr_BPM_ani",
+    "path":"sprites/playersoulspr_BPM_ani/playersoulspr_BPM_ani.yy",
   },
   "visible":true,
 }

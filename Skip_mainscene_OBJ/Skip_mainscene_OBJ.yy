@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
-  "eventList":[],
+  "%Name":"Skip_mainscene_OBJ",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"Skip_mainscene_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"PremenuCTLobjs",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/PremenuCTLobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,13 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"sporepoofs",
+  "%Name":"RNG_scenes_CTL_OBJ",
   "eventList":[],
   "managed":true,
-  "name":"sporepoofs",
+  "name":"RNG_scenes_CTL_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"RNG_CTL_OBJs",
+    "path":"folders/CTL_OBJs/RNG_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"cottonspores_spr",
-    "path":"sprites/cottonspores_spr/cottonspores_spr.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

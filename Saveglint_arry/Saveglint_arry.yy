@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Surviorssuppliesobj",
+  "%Name":"Saveglint_arry",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Surviorssuppliesobj",
+  "name":"Saveglint_arry",
   "overriddenProperties":[],
   "parent":{
-    "name":"Suvivorsupobj",
-    "path":"folders/Objects/building_OBJs/Suvivorsupobj.yy",
+    "name":"Save_glints",
+    "path":"folders/Objects/Player_OBJs/BattleandSave/Save_glints.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,9 +32,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"SurvivorsSupplys_spr",
-    "path":"sprites/SurvivorsSupplys_spr/SurvivorsSupplys_spr.yy",
+    "name":"empty_glint_savepoint",
+    "path":"sprites/empty_glint_savepoint/empty_glint_savepoint.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"empty_glint_savepoint",
+    "path":"sprites/empty_glint_savepoint/empty_glint_savepoint.yy",
+  },
   "visible":true,
 }

@@ -1,7 +1,14 @@
-var RNG_val = irandom(100);
-var Tadderedscarf = Tornscarf;
+irandom(100);
 
-instance_create_depth(345, 441, 100, Tornscarf, [Tadderedscarf]);
-instance_create_layer(345, 441, 100, "Player", Tornscarf);
+//
 
-sprite_index = 0;
+var Pickup = keyboard_check_pressed(vk_enter);
+var EQUIPPED = false;
+
+//
+
+var CB_HP = global.CBPlayerHP;
+var WH_HP = global.WHPlayerHP;
+var AFL_HP = global.AFLplayerHP;
+
+//
