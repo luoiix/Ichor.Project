@@ -9,13 +9,14 @@ global.playerselection =
 
 // Index of the currently selected option
 var cursor = 0;
-
- var choice = global.playerselection[cursor];
- var player_list = array_length(global.playerselection);
-
-// Font and spacing settings
-var menu_font = publicpixel_menu; // default font
+var margin = - 5;
 var menu_spacing = 32;
+
+///
+
+var player_list = array_length(global.playerselection);
+
+///
 
 var menu_x = 550;
 var menu_y = 550;
@@ -24,39 +25,42 @@ var menu_y = 550;
 
 var UP = keyboard_check_pressed(vk_up);
 var DOWN = keyboard_check_pressed(vk_down);
+
 var CONFIRM = keyboard_check_pressed(vk_enter);
+var BACK =keyboard_check_pressed(vk_backspace);
+
+var NAV = DOWN - UP;
 
 ///
 
-DOWN = keyboard_check_pressed(vk_down);
-
-if (DOWN) 
+if (NAV != 0)
 {
-    cursor++;
-	
-	if (cursor > player_list)
-	{
-		cursor = 0;
-	}
+	cursor = NAV;
 }
 
 ///
-UP = keyboard_check_pressed(vk_up);
+DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
-if (UP)
+if (DOWN) 
 {
-    cursor--;
-	
-if (cursor > 0)
-	{
-		cursor = player_list;
-	}
+	if (cursor >= player_list) 
+    cursor = 0; // Wrap to first item
+}
+
+
+///
+UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+
+if (UP) 
+{
+	if (cursor < 0) 
+	cursor = player_list - 1; // Wrap to last item
 }
 
 // Select option
 if (CONFIRM) 
 {
-    switch (choice) 
+    switch (cursor) 
 	{
         case "AfflictedArdor":
 
@@ -72,7 +76,9 @@ if (CONFIRM)
     }
 }
 
-draw_set_font(menu_font);
+///
+
+draw_set_font(Publicpixel_menu);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
@@ -86,8 +92,8 @@ for (var i = 0; i < player_list; i++)
     // Highlight selected option
     if (i == cursor) 
 	{
-        draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_set_color(c_silver);
+        draw_text(menu_x + margin, option, text);
     } 
 	else 
 	{
@@ -106,8 +112,8 @@ for (var i = 1; i < player_list; i++)
     // Highlight selected option
     if (i == cursor) 
 	{
-        draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_set_color(c_blue);
+        draw_text(menu_x + margin, option, text);
     } 
 	else 
 	{
@@ -126,8 +132,8 @@ for (var i = 2; i < player_list; i++)
     // Highlight selected option
     if (i == cursor) 
 	{
-        draw_set_color(c_yellow);
-        draw_text(menu_x, option, text);
+        draw_set_color(c_orange);
+        draw_text(menu_x + margin, option, text);
     } 
 	else
 	{

@@ -1,4 +1,4 @@
-var dialog = "";
+var dialog;
 
 var text_current = 0;
 var text_last = 21;
@@ -35,7 +35,7 @@ dialog[6] = "They're..."
 dialog[7] = "He's..."
 
 dialog[7] = "One..."
-dialog[8] = "in one hundred thousand..."
+dialog[8] = "in one in one-hundred thousand..."
 
 dialog[9] = "Sliver is..."
 dialog[10] = "Permenantly Afflicted..."
@@ -47,7 +47,7 @@ dialog[13] = "He can lose levels"
 
 dialog[14] = "However"
 dialog[15] = "His base stats..."
-dialog[16] = "They will never change..."
+dialog[16] = "Will never change..."
 
 dialog[17] = "Sliver is slower..."
 dialog[18] = "Sliver is weaker..."

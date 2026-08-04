@@ -12,7 +12,7 @@ var ColdBlooded = Coldblooded_player;
 
 //
 
-draw_set_font(publicpixel_chasel);
+draw_set_font(Publicpixel_main);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -22,7 +22,7 @@ draw_sprite_stretched_ext(player_statmenu_spr, 0, text_menuX, text_menuY, menu_w
 
 //
 
-if (global.Playerselected = ColdBlooded)
+if (global.playerselection = ColdBlooded)
 {
 	draw_text (text_menuX, text_menuY, "HP" + global.CBplayerHP); //Hitpoints
     draw_text (text_menuX, text_menuY * spacing, "DEF" + global.CBplayerDEF); //Defense

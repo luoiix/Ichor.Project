@@ -1,4 +1,4 @@
-var dialog = "";
+var dialog;
 
 var text_array_current = 1;
 var text_array_last = 21;
@@ -60,7 +60,7 @@ text_array_current++;
 if (text_array_current > text_array_last) room_restart();
 
     else {
-dialog[text_array_current] = dialog_string_wrap(dialog[text_array_current], text_width);
+dialog[text_array_current] = string_wrap(dialog[text_array_current], text_width);
 char_current = 0;
 }
 }

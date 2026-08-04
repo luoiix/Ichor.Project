@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"test_menus",
-    "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -29,11 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"Player_test_menu_","filters":[],"listItems":[
-        "\"Items\"",
-        "\"Stats\"",
-        "\"Equipment\"",
-      ],"multiselect":false,"name":"Player_test_menu_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Items\"","varType":6,},
+    {"$GMObjectProperty":"v2","%Name":"cursor","filters":[],"listItems":[],"multiselect":false,"name":"cursor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

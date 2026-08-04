@@ -12,7 +12,7 @@ var WarmHearted = Warmhearted_player;
 
 //
 
-if (global.Playerselected = WarmHearted)
+if (global.playerselection = WarmHearted)
 {
 	global.WHplayerHP = 90; //Hitpoints
     global.WHplayerDEF = 3; //Defense

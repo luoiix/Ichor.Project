@@ -7,10 +7,12 @@ var menu_h = 200;
 var spacing = 16;
 
 ///
+
 var ColdBlooded = Coldblooded_player;
+
 ///
 
-if (global.Playerselection = ColdBlooded)
+if (global.playerselection = ColdBlooded)
 {
 	global.CBplayerHP = 90; //HitPoints
     global.CBplayerDEF = 1; //Defense

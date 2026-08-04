@@ -9,51 +9,10 @@ var spacing = 16;
 ///
 
 var AfflictedArdor = Afflicted_player;
-var ColdBlooded = Coldblooded_player;
-var WarmHearted = Warmhearted_player;
-var Test = Test_player;
-
-///
-
-if (global.Playerselection = ColdBlooded)
-{
-	global.CBplayerHP = 90; //HitPoints
-    global.CBplayerDEF = 1; //Defense
-    global.CBplayerATK = 3; //Attack
-
-    global.CBplayerEXP = 0; //TotalEXP
-    global.CBplayerLV = 0; //Level
-
-    global.CBPositiveEXP = 0; //PosEXP (+)
-    global.CBNegitiveEXP = 0; //NegEXP (-)
-
-    global.CBplayerVIT = 5; //Vitality
-    global.CBplayerSTA = 12; //Stamina
-    global.CBplayerEND = 5; //Endurance
-}
 
 //
 
-if (global.Playerselected = WarmHearted)
-{
-	global.WHplayerHP = 90; //Hitpoints
-    global.WHplayerDEF = 3; //Defense
-    global.WHplayerATK = 1; //Attack
-
-    global.WHplayerEXP = 0; //TotalEXP
-    global.WHplayerLV = 0; //Level
-
-    global.WHPositiveEXP = 0; //PosEXP (+)
-    global.WHNegitiveEXP = 0; //NegEXP (-)
-
-    global.WHplayerVIT = 5; //Vitality
-    global.WHplayerSTA = 10; //Stamina
-    global.WHplayerEND = 5; //Endurance
-}
-
-//
-
-if (global.Playerselected = AfflictedArdor)
+if (global.playerselection = AfflictedArdor)
 {
 	global.afflictedPlayerHP = 90; //Hitpoints
     global.afflictedPlayerDEF = 3; //Defense
@@ -68,23 +27,4 @@ if (global.Playerselected = AfflictedArdor)
     global.afflictedPlayerVIT = 9; //Vitality
     global.afflictedPlayerSTA = 7; //Stamina
     global.afflictedPlayerEND = 1; //Endurance
-}
-
-//
-
-if (global.Playerselected = Test)
-{
-	global.testPlayerHP = 90; //Hitpoints
-    global.testPlayerDEF = 3; //Defense
-    global.testPlayerATK = 3; //Attack
-
-    global.testPlayerEXP = 0; //Total EXP
-    global.testPlayerLV = 0; //Level
-
-    global.testPositiveEXP = 0; //PosEXP (+)
-    global.testNegitiveEXP = 0; //NegEXP (-)
-
-    global.testPlayerVIT = 5; //Vitality
-    global.testPlayerSTA = 5; //Stamina
-    global.testPlayerEND = 5; //Endurance
 }

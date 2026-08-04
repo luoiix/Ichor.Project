@@ -12,7 +12,7 @@ var WarmHearted = Warmhearted_player;
 
 //
 
-draw_set_font(publicpixel_chasel);
+draw_set_font(Publicpixel_main);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -22,7 +22,7 @@ draw_sprite_stretched_ext(player_statmenu_spr, 0, text_menuX, text_menuY, menu_w
 
 //
 
-if (global.Playerselected = WarmHearted)
+if (global.playerselection = WarmHearted)
 {
 	draw_text (text_menuX, text_menuY, "HP" + global.WHplayerHP); //Hitpoints
     draw_text (text_menuX, text_menuY * spacing, "DEF" + global.WHplayerDEF); //Defense

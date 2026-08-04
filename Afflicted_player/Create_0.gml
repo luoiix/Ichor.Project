@@ -1,6 +1,6 @@
 //Gloabal.vars//
 
-global.Playerselection = 0;
+global.playerselection = "AfflictedArdor";
 global.AFLplayername = "Sliver";
 
 global.AFLplayerHP = 90;
@@ -26,8 +26,8 @@ global.AFLplayery = 0;
 //testplayer arrays//
 
 global.Playermenu = player_mainmenu;
-global.testPlayerinventory = player_inventory;
-global.testPlayerequipment = player_equipment;
+global.AFLplayerinventory = player_inventory;
+global.AFLplayerequipment = player_equipment;
 
 //testplayer shards//
 

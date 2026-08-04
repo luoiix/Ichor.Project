@@ -10,8 +10,8 @@
   "name":"player_stats_AFL",
   "overriddenProperties":[],
   "parent":{
-    "name":"AFL_playermenus",
-    "path":"folders/CTLobj's/Menus_CTL_OBJs/Player_menu_CTLs/AFL_playermenus.yy",
+    "name":"Player_stat_menus",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTLs/Player_stat_menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,
