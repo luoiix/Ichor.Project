@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Text_string_wrap",
   "parent":{
-    "name":"Dialog_scripts",
-    "path":"folders/scripts/Dialog_scripts.yy",
+    "name":"Other_scripts",
+    "path":"folders/scripts/Other_scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

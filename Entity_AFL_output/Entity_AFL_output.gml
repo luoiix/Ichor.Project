@@ -23,10 +23,4 @@ function Entity_AFL_output(AFL_INF, Entity_AFL, Player_VIT, Player_END)
 	{
 		AFL_INF = false;
 	}
-
-  if (Entity_AFL = true)
-  {
-    Player_END - Entity_AFL
-    return max(1, Player_END)
-  }
-}}
+}
