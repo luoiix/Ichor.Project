@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Bupples_maintbl",
-  "eventList":[],
+  "%Name":"Gotomainmenutest",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Bupples_maintbl",
+  "name":"Gotomainmenutest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bupplesobjs",
-    "path":"folders/Objects/building_OBJs/Bupplesobjs.yy",
+    "name":"PremenuCTLobjs",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/PremenuCTLobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +28,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"centerringtable_spr",
-    "path":"sprites/centerringtable_spr/centerringtable_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"centerringtable_spr",
-    "path":"sprites/centerringtable_spr/centerringtable_spr.yy",
-  },
+  "solid":false,
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

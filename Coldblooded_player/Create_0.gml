@@ -1,33 +1,33 @@
 //Gloabal.vars//
 
-global.Playerselected = 3;
-global.testPlayername = "";
+global.playerselection = "ColdBlooded";
+global.CBplayername = "";
 
-global.testPlayerHP = 90;
-global.testPlayerATK = 3;
-global.testPlayerDEF = 1;
+global.CBplayerHP = 90;
+global.CBplayerATK = 3;
+global.CBplayerDEF = 1;
 
-global.testPlayerVIT = 5;
-global.testPlayerSTA = 5;
-global.testPlayerEND = 5;
+global.CBplayerVIT = 5;
+global.CBplayerSTA = 5;
+global.CBplayerEND = 5;
 
-global.testPositiveEXP = 0;
-global.testNegitiveEXP = 0;
-global.testPlayerEXP = 0;
+global.CBPositiveEXP = 0;
+global.CBNegitiveEXP = 0;
+global.CBplayerEXP = 0;
 
-global.testPlayerLV = 0;
-global.testPlayerSha = 0;
+global.CBplayerLV = 0;
+global.CBplayerSha = 0;
 
 ///
 
-global.testplayerX = 0;
-global.testplayery = 0;
+global.CBplayerX = 0;
+global.CBplayery = 0;
 
 //testplayer arrays//
 
 global.Playermenu = player_mainmenu;
-global.testPlayerinventory = player_inventory;
-global.testPlayerequipment = player_equipment;
+global.CBplayerinventory = player_inventory;
+global.CBplayerequipment = player_equipment;
 
 //testplayer shards//
 
@@ -54,47 +54,47 @@ global.osm_shars = 0;
     ini_open("saveprog.ini");
     
     ini_write_real("global.Playerselected", "Warmhearted_player", 2);
-    ini_write_string("global.testPlayername", "", "")
+    ini_write_string("global.CBplayername", "", "")
     
-    ini_write_real("global.testPlayerHP", "Health", 90);
-    ini_write_real("global.testPlayerATK", "Attack", 1);
-    ini_write_real("global.testPlayerDEF", "Defense", 3);
+    ini_write_real("global.CBplayerHP", "Health", 90);
+    ini_write_real("global.CBplayerATK", "Attack", 1);
+    ini_write_real("global.CBplayerDEF", "Defense", 3);
     
-    ini_write_real("global.testPlayerEXP", "Exeperince", 0);
-    ini_write_real("global.testPlayerLV", "Level", 0); 
-    ini_write_real("global.testPlayerSHA", "Shards", 0);
+    ini_write_real("global.CBplayerEXP", "Exeperince", 0);
+    ini_write_real("global.CBplayerLV", "Level", 0); 
+    ini_write_real("global.CBplayerSHA", "Shards", 0);
     
-    ini_write_real ("global.testPlayerVIT", "Vitality", 5);
-    ini_write_real ("global.testPlayerSTA", "Stamina", 9);
-    ini_write_real ("global.testPlayerEND", "Endurance", 5);
+    ini_write_real ("global.CBplayerVIT", "Vitality", 5);
+    ini_write_real ("global.CBplayerSTA", "Stamina", 9);
+    ini_write_real ("global.CBplayerEND", "Endurance", 5);
     
      ///
     
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
     
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
     
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
-    ini_write_string("testPlayerinv", "Inventory", "");
-    
-    ///
-    
-    ini_write_string("testPlayerArmor", "Armor", "" );
-    ini_write_string("testPlayerWepon", "Wepon", "" );
-    ini_write_string("testPlayerTrinket", "Trinket", "" );
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
+    ini_write_string("CBplayerinv", "Inventory", "");
     
     ///
     
-    ini_write_real("global.testPlayerx", "X", x);
-    ini_write_real("global.testPlayery", "Y", y);
+    ini_write_string("CBplayerArmor", "Armor", "" );
+    ini_write_string("CBplayerWepon", "Wepon", "" );
+    ini_write_string("CBplayerTrinket", "Trinket", "" );
+    
+    ///
+    
+    ini_write_real("global.CBplayerx", "X", x);
+    ini_write_real("global.CBplayery", "Y", y);
     
      debug_input_save("saveprog.ini");
-     buffer_create(4,1,1);
+     buffer_create(2,1,1);
     
      ini_close();
 }

@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Global.PlayerShards",
-    "path":"folders/CTLobj's/GlobalstatsCTLobjs/Player.Globalstats/Global.PlayerShards.yy",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Player.Globalstats/Global.PlayerShards.yy",
   },
   "parentObjectId":null,
   "persistent":true,

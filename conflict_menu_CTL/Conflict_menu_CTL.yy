@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"dew_kittyOngOBJ",
+  "%Name":"Conflict_menu_CTL",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"dew_kittyOngOBJ",
+  "name":"Conflict_menu_CTL",
   "overriddenProperties":[],
   "parent":{
-    "name":"DewkitOBJs",
-    "path":"folders/Objects/NPC_OBJs/AsierNPCS/DewkitOBJs.yy",
+    "name":"Conflict_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Conflict_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,14 +30,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"dewcat_Ong_spr",
-    "path":"sprites/dewcat_Ong_spr/dewcat_Ong_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"dewcat_Ong_spr",
-    "path":"sprites/dewcat_Ong_spr/dewcat_Ong_spr.yy",
-  },
+  "solid":false,
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

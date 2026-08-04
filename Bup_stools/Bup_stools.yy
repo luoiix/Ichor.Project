@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"Bup_stools",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Playerobj_tests","path":"objects/Playerobj_tests/Playerobj_tests.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"Bup_stools",
   "overriddenProperties":[],

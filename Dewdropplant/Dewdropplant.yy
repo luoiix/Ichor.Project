@@ -26,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"dewdrop_spr_ani_orig",
-    "path":"sprites/dewdrop_spr_ani_orig/dewdrop_spr_ani_orig.yy",
+    "name":"dewdrop_spr_ani_remastered",
+    "path":"sprites/dewdrop_spr_ani_remastered/dewdrop_spr_ani_remastered.yy",
   },
   "spriteMaskId":{
-    "name":"dewdrop_spr_ani_orig",
-    "path":"sprites/dewdrop_spr_ani_orig/dewdrop_spr_ani_orig.yy",
+    "name":"dewdrop_spr_ani_remastered",
+    "path":"sprites/dewdrop_spr_ani_remastered/dewdrop_spr_ani_remastered.yy",
   },
   "visible":true,
 }
