@@ -7,4 +7,14 @@ global.Nimvit = 0
 global.NimLV = 99;
 global.NimEXP = 9999999;
 
-var nimbus = Nimbus_OBJ.id
+//
+
+var dialog_data = 
+[ 
+"Oh...",
+"Uhm...", 
+"Hemlo", 
+"(where ta da fuq did you spawn from??)"
+]
+
+script_Nimbus(dialog_data);

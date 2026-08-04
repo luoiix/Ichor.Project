@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Morality_Mortality",
+  "%Name":"Nimbus_dialog_CTL",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Morality_Mortality",
+  "name":"Nimbus_dialog_CTL",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "name":"main_character_dia_objs",
+    "path":"folders/CTL_OBJs/Dialog_CTL_objs/main_character_dia_objs.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -28,14 +30,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
-  },
+  "solid":false,
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

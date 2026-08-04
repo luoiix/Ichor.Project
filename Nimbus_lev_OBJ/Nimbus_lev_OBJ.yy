@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Morality_Mortality",
+  "%Name":"Nimbus_lev_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Morality_Mortality",
+  "name":"Nimbus_lev_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "name":"Nimbus_objs",
+    "path":"folders/Objects/KeycharacterOBJS/Nimbus_objs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,12 +31,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"Nimbus_levetate_front_spr",
+    "path":"sprites/Nimbus_levetate_front_spr/Nimbus_levetate_front_spr.yy",
   },
   "spriteMaskId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"Nimbus_levetate_front_spr",
+    "path":"sprites/Nimbus_levetate_front_spr/Nimbus_levetate_front_spr.yy",
   },
   "visible":true,
 }

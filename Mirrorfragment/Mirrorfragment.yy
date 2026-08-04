@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Morality_Mortality",
+  "%Name":"Mirrorfragment",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Morality_Mortality",
+  "name":"Mirrorfragment",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "name":"Trinkets",
+    "path":"folders/Objects/InventoryOBJs/ItemOBJS/Trinkets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,14 +29,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"Mirrorfragment_spr",
+    "path":"sprites/Mirrorfragment_spr/Mirrorfragment_spr.yy",
   },
   "spriteMaskId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"Mirrorfragment_spr",
+    "path":"sprites/Mirrorfragment_spr/Mirrorfragment_spr.yy",
   },
   "visible":true,
 }

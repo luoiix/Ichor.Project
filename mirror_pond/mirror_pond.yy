@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Morality_Mortality",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"mirror_pond",
+  "eventList":[],
   "managed":true,
-  "name":"Morality_Mortality",
+  "name":"mirror_pond",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "name":"PrisabyssOBJs",
+    "path":"folders/Objects/PrisabyssOBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"mirrorpond_spr",
+    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
   },
   "spriteMaskId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
+    "name":"mirrorpond_spr",
+    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
   },
   "visible":true,
 }

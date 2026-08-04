@@ -1,7 +1,16 @@
-var RNG_val = irandom(0);
-var OBSshard = OBSpendant;
+irandom(0);
 
-    instance_create_depth(345, 441, 100, OBSpendant, [OBSshard]);
-    instance_create_layer(345, 441, 100, "Player", OBSpendant);
+//
 
-sprite_index = 0;
+global.ARMOR_DEF = + 9;
+
+//
+
+var CB_HP = global.CBPlayerHP;
+var WH_HP = global.WHPlayerHP;
+var AFL_HP = global.AFLplayerHP;
+
+//
+
+var Pickup = keyboard_check_pressed(vk_enter);
+var EQUIPPED = false;

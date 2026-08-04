@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Morality_Mortality",
+  "%Name":"pew_pew_obj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Morality_Mortality",
+  "name":"pew_pew_obj",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "name":"projectile_OBJs",
+    "path":"folders/Objects/Conflict_OBJs/projectile_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,14 +29,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"morality_mortality_spr",
-    "path":"sprites/morality_mortality_spr/morality_mortality_spr.yy",
-  },
+  "solid":false,
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }
