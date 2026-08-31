@@ -1,72 +1,83 @@
 //Gloabal.vars//
 
-global.playerselection = "AfflictedArdor";
-global.AFLplayername = "Sliver";
+playerselection = "AfflictedArdor";
+AFLplayername = "Sliver";
 
-global.AFLplayerHP = 90;
-global.AFLplayerATK = 1;
-global.AFLplayerDEF = 9;
+AFLplayerHP = 90;
+AFLplayerATK = 1;
+AFLplayerDEF = 9;
 
-global.AFLplayerVIT = 9;
-global.AFLplayerSTA = 3;
-global.AFLplayerEND = 1;
+AFLplayerVIT = 9;
+AFLplayerSTA = 3;
+AFLplayerEND = 1;
 
-global.AFLPositiveEXP = 0;
-global.AFLNegitiveEXP = 0;
-global.AFLplayerEXP = 0;
+AFLPositiveEXP = 0;
+AFLNegitiveEXP = 0;
+AFLplayerEXP = 0;
 
-global.AFLplayerLV = 0;
-global.AFLplayerSha = 0;
+AFLplayerLV = 0;
+AFLplayerSha = 0;
 
-///
+//speed varibles//
 
-global.AFLplayerX = 0;
-global.AFLplayery = 0;
+AFLplayerX = 0;
+AFLplayery = 0;
+
+x_speed = hspeed;
+y_speed = vspeed;
+
+movement_speed = 2;
+null_speed = 0;
 
 //testplayer arrays//
 
-global.Playermenu = player_mainmenu;
-global.AFLplayerinventory = player_inventory;
-global.AFLplayerequipment = player_equipment;
+AFL_Playermenu = player_mainmenu;
+AFLplayerinventory = player_inventory;
+AFLplayerequipment = player_equipment;
 
 //testplayer shards//
 
-global.brass_shars = 0; 
-global.bronze_shars = 0;
-global.copper_shars = 0;
+brass_shars = 0; 
+bronze_shars = 0;
+copper_shars = 0;
 
 /////
-global.silver_shars = 0;
+sulfa_shars = 0
+silver_shars = 0;
 
 /////
-global.rose_g_shars = 0;
-global.yellow_g_shars = 0; 
-global.white_g_shars = 0;
+rose_g_shars = 0;
+yellow_g_shars = 0; 
+white_g_shars = 0;
 
 /////
-global.plat_shars = 0;
-global.rhod_shars = 0;
-global.osm_shars = 0;
+plat_shars = 0;
+rhod_shars = 0;
+osm_shars = 0;
 
-//testPlayer ini.data//
+//tilewall collision//
+
+collision_tiles = layer_tilemap_get_id("border_tiles");
+
+//AFLplayer ini.data//
 
 {
     ini_open("saveprog.ini");
     
-    ini_write_real("global.Playerselection", "Afflicted_player", 0);
-    ini_write_string("global.AFLplayername", "Sliver", "Sliver")
+    ini_write_real("playerselection", "Afflicted_player", 0);
+    ini_write_string("AFLplayername", "Sliver", "Sliver")
     
-    ini_write_real("global.AFLplayerHP", "Health", 90);
-    ini_write_real("global.AFLplayerATK", "Attack", 1);
-    ini_write_real("global.AFLplayerDEF", "Defense", 9);
+    ini_write_real("AFLplayerHP", "Health", 90);
+    ini_write_real("AFLplayerATK", "Attack", 1);
+    ini_write_real("AFLplayerDEF", "Defense", 9);
     
-    ini_write_real("global.AFLplayerEXP", "Exeperince", 0);
-    ini_write_real("global.AFLplayerLV", "Level", 0); 
-    ini_write_real("global.AFLplayerSHA", "Shards", 0);
+    ini_write_real("AFLplayerEXP", "Exeperince", 0);
+    ini_write_real("AFLplayerLV", "Level", 0); 
+    ini_write_real("AFLplayerSHA", "Shards", 0);
     
-    ini_write_real ("global.AFLplayerVIT", "Vitality", 9);
-    ini_write_real ("global.AFLplayerSTA", "Stamina", 3);
-    ini_write_real ("global.AFLplayerEND", "Endurance", 1);
+    ini_write_real ("AFLplayerVIT", "Vitality", 9);
+    ini_write_real ("AFLplayerSTA", "Stamina", 3);
+    ini_write_real ("AFLplayerEND", "Endurance", 1);
     
      ///
     
@@ -90,8 +101,8 @@ global.osm_shars = 0;
     
     ///
     
-    ini_write_real("global.AFLplayerx", "X", x);
-    ini_write_real("global.AFLplayery", "Y", y);
+    ini_write_real("AFLplayerX", "X", x);
+    ini_write_real("AFLplayery", "Y", y);
     
      debug_input_save("saveprog.ini");
      buffer_create(1,1,1);

@@ -44,8 +44,8 @@
     "path":"sprites/afflictedsoul_spr/afflictedsoul_spr.yy",
   },
   "spriteMaskId":{
-    "name":"playersoulspr",
-    "path":"sprites/playersoulspr/playersoulspr.yy",
+    "name":"playersoul_spr",
+    "path":"sprites/playersoul_spr/playersoul_spr.yy",
   },
   "visible":true,
 }

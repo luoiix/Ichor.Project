@@ -1,32 +1,3 @@
-// Menu options stored in an array//
-var player_menu;
-
-player_menu[0] = "Items"
-player_menu[1] = "Stats"
-player_menu[2] = "Equipment"
-
-
-//Index of the currently selected option, padding and spacing between options//
-
-var cursor = 0;
-var margin = -10;
-var menu_spacing = 32;
-
-//list of varibles//
-
-var menu_list = array_length(player_menu);
-
-//x,y, pos of spr and menu options//
-
-var menu_spr_x = 5;
-var menu_spr_y = 5;
-
-var menu_w = 225;
-var menu_h = 180;
-
-var menu_x = 75;
-var menu_y = 35;
-
 ///
 
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
@@ -35,7 +6,7 @@ var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 var CONFIRM = keyboard_check_pressed(vk_enter);
 var BACK = keyboard_check_pressed(vk_backspace);
 
-var NAV = DOWN - UP
+var NAV = UP - DOWN;
 
 ///
 
@@ -83,15 +54,13 @@ draw_sprite_stretched(player_mainmenu_spr, 0, menu_spr_x, menu_spr_y, menu_w, me
 
 ///
 
-var i;
-
-for (i = 0; i < array_length(player_menu); i++) 
+for (var i = 0; i < array_length(player_menu); i++) 
 {
     var text = player_menu[i];
     var option = menu_x + (i * menu_spacing);
     
     // Highlight selected option
-    if (cursor == i) 
+    if (i == cursor) 
 	{
         draw_set_color(c_yellow);
         draw_text(menu_y + margin, option, text);
@@ -102,3 +71,5 @@ for (i = 0; i < array_length(player_menu); i++)
         draw_text(menu_y, option, text);
     }
 }
+
+///

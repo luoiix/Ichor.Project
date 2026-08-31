@@ -10,8 +10,8 @@
   "name":"player_equipment",
   "overriddenProperties":[],
   "parent":{
-    "name":"test_menus",
-    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTLs/test_menus.yy",
+    "name":"working_array_menus",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTLs/working_array_menus.yy",
   },
   "parentObjectId":null,
   "persistent":true,

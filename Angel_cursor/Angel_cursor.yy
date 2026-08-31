@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Afflicted_soulpulse",
+  "%Name":"Angel_cursor",
   "eventList":[],
   "managed":true,
-  "name":"Afflicted_soulpulse",
+  "name":"Angel_cursor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slivers_soul",
-    "path":"folders/Objects/Player_OBJs/BattleandSave/Playersoulobjs/Slivers_soul.yy",
+    "name":"Cursor_OBJs",
+    "path":"folders/Objects/Cursor_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playersoul_spr_BPM_AFL",
-    "path":"sprites/playersoul_spr_BPM_AFL/playersoul_spr_BPM_AFL.yy",
+    "name":"Angel_symbol_spr",
+    "path":"sprites/Angel_symbol_spr/Angel_symbol_spr.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Angel_symbol_spr",
+    "path":"sprites/Angel_symbol_spr/Angel_symbol_spr.yy",
+  },
   "visible":true,
 }

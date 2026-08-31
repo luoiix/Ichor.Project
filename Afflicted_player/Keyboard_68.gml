@@ -1,3 +1,16 @@
+//speed varibles//
+
+AFLplayerX = 0;
+AFLplayery = 0;
+
+x_speed = hspeed;
+y_speed = vspeed;
+
+movement_speed = 2;
+null_speed = 0;
+
+///
+
 var Sliver_right;
 var STRIDE;
 

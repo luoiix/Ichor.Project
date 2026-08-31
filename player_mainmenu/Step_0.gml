@@ -1,29 +1,18 @@
-// Menu options stored in an array//
-var player_menu;
 
-player_menu[0] = "Items"
-player_menu[1] = "Stats"
-player_menu[2] = "Equipment"
+toggle_menu = keyboard_check_pressed(vk_tab);
 
-//Index of the currently selected option, padding and spacing between options//
-var cursor = 0;
-var margin = -10;
-var menu_spacing = 32;
+if toggle_menu
+{
+	{
+	 toggle_menu = !toggle_menu
+	 instance_create_depth(55, 55, 100, player_mainmenu);
+    }
 
-///list of varibles///
-
-var menu_list = array_length(player_menu);
-
-///x,y, pos of spr and menu options///
-
-var menu_spr_x = 5;
-var menu_spr_y = 5;
-
-var menu_w = 225;
-var menu_h = 180;
-
-var menu_x = 75;
-var menu_y = 35;
+     if !toggle_menu
+    {
+	 instance_destroy(player_mainmenu);
+    }
+}
 
 ///
 
@@ -33,7 +22,7 @@ var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 var CONFIRM = keyboard_check_pressed(vk_enter);
 var BACK = keyboard_check_pressed(vk_backspace);
 
-var NAV = DOWN -UP;
+var NAV = UP - DOWN;
 
 ///
 

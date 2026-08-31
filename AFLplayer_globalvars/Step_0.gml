@@ -1,18 +1,19 @@
-var NAME = global.AFLplayername;
-var VESSEL = global.playerselection;
+NAME = AFLplayername;
+VESSEL = playerselection;
 
-var HP = global.AFLplayerHP;
-var ATK = global.AFLplayerATK;
-var DEF = global.AFLplayerDEF;
+HP = AFLplayerHP;
+ATK = AFLplayerATK;
+DEF = AFLplayerDEF;
 
-var VIT = global.AFLplayerVIT;
-var STA = global.AFLplayerSTA;
-var END = global.AFLplayerEND;
+VIT = AFLplayerVIT;
+STA = AFLplayerSTA;
+END = AFLplayerEND;
 
-var P_EXP = global.AFLPositiveEXP;
-var N_EXP = global.AFLNegitiveEXP;
+P_EXP = AFLPositiveEXP;
+N_EXP = AFLNegitiveEXP;
 
-var EXP = global.AFLplayerEXP;
-var LV = global.AFLplayerLV;
+EXP = AFLplayerEXP;
+
+LV = AFLplayerLV;
 
 ///
