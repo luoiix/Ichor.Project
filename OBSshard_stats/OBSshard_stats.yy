@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"mirror_pond",
+  "%Name":"OBSshard_stats",
   "eventList":[],
   "managed":true,
-  "name":"mirror_pond",
+  "name":"OBSshard_stats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prisabyss_env_OBJs",
-    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
+    "name":"Armor.Global.vars",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Item.Global.vars/Armor.Global.vars.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

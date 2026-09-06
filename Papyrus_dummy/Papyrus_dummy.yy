@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"mirror_pond",
+  "%Name":"Papyrus_dummy",
   "eventList":[],
   "managed":true,
-  "name":"mirror_pond",
+  "name":"Papyrus_dummy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prisabyss_env_OBJs",
-    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
+    "name":"Easteregg_conflict_OBJs",
+    "path":"folders/Objects/Easteregg_OBJs/Easteregg_conflict_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
+    "name":"Papyrus_dummy_spr",
+    "path":"sprites/Papyrus_dummy_spr/Papyrus_dummy_spr.yy",
   },
   "spriteMaskId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
+    "name":"Papyrus_dummy_spr",
+    "path":"sprites/Papyrus_dummy_spr/Papyrus_dummy_spr.yy",
   },
   "visible":true,
 }

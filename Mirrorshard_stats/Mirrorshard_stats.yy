@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"mirror_pond",
+  "%Name":"Mirrorshard_stats",
   "eventList":[],
   "managed":true,
-  "name":"mirror_pond",
+  "name":"Mirrorshard_stats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prisabyss_env_OBJs",
-    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
+    "name":"Trinket.Global.vars",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Item.Global.vars/Trinket.Global.vars.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
-  },
-  "spriteMaskId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

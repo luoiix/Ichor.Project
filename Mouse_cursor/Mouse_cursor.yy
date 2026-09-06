@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"mirror_pond",
+  "%Name":"Mouse_cursor",
   "eventList":[],
   "managed":true,
-  "name":"mirror_pond",
+  "name":"Mouse_cursor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prisabyss_env_OBJs",
-    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
+    "name":"Cursor_OBJs",
+    "path":"folders/Objects/Cursor_OBJs.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -28,12 +28,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
+    "name":"afflictedsoul_cursor_spr",
+    "path":"sprites/afflictedsoul_cursor_spr/afflictedsoul_cursor_spr.yy",
   },
   "spriteMaskId":{
-    "name":"mirrorpond_spr",
-    "path":"sprites/mirrorpond_spr/mirrorpond_spr.yy",
+    "name":"afflictedsoul_cursor_spr",
+    "path":"sprites/afflictedsoul_cursor_spr/afflictedsoul_cursor_spr.yy",
   },
   "visible":true,
 }

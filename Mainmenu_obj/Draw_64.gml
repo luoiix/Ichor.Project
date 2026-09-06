@@ -25,15 +25,15 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "Newgame":
+        case 0:
 
             break;
         
-		case "Continue":
+		case 1:
 
             break;
         
-		case "Restart":
+		case 2:
 		
             break;
     }

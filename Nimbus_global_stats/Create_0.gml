@@ -1,14 +1,13 @@
-global.NimATK = 3;
-global.NimDEF = 10
-global.NimHP = 99;
+NimATK = 3;
+NimDEF = 10
+NimHP = 99;
 
-global.NimVit = 0;
-global.NimSta = 9;
-global.NimEnd = 9;
+NimVit = 0;
+NimSta = 9;
+NimEnd = 9;
 
-global.NimPosEXP = 0;
-global.NimNegEXP = 0;
+NimPosEXP = 0;
+NimNegEXP = 0;
 
-global.NimLV = 99;
-global.NimEXP = 0;
-global.Nimsha = 0;
+NimLV = 99;
+NimEXP = 0;

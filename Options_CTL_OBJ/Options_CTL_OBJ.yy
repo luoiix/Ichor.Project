@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Nimbus_global_stats",
+  "%Name":"Options_CTL_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Nimbus_global_stats",
+  "name":"Options_CTL_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"Nimbus.Globa.vars",
-    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Maincharacter.Globalstats/Nimbus.Globa.vars.yy",
+    "name":"options_menu_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/options_menu_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":true,

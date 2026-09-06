@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"OBS_point",
+  "%Name":"Mirror_fragment",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Test_player","path":"objects/Test_player/Test_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Afflicted_player","path":"objects/Afflicted_player/Afflicted_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Coldblooded_player","path":"objects/Coldblooded_player/Coldblooded_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Warmhearted_player","path":"objects/Warmhearted_player/Warmhearted_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Afflicted_player","path":"objects/Afflicted_player/Afflicted_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBS_point",
+  "name":"Mirror_fragment",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prisabyss_env_OBJs",
-    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
+    "name":"Trinkets",
+    "path":"folders/Objects/InventoryOBJs/Trinkets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,12 +36,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"obsidian_point_spr",
-    "path":"sprites/obsidian_point_spr/obsidian_point_spr.yy",
+    "name":"Mirrorfragment_spr",
+    "path":"sprites/Mirrorfragment_spr/Mirrorfragment_spr.yy",
   },
   "spriteMaskId":{
-    "name":"obsidian_point_spr",
-    "path":"sprites/obsidian_point_spr/obsidian_point_spr.yy",
+    "name":"Mirrorfragment_spr",
+    "path":"sprites/Mirrorfragment_spr/Mirrorfragment_spr.yy",
   },
   "visible":true,
 }
