@@ -1,18 +1,18 @@
-var dialog = "";
+dialog = "";
 
-var text_current = 0;
-var text_last = 0;
+text_current = 0;
+text_last = 0;
 
-var text_w = 16;
-var text_h = 16;
+text_w = 16;
+text_h = 16;
 
-var text_x = 32;
-var text_y = 32;
+text_x = 32;
+text_y = 32;
 
-var text_spacing = 8
+text_spacing = 8
 
-var char_current = 1;
-var char_speed = 0.25;
+char_current = 1;
+char_speed = 0.25;
 
 ///Logic///
 

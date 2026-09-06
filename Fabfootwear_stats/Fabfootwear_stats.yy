@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Filenotfound_dia",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Fabfootwear_stats",
+  "eventList":[],
   "managed":true,
-  "name":"Filenotfound_dia",
+  "name":"Fabfootwear_stats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialog_CTL_OBJs",
-    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs.yy",
+    "name":"Armor.Global.vars",
+    "path":"folders/CTL_OBJs/Globalvars_CTL_OBJs/Item.Global.vars/Armor.Global.vars.yy",
   },
   "parentObjectId":null,
   "persistent":false,

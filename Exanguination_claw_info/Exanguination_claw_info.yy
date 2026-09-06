@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Filenotfound_dia",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Exanguination_claw_info",
+  "eventList":[],
   "managed":true,
-  "name":"Filenotfound_dia",
+  "name":"Exanguination_claw_info",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialog_CTL_OBJs",
-    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs.yy",
+    "name":"weapon info menus",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTL_OBJs/main_player_submenus/equipment_info_menus/weapon info menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

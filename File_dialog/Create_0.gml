@@ -1,27 +1,27 @@
-var diabox_x = room_width;
-var diabox_y = room_height;
+diabox_x = room_width;
+diabox_y = room_height;
 
-var pixel_width = 175;
-var pixel_height = 64;
+pixel_width = 175;
+pixel_height = 64;
 
 ///
 
-var Dialog = [];
-var Dia_string = "";
+Dialog = [];
+Dia_string = "";
 
-var current_text = 0
-var last_text = 24;
+current_text = 0
+last_text = 24;
 
-var text_x = 16;
-var text_y = 16;
+text_x = 16;
+text_y = 16;
 
-var text_spacing = 8;
+text_spacing = 8;
 
-var char_speed = 1;
-var char_current = 0;
+char_speed = 1;
+char_current = 0;
 
 
-var next = keyboard_check_pressed(vk_enter);
+next = keyboard_check_pressed(vk_enter);
 
 //
 

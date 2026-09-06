@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Filenotfound_dia",
+  "%Name":"Dummy_0",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Test_player","path":"objects/Test_player/Test_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Filenotfound_dia",
+  "name":"Dummy_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialog_CTL_OBJs",
-    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs.yy",
+    "name":"Dummy_OBJs",
+    "path":"folders/Objects/Conflict_OBJs/Dummy_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,8 +28,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"Dummy_spr_0",
+    "path":"sprites/Dummy_spr_0/Dummy_spr_0.yy",
+  },
+  "spriteMaskId":{
+    "name":"Dummy_spr_0",
+    "path":"sprites/Dummy_spr_0/Dummy_spr_0.yy",
+  },
   "visible":true,
 }
