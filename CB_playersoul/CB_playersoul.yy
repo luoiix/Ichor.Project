@@ -40,12 +40,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"playersoulspr_CB",
-    "path":"sprites/playersoulspr_CB/playersoulspr_CB.yy",
+    "name":"playersoul_spr_CB",
+    "path":"sprites/playersoul_spr_CB/playersoul_spr_CB.yy",
   },
   "spriteMaskId":{
-    "name":"playersoulspr",
-    "path":"sprites/playersoulspr/playersoulspr.yy",
+    "name":"playersoul_spr",
+    "path":"sprites/playersoul_spr/playersoul_spr.yy",
   },
   "visible":true,
 }

@@ -1,3 +1,14 @@
+//speed varibles//
+
+CBplayerX = 0;
+CBplayery = 0;
+
+x_speed = hspeed;
+y_speed = vspeed;
+
+movement_speed = 2;
+null_speed = 0;
+
 //stop total movement//
 var Player_stop;
 

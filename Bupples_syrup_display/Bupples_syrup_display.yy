@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Dewdropplant",
+  "%Name":"Bupples_syrup_display",
   "eventList":[],
   "managed":true,
-  "name":"Dewdropplant",
+  "name":"Bupples_syrup_display",
   "overriddenProperties":[],
   "parent":{
-    "name":"Asier_env_OBJs",
-    "path":"folders/Objects/Asier_OBJs/Asier_env_OBJs.yy",
+    "name":"Bupplesobjs",
+    "path":"folders/Objects/Asier_OBJs/Silt_town_OBJS/Bupplesobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"dewdrop_spr_ani",
-    "path":"sprites/dewdrop_spr_ani/dewdrop_spr_ani.yy",
+    "name":"Syrups_display_spr",
+    "path":"sprites/Syrups_display_spr/Syrups_display_spr.yy",
   },
   "spriteMaskId":{
-    "name":"dewdrop_spr_ani",
-    "path":"sprites/dewdrop_spr_ani/dewdrop_spr_ani.yy",
+    "name":"Syrups_display_spr",
+    "path":"sprites/Syrups_display_spr/Syrups_display_spr.yy",
   },
   "visible":true,
 }

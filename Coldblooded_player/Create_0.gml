@@ -18,42 +18,68 @@ global.CBplayerEXP = 0;
 global.CBplayerLV = 0;
 global.CBplayerSha = 0;
 
-///
+//speed varibles//
 
-global.CBplayerX = 0;
-global.CBplayery = 0;
+CBplayerX = 0;
+CBplayery = 0;
 
-//testplayer arrays//
+//basic four point direction//
 
-global.Playermenu = player_mainmenu;
-global.CBplayerinventory = player_inventory;
-global.CBplayerequipment = player_equipment;
+NORTH = 90; //direction UP//
+EAST = 0; //direction RIGHT//
+WEST = 180; //direction LEFT//
+SOUTH = 270; //direction DOWN//
 
-//testplayer shards//
+//basic diagonal point direction//
 
-global.brass_shars = 0; 
-global.bronze_shars = 0;
-global.copper_shars = 0;
+N_WEST = 135; //direction UP LEFT//
+N_EAST = 45;  //direction UP RIGHT//
+S_EAST = 315; //direction DOWN RIGHT//
+S_WEST = 225; //direction DOWN LEFT
+
+
+//player arrays//
+
+Playermenu = player_mainmenu;
+CBplayerinventory = player_inventory;
+CBplayerequipment = player_equipment;
+
+//CB equipment//
+
+CB_WEP = "";
+CB_ARM = "";
+CB_TRK = "";
+
+//player shards//
+
+brass_shars = 0; 
+bronze_shars = 0;
+copper_shars = 0;
 
 /////
-global.silver_shars = 0;
+sulfa_shars = 0;
+silver_shars = 0;
 
 /////
-global.rose_g_shars = 0;
-global.yellow_g_shars = 0; 
-global.white_g_shars = 0;
+rose_g_shars = 0;
+yellow_g_shars = 0; 
+white_g_shars = 0;
 
 /////
-global.plat_shars = 0;
-global.rhod_shars = 0;
-global.osm_shars = 0;
+plat_shars = 0;
+rhod_shars = 0;
+osm_shars = 0;
 
-//testPlayer ini.data//
+//tilewall collision//
+
+collision_tiles = layer_tilemap_get_id("border_tiles");
+
+//CBplayer ini.data//
 
 {
     ini_open("saveprog.ini");
     
-    ini_write_real("global.Playerselected", "Warmhearted_player", 2);
+    ini_write_real("global.playerselected", "Warmhearted_player", 2);
     ini_write_string("global.CBplayername", "", "")
     
     ini_write_real("global.CBplayerHP", "Health", 90);
@@ -84,14 +110,14 @@ global.osm_shars = 0;
     
     ///
     
-    ini_write_string("CBplayerArmor", "Armor", "" );
-    ini_write_string("CBplayerWepon", "Wepon", "" );
-    ini_write_string("CBplayerTrinket", "Trinket", "" );
+    ini_write_string("global.CBplayerARM", "Armor", "" );
+    ini_write_string("global.CBplayerWEP", "Wepon", "" );
+    ini_write_string("global.CBplayerTRINK", "Trinket", "" );
     
     ///
     
-    ini_write_real("global.CBplayerx", "X", x);
-    ini_write_real("global.CBplayery", "Y", y);
+    ini_write_real("CBplayerX", "X", x);
+    ini_write_real("CBplayery", "Y", y);
     
      debug_input_save("saveprog.ini");
      buffer_create(2,1,1);

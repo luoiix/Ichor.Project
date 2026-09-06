@@ -9,11 +9,6 @@ var array_spacing = 64;
 
 ///
 
-var i;
-var CHOICE;
-
-///
-
 var LEFT = keyboard_check_pressed(vk_left) or keyboard_check_pressed (ord("D"));
 var RIGHT = keyboard_check_pressed(vk_right) or keyboard_check_pressed (ord("A"));
 
@@ -22,7 +17,7 @@ var BACK = keyboard_check_pressed(vk_backspace);
 
 ///
 
-draw_set_font(publicpixel_chasel);
+draw_set_font(Publicpixel_menu);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 

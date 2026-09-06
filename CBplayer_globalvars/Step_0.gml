@@ -1,18 +1,18 @@
-var NAME = global.CBplayername;
-var VESSEL = global.playerselection;
+NAME = CBplayername;
+VESSEL = playerselection;
 
-var HP = global.CBplayerHP;
-var ATK = global.CBplayerATK;
-var DEF = global.CBplayerDEF;
+HP = CBplayerHP;
+ATK = CBplayerATK;
+DEF = CBplayerDEF;
 
-var VIT = global.CBplayerVIT;
-var STA = global.CBplayerSTA;
-var END = global.CBplayerEND;
+VIT = CBplayerVIT;
+STA = CBplayerSTA;
+END = CBplayerEND;
 
-var P_EXP = global.CBPositiveEXP;
-var N_EXP = global.CBNegitiveEXP;
+P_EXP = CBPositiveEXP;
+N_EXP = CBNegitiveEXP;
 
-var EXP = global.CBplayerEXP;
-var LV = global.CBplayerLV;
+EXP = CBplayerEXP;
+LV = CBplayerLV;
 
 ///

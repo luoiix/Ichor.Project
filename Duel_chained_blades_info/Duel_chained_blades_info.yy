@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Dewdropplant",
+  "%Name":"Duel_chained_blades_info",
   "eventList":[],
   "managed":true,
-  "name":"Dewdropplant",
+  "name":"Duel_chained_blades_info",
   "overriddenProperties":[],
   "parent":{
-    "name":"Asier_env_OBJs",
-    "path":"folders/Objects/Asier_OBJs/Asier_env_OBJs.yy",
+    "name":"weapon info menus",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTL_OBJs/main_player_submenus/equipment_info_menus/weapon info menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,14 +26,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"dewdrop_spr_ani",
-    "path":"sprites/dewdrop_spr_ani/dewdrop_spr_ani.yy",
-  },
-  "spriteMaskId":{
-    "name":"dewdrop_spr_ani",
-    "path":"sprites/dewdrop_spr_ani/dewdrop_spr_ani.yy",
-  },
+  "solid":false,
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"DewkitOBJs",
-    "path":"folders/Objects/NPC_OBJs/AsierNPCS/DewkitOBJs.yy",
+    "path":"folders/Objects/Asier_OBJs/AsierNPCS/DewkitOBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

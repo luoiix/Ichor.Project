@@ -1,36 +1,36 @@
 //Gloabal.vars//
 
-global.Playerselected = 3;
-global.CBplayername = "";
+Playerselected = 3;
+CBplayername = "";
 
-global.CBplayerHP = 90;
-global.CBplayerATK = 3;
-global.CBplayerDEF = 1;
+CBplayerHP = 90;
+CBplayerATK = 3;
+CBplayerDEF = 1;
 
-global.CBplayerVIT = 5;
-global.CBplayerSTA = 5;
-global.CBplayerEND = 5;
+CBplayerVIT = 5;
+CBplayerSTA = 5;
+CBplayerEND = 5;
 
-global.CBPositiveEXP = 0;
-global.CBNegitiveEXP = 0;
-global.CBplayerEXP = 0;
+CBPositiveEXP = 0;
+CBNegitiveEXP = 0;
+CBplayerEXP = 0;
 
-global.CBplayerLV = 0;
-global.CBplayerSha = 0;
+CBplayerLV = 0;
+CBplayerSha = 0;
 
 ///
 
-global.CBplayerX = 0;
-global.CBplayery = 0;
+CBplayerX = 0;
+CBplayery = 0;
 
 //testplayer arrays//
 
-global.Playermenu = player_mainmenu;
-global.CBplayerinventory = player_inventory;
-global.CBplayerequipment = player_equipment;
+CB_Playermenu = player_mainmenu;
+CBplayerinventory = player_inventory;
+CBplayerequipment = player_equipment;
 
 ///Player equipment ID///
 
-global.CBplayerARM = noone;
-global.CBplayerWEP = noone;
-global.CBplayerTRNK = noone;
+CBplayerARM = noone;
+CBplayerWEP = noone;
+CBplayerTRNK = noone;

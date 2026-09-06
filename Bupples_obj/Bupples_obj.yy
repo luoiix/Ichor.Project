@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Bupplesobjs",
-    "path":"folders/Objects/building_OBJs/Bupplesobjs.yy",
+    "path":"folders/Objects/Asier_OBJs/Silt_town_OBJS/Bupplesobjs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

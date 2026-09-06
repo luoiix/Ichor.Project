@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"playerselectiondia",
-    "path":"folders/CTL_OBJs/Dialog_CTL_objs/playerselectiondia.yy",
+    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs/playerselectiondia.yy",
   },
   "parentObjectId":null,
   "persistent":false,
