@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PrismabyssNPCS",
-    "path":"folders/Objects/NPC_OBJs/PrismabyssNPCS.yy",
+    "path":"folders/Objects/Prismabyss_OBJs/PrismabyssNPCS.yy",
   },
   "parentObjectId":null,
   "persistent":false,

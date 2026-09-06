@@ -1,4 +1,4 @@
-//stop total movement//
+//stop movement//
 var Player_stop;
 
 ///

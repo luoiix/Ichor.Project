@@ -7,7 +7,7 @@ if (Player_left)
 	hspeed = 2;
 	vspeed = 0;
     
-	direction = 180;
+	direction = WEST;
 	image_speed = 2;
     
 	sprite_index = testplayer_stepleft_spr;
@@ -21,5 +21,5 @@ if (STRIDE)
     vspeed = 0;
     
     image_speed = 3;
-    direction = 180;
+    direction = WEST;
 }

@@ -1,54 +1,78 @@
-//Gloabal.vars//
+//stat varibles//
 
-global.playerselection = "WarmHearted";
-global.WHplayername = "";
+playerselection = "WarmHearted";
+WHplayername = "";
 
-global.WHplayerHP = 90;
-global.WHplayerATK = 3;
-global.WHplayerDEF = 1;
+WHplayerHP = 90;
+WHplayerATK = 3;
+WHplayerDEF = 1;
 
-global.WHplayerVIT = 5;
-global.WHplayerSTA = 5;
-global.WHplayerEND = 5;
+WHplayerVIT = 5;
+WHplayerSTA = 5;
+WHplayerEND = 5;
 
-global.WHPositiveEXP = 0;
-global.WHNegitiveEXP = 0;
-global.WHplayerEXP = 0;
+WHPositiveEXP = 0;
+WHNegitiveEXP = 0;
+WHplayerEXP = 0;
 
-global.WHplayerLV = 0;
-global.WHplayerSha = 0;
+WHplayerLV = 0;
+WHplayerSha = 0;
 
-///
+//speed varibles//
 
-global.WHplayerX = 0;
-global.WHplayery = 0;
+WHplayerX = 0;
+WHplayery = 0;
 
-//testplayer arrays//
+//basic four point direction//
 
-global.Playermenu = player_mainmenu;
-global.WHplayerinventory = player_inventory;
-global.WHplayerequipment = player_equipment;
+NORTH = 90; //direction UP//
+EAST = 0; //direction RIGHT//
+WEST = 180; //direction LEFT//
+SOUTH = 270; //direction DOWN//
 
-//testplayer shards//
+//basic diagonal point direction//
 
-global.brass_shars = 0; 
-global.bronze_shars = 0;
-global.copper_shars = 0;
+N_WEST = 135; //direction UP LEFT//
+N_EAST = 45;  //direction UP RIGHT//
+S_EAST = 315; //direction DOWN RIGHT//
+S_WEST = 225; //direction DOWN LEFT
+
+//menu arrays//
+
+WH_Playermenu = player_mainmenu;
+WHplayerinventory = player_inventory;
+WHplayerequipment = player_equipment;
+
+//WH player equipment//
+
+WH_WEP = "";
+WH_ARM = "";
+WH_TRK = "";
+
+//shards//
+
+brass_shars = 0; 
+bronze_shars = 0;
+copper_shars = 0;
 
 /////
-global.silver_shars = 0;
+silver_shars = 0;
 
 /////
-global.rose_g_shars = 0;
-global.yellow_g_shars = 0; 
-global.white_g_shars = 0;
+rose_g_shars = 0;
+yellow_g_shars = 0; 
+white_g_shars = 0;
 
 /////
-global.plat_shars = 0;
-global.rhod_shars = 0;
-global.osm_shars = 0;
+plat_shars = 0;
+rhod_shars = 0;
+osm_shars = 0;
 
-//testPlayer ini.data//
+//tilewall collision//
+
+collision_tiles = layer_tilemap_get_id("border_tiles");
+
+//WHPlayer ini.data//
 
 {
     ini_open("saveprog.ini");
@@ -56,17 +80,17 @@ global.osm_shars = 0;
     ini_write_real("global.Playerselected", "Warmhearted_player", 2);
     ini_write_string("global.WHplayername", "", "")
     
-    ini_write_real("global.WHplayerHP", "Health", 90);
-    ini_write_real("global.WHplayerATK", "Attack", 1);
-    ini_write_real("global.WHplayerDEF", "Defense", 3);
+    ini_write_real("WHplayerHP", "Health", 90);
+    ini_write_real("WHplayerATK", "Attack", 1);
+    ini_write_real("WHplayerDEF", "Defense", 3);
     
-    ini_write_real("global. WHplayerEXP", "Exeperince", 0);
-    ini_write_real("global.WHplayerLV", "Level", 0); 
-    ini_write_real("global.WHplayerSHA", "Shards", 0);
+    ini_write_real("WHplayerEXP", "Exeperince", 0);
+    ini_write_real("WHplayerLV", "Level", 0); 
+    ini_write_real("WHplayerSHA", "Shards", 0);
     
-    ini_write_real ("global.WHplayerVIT", "Vitality", 5);
-    ini_write_real ("global.WHplayerSTA", "Stamina", 9);
-    ini_write_real ("global.WHplayerEND", "Endurance", 5);
+    ini_write_real ("WHplayerVIT", "Vitality", 5);
+    ini_write_real ("WHplayerSTA", "Stamina", 9);
+    ini_write_real ("WHplayerEND", "Endurance", 5);
     
      ///
     
@@ -90,8 +114,8 @@ global.osm_shars = 0;
     
     ///
     
-    ini_write_real("global.testPlayerx", "X", x);
-    ini_write_real("global.testPlayery", "Y", y);
+    ini_write_real("WHplayerX", "X", x);
+    ini_write_real("WHplayery", "Y", y);
     
      debug_input_save("saveprog.ini");
      buffer_create(3,1,1);

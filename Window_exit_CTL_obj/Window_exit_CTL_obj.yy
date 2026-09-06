@@ -9,8 +9,8 @@
   "name":"Window_exit_CTL_obj",
   "overriddenProperties":[],
   "parent":{
-    "name":"PremenuCTLobjs",
-    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/PremenuCTLobjs.yy",
+    "name":"Premenu_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Premenu_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":true,

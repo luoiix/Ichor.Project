@@ -1,13 +1,15 @@
 var Player_up;
 var STRIDE;
 
+///
+
 Player_up = keyboard_check(ord("W"));
 if (Player_up)
 {
 	vspeed = 2;
 	hspeed = 0;
     
-	direction = 90;
+	direction = NORTH;
 	image_speed = 1.5;
     
 	sprite_index = testplayer_up_spr;
@@ -21,5 +23,5 @@ if (STRIDE)
     vspeed = 3;
     
     image_speed = 2;
-    direction =90;
+    direction = NORTH;
 }

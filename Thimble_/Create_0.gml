@@ -1,0 +1,1 @@
+var thimble = Thimble_covered;

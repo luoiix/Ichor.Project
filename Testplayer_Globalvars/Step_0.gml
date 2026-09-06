@@ -1,18 +1,18 @@
-var NAME = global.testPlayername;
-var VESSEL = global.playerselection;
+NAME = testPlayername;
+VESSEL = playerselection;
 
-var HP = global.testPlayerHP;
-var ATK = global.testPlayerATK;
-var DEF = global.testPlayerDEF;
+HP = testPlayerHP;
+ATK = testPlayerATK;
+DEF = testPlayerDEF;
 
-var VIT = global.testPlayerVIT;
-var STA = global.testPlayerSTA;
-var END = global.testPlayerEND;
+VIT = testPlayerVIT;
+STA = testPlayerSTA;
+END = testPlayerEND;
 
-var P_EXP = global.testPositiveEXP;
-var N_EXP = global.testNegitiveEXP;
+P_EXP = testPositiveEXP;
+N_EXP = testNegitiveEXP;
 
-var EXP = global.testPlayerEXP;
-var LV = global.testPlayerLV;
+EXP = testPlayerEXP;
+LV = testPlayerLV;
 
 ///

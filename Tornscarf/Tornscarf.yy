@@ -9,8 +9,8 @@
   "name":"Tornscarf",
   "overriddenProperties":[],
   "parent":{
-    "name":"Armor",
-    "path":"folders/Objects/InventoryOBJs/ItemOBJS/Armor.yy",
+    "name":"Easteregg_armors",
+    "path":"folders/Objects/Easteregg_OBJs/Easteregg_armors.yy",
   },
   "parentObjectId":null,
   "persistent":false,

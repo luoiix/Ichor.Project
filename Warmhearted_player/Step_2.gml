@@ -13,7 +13,7 @@ if (Player_stop)
 	sprite_index = warmhue_idle_spr;
     
 	image_index = 2;
-	direction = 0;
+	direction = NORTH;
 }
 
 ///
@@ -28,7 +28,7 @@ if (Player_stop)
 	sprite_index = warmhue_idle_spr;
     
 	image_index = 4;
-	direction = 0;
+	direction = SOUTH;
 }
 
 ///
@@ -44,7 +44,7 @@ if (Player_stop)
     
 	image_index = 1;
 	speed = 0;
-	direction = 0;
+	direction = WEST;
 }
 
 ///
@@ -59,7 +59,7 @@ if (Player_stop)
 	image_index = 3;
 	image_speed = 0;
     
-	direction = 0;
+	direction = EAST;
 }
 
 ///Stop sprinting///

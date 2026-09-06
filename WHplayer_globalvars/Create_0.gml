@@ -1,36 +1,36 @@
 //Gloabal.vars//
 
-global.Playerselected = 3;
-global.WHplayername = "";
+Playerselected = 3;
+WHplayername = "";
 
-global.WHplayerHP = 90;
-global.WHplayerATK = 3;
-global.WHplayerDEF = 1;
+WHplayerHP = 90;
+WHplayerATK = 3;
+WHplayerDEF = 1;
 
-global.WHplayerVIT = 5;
-global.WHplayerSTA = 5;
-global.WHplayerEND = 5;
+WHplayerVIT = 5;
+WHplayerSTA = 5;
+WHplayerEND = 5;
 
-global.WHPositiveEXP = 0;
-global.WHNegitiveEXP = 0;
-global.WHplayerEXP = 0;
+WHPositiveEXP = 0;
+WHNegitiveEXP = 0;
+WHplayerEXP = 0;
 
-global.WHplayerLV = 0;
-global.WHplayerSha = 0;
+WHplayerLV = 0;
+WHplayerSha = 0;
 
 ///
 
-global.WHplayerX = 0;
-global.WHplayery = 0;
+WHplayerX = 0;
+WHplayery = 0;
 
 //testplayer arrays//
 
-global.Playermenu = player_mainmenu;
-global.WHplayerinventory = player_inventory;
-global.WHplayerequipment = player_equipment;
+WH_Playermenu = player_mainmenu;
+WHplayerinventory = player_inventory;
+WHplayerequipment = player_equipment;
 
 //Player equipment ID//
 
-global.WHplayerARM = noone;
-global.WHplayerWEP = noone;
-global.WHplayerTRNK = noone;
+WHplayerARM = noone;
+WHplayerWEP = noone;
+WHplayerTRNK = noone;

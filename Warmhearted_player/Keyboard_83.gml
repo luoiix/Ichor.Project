@@ -1,13 +1,15 @@
 var Player_down;
 var STRIDE
 
+///
+
 Player_down = keyboard_check(ord("S"));
 if (Player_down)
 {
 	vspeed = 2;
 	hspeed = 0;
     
-	direction = 270;
+	direction = SOUTH;
 	image_speed = 1.5;
     
 	sprite_index = warmhue_down_spr;
@@ -21,5 +23,5 @@ if (STRIDE)
     vspeed = 3;
     
     image_speed = 2;
-    direction =270;
+    direction = SOUTH;
 }

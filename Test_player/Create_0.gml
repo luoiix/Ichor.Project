@@ -1,4 +1,4 @@
-//Gloabal.vars//
+//Gloabal.vars player stats//
 
 global.playerselection = 4;
 global.testPlayername = "";
@@ -18,66 +18,82 @@ global.testPlayerEXP = 0;
 global.testPlayerLV = 0;
 global.testPlayerSha = 0;
 
-///
+//movement and coordnaites//
 
 global.testplayerX = 0;
 global.testplayery = 0;
 
+//basic four point direction//
+
+NORTH = 90; //direction UP//
+EAST = 0; //direction RIGHT//
+WEST = 180; //direction LEFT//
+SOUTH = 270; //direction DOWN//
+
+//basic diagonal point direction//
+
+N_WEST = 135; //direction UP LEFT//
+N_EAST = 45;  //direction UP RIGHT//
+S_EAST = 315; //direction DOWN RIGHT//
+S_WEST = 225; //direction DOWN LEFT
+
 //testplayer arrays//
 
-global.Playermenu = player_mainmenu;
-global.testPlayerinventory = player_inventory;
-global.testPlayerequipment = player_equipment;
+Playermenu = player_mainmenu;
+Playerinventory = player_inventory;
+Playerequipment = player_equipment;
 
 // testPlayer's current equipment//
 
-global.testPlayerWEP = noone;
-global.testPlayerARM = noone;
-global.testPlayerTRINK = noone;
+playerWEP = "";
+playerARM = "";
+playerTRK = "";
 
 //testplayer shards//
 
-global.brass_shars = 0; 
-global.bronze_shars = 0;
-global.copper_shars = 0;
+brass_shars = 0; 
+bronze_shars = 0;
+copper_shars = 0;
 
 /////
-global.silver_shars = 0;
+silver_shars = 0;
 
 /////
-global.rose_g_shars = 0;
-global.yellow_g_shars = 0; 
-global.white_g_shars = 0;
+rose_g_shars = 0;
+yellow_g_shars = 0; 
+white_g_shars = 0;
 
 /////
-global.plat_shars = 0;
-global.rhod_shars = 0;
-global.osm_shars = 0;
+plat_shars = 0;
+rhod_shars = 0;
+osm_shars = 0;
 
-///
+///player pause///
 
-global.player_pause = hspeed + vspeed + speed = 0;
 
+///player tile collision//
+
+collision_tiles = layer_tilemap_get_id("border_tiles");
 
 //testPlayer ini.data//
 
 {
     ini_open("saveprog.ini");
     
-    ini_write_real("global.Playerselected", "Warmhearted_player", 2);
-    ini_write_string("global.testPlayername", "", "")
+    ini_write_real("Playerselected", "Warmhearted_player", 2);
+    ini_write_string("testPlayername", "", "")
     
-    ini_write_real("global.testPlayerHP", "Health", 90);
-    ini_write_real("global.testPlayerATK", "Attack", 1);
+    ini_write_real("testPlayerHP", "Health", 90);
+    ini_write_real("testPlayerATK", "Attack", 1);
     ini_write_real("global.testPlayerDEF", "Defense", 3);
     
-    ini_write_real("global.testPlayerEXP", "Exeperince", 0);
-    ini_write_real("global.testPlayerLV", "Level", 0); 
-    ini_write_real("global.testPlayerSHA", "Shards", 0);
+    ini_write_real("testPlayerEXP", "Exeperince", 0);
+    ini_write_real("testPlayerLV", "Level", 0); 
+    ini_write_real("testPlayerSHA", "Shards", 0);
     
-    ini_write_real ("global.testPlayerVIT", "Vitality", 5);
-    ini_write_real ("global.testPlayerSTA", "Stamina", 9);
-    ini_write_real ("global.testPlayerEND", "Endurance", 5);
+    ini_write_real ("testPlayerVIT", "Vitality", 5);
+    ini_write_real ("testPlayerSTA", "Stamina", 9);
+    ini_write_real ("testPlayerEND", "Endurance", 5);
     
      ///
     
@@ -101,8 +117,8 @@ global.player_pause = hspeed + vspeed + speed = 0;
     
     ///
     
-    ini_write_real("global.testPlayerx", "X", x);
-    ini_write_real("global.testPlayery", "Y", y);
+    ini_write_real("testPlayerX", "X", x);
+    ini_write_real("testPlayery", "Y", y);
     
      debug_input_save("saveprog.ini");
      buffer_create(4,1,1);

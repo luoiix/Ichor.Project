@@ -9,7 +9,7 @@ if (Player_right)
 	hspeed = 2;
 	vspeed = 0;
     
-	direction = 0;
+	direction = EAST;
 	image_speed = 2;
     
 	sprite_index = warmhue_stepright_spr;
@@ -23,5 +23,5 @@ if (STRIDE)
     vspeed = 0;
     
     image_speed = 3;
-    direction = 0;
+    direction = EAST;
 }

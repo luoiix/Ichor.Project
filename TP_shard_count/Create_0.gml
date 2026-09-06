@@ -1,17 +1,18 @@
 //Tier 3//
-global.brass_shars = 0; 
-global.bronze_shars = 0;
-global.copper_shars = 0;
+brass_shars = 0; 
+bronze_shars = 0;
+copper_shars = 0;
 
 //Tier 2//
-global.silver_shars = 0;
+sulfa_shars = 0;
+silver_shars = 0;
 
 //Tier 1//
-global.rose_g_shars = 0;
-global.yellow_g_shars = 0; 
-global.white_g_shars = 0;
+rose_g_shars = 0;
+yellow_g_shars = 0; 
+white_g_shars = 0;
 
 //Tier 0//
-global.plat_shars = 0;
-global.rhod_shars = 0;
-global.osm_shars = 0;
+plat_shars = 0;
+rhod_shars = 0;
+osm_shars = 0;

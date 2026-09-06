@@ -1,3 +1,5 @@
+//local movement keys//
+
 var player_UP = keyboard_check(ord("W")) && keyboard_check(vk_up);
 var player_DOWN = keyboard_check(ord("S")) && keyboard_check(vk_down);
 var player_LEFT = keyboard_check(ord("A")) && keyboard_check(vk_left);
@@ -18,7 +20,7 @@ if (UP_LEFT)
     hspeed = 2;
 	vspeed = 2;
     
-	direction = 135;
+	direction = N_WEST;
     
 	image_speed = 1.5;
 	sprite_index = testplayer_up_spr;
@@ -34,7 +36,7 @@ if (UP_RIGHT)
     hspeed = 2;
 	vspeed = 2;
     
-	direction = 45;
+	direction = N_EAST;
     
 	image_speed = 1.5;
 	sprite_index = testplayer_up_spr;
@@ -49,7 +51,7 @@ if (DOWN_RIGHT)
 	hspeed = 2;
 	vspeed = 2;
     
-	direction = 315;
+	direction = S_EAST;
     
 	image_speed = 1.5;
 	sprite_index = testplayer_down_spr;
@@ -64,7 +66,7 @@ if (DOWN_LEFT)
 	hspeed = 2;
 	vspeed = 2;
     
-	direction = 225;
+	direction = S_WEST;
 	image_speed = 1.5;
     
 	sprite_index = testplayer_down_spr;

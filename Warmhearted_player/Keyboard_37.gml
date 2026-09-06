@@ -1,13 +1,15 @@
 var Player_left;
 var STRIDE;
 
+///
+
 Player_left = keyboard_check(vk_left); 
 if (Player_left)
 {
 	hspeed = 2;
 	vspeed = 0;
     
-	direction = 180;
+	direction = WEST;
 	image_speed = 2;
     
 	sprite_index = warmhue_stepleft_spr;
@@ -21,5 +23,5 @@ if (STRIDE)
     vspeed = 0;
     
     image_speed = 3;
-    direction = 180;
+    direction = WEST;
 }
