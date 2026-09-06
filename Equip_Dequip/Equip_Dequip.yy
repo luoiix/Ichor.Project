@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Equip_Dequip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Equip_Dequip",
+  "parent":{
+    "name":"Player_menu_scripts",
+    "path":"folders/scripts/Menu_scripts/Player_menu_scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

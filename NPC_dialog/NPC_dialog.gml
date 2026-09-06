@@ -1,4 +1,4 @@
-function NPC_dialog()
+function NPC_dialog(NPC_speak)
 {
 	
 }
