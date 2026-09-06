@@ -10,8 +10,8 @@
   "name":"Player_StorPit",
   "overriddenProperties":[],
   "parent":{
-    "name":"ItemOBJS",
-    "path":"folders/Objects/InventoryOBJs/ItemOBJS.yy",
+    "name":"InventoryOBJs",
+    "path":"folders/Objects/InventoryOBJs.yy",
   },
   "parentObjectId":null,
   "persistent":true,

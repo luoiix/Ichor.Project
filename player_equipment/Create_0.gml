@@ -1,14 +1,18 @@
-// Menu options stored in an array//
-player_equip[0] = "Wepon";
-player_equip[1] = "Armor";
-player_equip[2] = "Trinket";
+var WEP_str = string(Test_player.playerWEP);
+var ARM_str = string(Test_player.playerARM);
+var TRK_str = string (Test_player.playerTRK);
 
-equipment_list = array_length(player_equip)
+// Menu options stored in an array//
+global.player_equip[0] = "WEP:" + WEP_str;
+global.player_equip[1] = "ARM:" + ARM_str;
+global.player_equip[2] = "TRK:" + TRK_str;
+
+equipment_list = array_length(global.player_equip)
 
 // Index of the currently selected option
 cursor = 0;
 menu_spacing = 32;
-margin = - 5;
+margin = 5;
 
 ///x,y, pos of spr and menu options///
 

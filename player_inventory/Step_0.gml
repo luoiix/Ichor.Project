@@ -14,11 +14,11 @@ if (NAV != 0)
 {
 	cursor += NAV
 	
-	if (cursor >= array_length(player_items)) 
+	if (cursor >= array_length(global.player_items)) 
     cursor = 0; // Wrap to first item
 	
 	if (cursor < 0) 
-	cursor = array_length(player_items) - 1;
+	cursor = array_length(global.player_items) - 1;
 }
 
 //
@@ -27,8 +27,16 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "":
+        case 0:
 		
 		break;
     }
+}
+
+///
+
+if (BACK)
+{
+  instance_destroy(player_inventory);
+  instance_create_depth(menu_x, menu_y, 100, player_mainmenu);
 }

@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"follow_player_objs",
-    "path":"folders/Sprites/Obj_sprs/follow_player_objs.yy",
+    "path":"folders/Objects/follow_player_objs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

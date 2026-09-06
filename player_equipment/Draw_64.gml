@@ -12,11 +12,11 @@ if (NAV != 0)
 {
 	cursor += NAV
 	
-	if (cursor >= array_length(player_equip)) 
+	if (cursor >= array_length(global.player_equip)) 
     cursor = 0; // Wrap to first item
 	
 	if (cursor < 0) 
-	cursor = array_length(player_equip) - 1;
+	cursor = array_length(global.player_equip) - 1;
 }
 
 // Select option
@@ -26,15 +26,15 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "Items":
+        case 0:
 
             break;
         
-		case "Stats":
+		case 1:
 
             break;
         
-		case "Equipment":
+		case 2:
 		
             break;
     }
@@ -48,27 +48,65 @@ draw_set_valign(fa_left);
 
 ///
 
-draw_sprite_stretched(player_equipmenu_spr, 0, menu_spr_x, menu_spr_y, menu_spr_w, menu_spr_h);
+draw_sprite_stretched(player_mainmenu_spr, 0, menu_spr_x, menu_spr_y, menu_spr_w, menu_spr_h);
 
 ///
 var i;
 
-for (i = 0; i < array_length(player_equip); i++) 
+for (i = 0; i < array_length(global.player_equip); i++) 
 {
-    var option_text = player_equip[i];
+    var option_text = global.player_equip[i];
     var hightlight_option = menu_x + (i * menu_spacing);
     
     // Highlight selected option
     if (i == cursor) 
 	{
         draw_set_color(c_yellow);
-        draw_text(menu_y + margin, option_text, hightlight_option);
+        draw_text(menu_y + margin, hightlight_option, option_text);
     } 	
 	else
 	{
         draw_set_color(c_white);
-        draw_text(menu_y, option_text, hightlight_option);
+        draw_text(menu_y, hightlight_option, option_text);
     }
 }
 
 ///
+
+for (i = 1; i < array_length(global.player_equip); i++) 
+{
+    var option_text = global.player_equip[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y + margin, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+/// 
+
+for (i = 2; i < array_length(global.player_equip); i++) 
+{
+    var option_text = global.player_equip[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y + margin, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}

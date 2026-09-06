@@ -10,8 +10,8 @@
   "name":"player_selection_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Mainmenu_CTL_objs",
-    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Mainmenu_CTL_objs.yy",
+    "name":"Mainmenu_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Mainmenu_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

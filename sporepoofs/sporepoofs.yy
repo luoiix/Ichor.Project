@@ -6,8 +6,8 @@
   "name":"sporepoofs",
   "overriddenProperties":[],
   "parent":{
-    "name":"PrisabyssOBJs",
-    "path":"folders/Objects/PrisabyssOBJs.yy",
+    "name":"Prisabyss_env_OBJs",
+    "path":"folders/Objects/Prismabyss_OBJs/Prisabyss_env_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

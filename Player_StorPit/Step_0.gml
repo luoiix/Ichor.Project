@@ -1,56 +1,42 @@
-var playerpit = ["","","","","","","","",""];
-var menu_count = array_length(playerpit);
+//Navagation varibles//
 
-///
+var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
-var menu_x = 55;
-var menu_y = 55;
-
-var cursor = 0; 
-var arrspacing = 32;
-
-///
-
-var CHOICE = playerpit[cursor];
-var i;
-
-///
-
-var DOWN = keyboard_check_pressed(vk_down) && keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) && keyboard_check_pressed(ord("W"));
-
-var SELECT = keyboard_check_pressed(vk_enter);
+var CONFIRM = keyboard_check_pressed(vk_enter);
 var BACK = keyboard_check_pressed(vk_backspace);
 
-//UP function//
+var NAV = UP - DOWN;
 
-if (UP) 
+///
+
+if (NAV != 0)
 {
-    cursor --;
-    if (cursor < 0) {
-        cursor = menu_count;
-    }
+	cursor += NAV
+	
+	if (cursor >= array_length(global.player_pit)) 
+    cursor = 0; // Wrap to first item
+	
+	if (cursor < 0) 
+	cursor = array_length(global.player_pit) - 1;
 }
 
-//DOWN function//
+//
 
-if (DOWN)
+if (CONFIRM) 
 {
-    cursor ++;
-    if (cursor = menu_count) {
-        cursor = 0;
-    }
-}
-
-///SELECT function///
-SELECT = keyboard_check_pressed(vk_enter);
-
-if (SELECT) 
-{
-    switch (CHOICE) 
+    switch (cursor) 
 	{
-        case "":
-
-            break;
+        case 0:
+		
+		break;
     }
+}
+
+///
+
+if (BACK)
+{
+  instance_destroy(player_inventory);
+  instance_create_depth(menu_x, menu_y, 100, player_mainmenu);
 }

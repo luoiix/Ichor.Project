@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"playershards_menu",
-    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTLs/test_menus/playershards_menu.yy",
+    "path":"folders/CTL_OBJs/Menus_CTL_OBJs/Player_menu_CTL_OBJs/playershards_menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

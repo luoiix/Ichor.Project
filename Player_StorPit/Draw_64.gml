@@ -1,172 +1,54 @@
-var playerpit = ["","","","","","","","",""]
-var menu_count = array_length(playerpit);
+//Navagation varibles//
 
-///
-var menu_x = 55;
-var menu_y = 55;
+var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
+var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
-var cursor = 0; 
-var arrspacing = 32;
-
-///
-
-var CHOICE = playerpit[cursor];
-var i;
-
-///
-
-var DOWN = keyboard_check_pressed(vk_down) && keyboard_check_pressed(ord("S"));
-var UP = keyboard_check_pressed(vk_up) && keyboard_check_pressed(ord("W"));
-
-var SELECT = keyboard_check_pressed(vk_enter);
+var CONFIRM = keyboard_check_pressed(vk_enter);
 var BACK = keyboard_check_pressed(vk_backspace);
 
-///
-
-draw_sprite_stretched(player_inventory_spr, 1, 25, 25, 240, 150);
-
-draw_set_font(publicpixel_menu);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+var NAV = UP - DOWN;
 
 ///
 
-draw_text(75, 40, "StoragePit");
-
-draw_text(menu_x, menu_y+ 32, "");
-draw_text (menu_x, menu_y+ 64, "");
-draw_text (menu_x, menu_y+ 96, "");
-
-draw_text(menu_x, menu_y+ 128, "");
-draw_text (menu_x, menu_y+ 160, "");
-draw_text (menu_x, menu_y+ 192, "");
-
-draw_text(menu_x, menu_y+ 224, "");
-draw_text (menu_x, menu_y+ 256, "");
-draw_text (menu_x, menu_y+ 288, "");
-
-///HIGHLIGHT///
-
-///
-for (i = 0; i < array_length(playerpit); i++) 
+if (NAV != 0)
 {
-	if (i == 0)
-	{
-		
-	}
-	else
-	{
-		
-	}
+	cursor += NAV
+	
+	if (cursor >= array_length(global.player_pit)) 
+    cursor = 0; // Wrap to first item
+	
+	if (cursor < 0) 
+	cursor = array_length(global.player_pit) - 1;
 }
 
 ///
 
-for (i = 1; i < array_length(playerpit); i++) 
-{
-	if (i == 1)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
+draw_set_font(Publicpixel_menu);
+draw_set_halign(fa_top);
+draw_set_valign(fa_left);
 
 ///
 
-for (i = 2; i < array_length(playerpit); i++) 
-{
-	if (i == 2)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
+draw_sprite_stretched(player_inventory_spr, 0, menu_spr_x, menu_spr_y, menu_spr_w, menu_spr_h);
 
 ///
 
-for (i = 3; i < array_length(playerpit); i++) 
+var i;
+
+for (i = 0; i < array_length(global.player_pit); i++) 
 {
-	if (i == 3)
+    var option_text = global.player_pit[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
 	{
-		
-	}
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
 	else
 	{
-		
-	}
-}
-///
-
-for (i = 4; i < array_length(playerpit); i++) 
-{
-	if (i == 4)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
-
-///
-
-for (i = 5; i < array_length(playerpit); i++) 
-{
-	if (i == 5)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
-
-///
-
-for (i = 6; i < array_length(playerpit); i++) 
-{
-	if (i == 6)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
-
-///
-
-for (i = 7; i < array_length(playerpit); i++) 
-{
-	if (i == 7)
-	{
-		
-	}
-	else
-	{
-		
-	}
-}
-
-///
-
-for (i = 8; i < array_length(playerpit); i++) 
-{
-	if (i == 8)
-	{
-		
-	}
-	else
-	{
-		
-	}
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
 }

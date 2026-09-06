@@ -14,11 +14,11 @@ if (NAV != 0)
 {
 	cursor += NAV
 	
-	if (cursor >= array_length(player_equip)) 
+	if (cursor >= array_length(global.player_equip)) 
     cursor = 0; // Wrap to first item
 	
 	if (cursor < 0) 
-	cursor = array_length(player_equip) - 1;
+	cursor = array_length(global.player_equip) - 1;
 }
 
 // Select option
@@ -28,16 +28,33 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "Items":
-
+        case 0:
+		{	
+         instance_destroy(player_equipment);
+         instance_create_depth(menu_x, menu_y, 100, player_WEAPONs);
+		}
             break;
         
-		case "Stats":
-
+		case 1:
+		{	
+         instance_destroy(player_equipment);
+         instance_create_depth(menu_x, menu_y, 100, player_ARMORs);
+		}
             break;
         
-		case "Equipment":
-		
+		case 2:
+		{	
+         instance_destroy(player_equipment);
+         instance_create_depth(menu_x, menu_y, 100, player_TRINKETs);
+		}
             break;
     }
+}
+
+///
+
+if (BACK)
+{
+  instance_destroy(player_equipment);
+  instance_create_depth(menu_x, menu_y, 100, player_mainmenu);
 }

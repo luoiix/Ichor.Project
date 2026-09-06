@@ -1,19 +1,15 @@
-global.playerselection = 
+global.playerselection[0] = "AfflictedArdor"
+global.playerselection[1] = "ColdBlooded"
+global.playerselection[2] = "WarmHearted"
 
-[
-    "AfflictedArdor",
-    "ColdBlooded",
-    "WarmHearted"
-];
-
-var player_list = array_length(global.playerselection);
+player_list = array_length(global.playerselection);
 
 // Index of the currently selected option
-var cursor = 0;
-var margin = -5;
-var menu_spacing = 32;
+cursor = 0;
+margin = -5;
+menu_spacing = 32;
 
 ///
 
-var menu_x = 550;
-var menu_y = 550;
+menu_x = 550;
+menu_y = 550;

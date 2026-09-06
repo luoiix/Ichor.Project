@@ -9,8 +9,8 @@
   "name":"Resetprog_dia",
   "overriddenProperties":[],
   "parent":{
-    "name":"Restart_reset_CTL_OBJs",
-    "path":"folders/CTL_OBJs/Restart_reset_CTL_OBJs.yy",
+    "name":"Dialog_CTL_OBJs",
+    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

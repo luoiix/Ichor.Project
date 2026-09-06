@@ -4,7 +4,6 @@ var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
 var CONFIRM = keyboard_check_pressed(vk_enter);
-var BACK = keyboard_check_pressed(vk_backspace);
 
 var NAV = UP - DOWN;
 
@@ -28,15 +27,15 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "Items":
+        case 0:
 
             break;
         
-		case "Stats":
+		case 1:
 
             break;
         
-		case "Equipment":
+		case 2:
 		
             break;
     }
@@ -56,19 +55,19 @@ draw_sprite_stretched(player_mainmenu_spr, 0, menu_spr_x, menu_spr_y, menu_w, me
 
 for (var i = 0; i < array_length(player_menu); i++) 
 {
-    var text = player_menu[i];
-    var option = menu_x + (i * menu_spacing);
+    var option_text = player_menu[i];
+    var highlight_option = menu_x + (i * menu_spacing);
     
     // Highlight selected option
     if (i == cursor) 
 	{
         draw_set_color(c_yellow);
-        draw_text(menu_y + margin, option, text);
+        draw_text(menu_y + margin, highlight_option, option_text);
     } 	
 	else
 	{
         draw_set_color(c_white);
-        draw_text(menu_y, option, text);
+        draw_text(menu_y, highlight_option, option_text);
     }
 }
 

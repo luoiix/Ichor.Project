@@ -1,26 +1,7 @@
-
-toggle_menu = keyboard_check_pressed(vk_tab);
-
-if toggle_menu
-{
-	{
-	 toggle_menu = !toggle_menu
-	 instance_create_depth(55, 55, 100, player_mainmenu);
-    }
-
-     if !toggle_menu
-    {
-	 instance_destroy(player_mainmenu);
-    }
-}
-
-///
-
 var UP = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 var DOWN = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 
 var CONFIRM = keyboard_check_pressed(vk_enter);
-var BACK = keyboard_check_pressed(vk_backspace);
 
 var NAV = UP - DOWN;
 
@@ -44,16 +25,26 @@ if (CONFIRM)
 {
     switch (cursor) 
 	{
-        case "Items":
+        case 0:
+		{
+			instance_destroy(player_mainmenu);
+			instance_create_depth(menu_x, menu_y, 100, player_inventory);
+		}
 
             break;
         
-		case "Stats":
-
+		case 1:
+		{
+			instance_destroy(player_mainmenu);
+			instance_create_depth(menu_x, menu_y, 100, player_stats_test);
+		}
             break;
         
-		case "Equipment":
-		
+		case 2:
+		{
+			instance_destroy(player_mainmenu);
+			instance_create_depth(menu_x, menu_y, 100, player_equipment);
+		}
             break;
     }
 }

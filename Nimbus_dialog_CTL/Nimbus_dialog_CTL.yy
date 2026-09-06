@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"main_character_dia_objs",
-    "path":"folders/CTL_OBJs/Dialog_CTL_objs/main_character_dia_objs.yy",
+    "path":"folders/CTL_OBJs/Dialog_CTL_OBJs/main_character_dia_objs.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -5,5 +5,11 @@ global.osm_shars = 0;
 
 //
 
-var menu_X = 55;
-var menu_Y = 55;
+menu_X = 55;
+menu_Y = 55;
+
+///
+
+var plat_str = string(global.plat_shars);
+var rhod_str = string(global.rhod_shars);
+var osm_str = string(global.osm_shars);

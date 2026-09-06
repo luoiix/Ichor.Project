@@ -14,11 +14,11 @@ if (NAV != 0)
 {
 	cursor += NAV
 	
-	if (cursor >= array_length(player_items)) 
+	if (cursor >= array_length(global.player_items)) 
     cursor = 0; // Wrap to first item
 	
 	if (cursor < 0) 
-	cursor = array_length(player_items) - 1;
+	cursor = array_length(global.player_items) - 1;
 }
 
 ///
@@ -29,26 +29,186 @@ draw_set_valign(fa_left);
 
 ///
 
-draw_sprite_stretched(player_inventory_spr, 0, menu_spr_x, menu_spr_y, 275, 375);
+draw_sprite_stretched(player_inventory_spr, 0, menu_spr_x, menu_spr_y, menu_spr_w, menu_spr_h);
 
 ///
 
 var i;
 
-for (i = 0; i < array_length(player_items); i++) 
+for (i = 0; i < array_length(global.player_items); i++) 
 {
-    var option_text = player_items[i];
+    var option_text = global.player_items[i];
     var hightlight_option = menu_x + (i * menu_spacing);
     
     // Highlight selected option
     if (i == cursor) 
 	{
         draw_set_color(c_yellow);
-        draw_text(menu_y, option_text, hightlight_option);
+        draw_text(menu_y, hightlight_option, option_text);
     } 	
 	else
 	{
         draw_set_color(c_white);
-        draw_text(menu_y, option_text, hightlight_option);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 1; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 2; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 3; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 4; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 5; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 6; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 7; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
+    }
+}
+
+///
+
+for (i = 8; i < array_length(global.player_items); i++) 
+{
+    var option_text = global.player_items[i];
+    var hightlight_option = menu_x + (i * menu_spacing);
+    
+    // Highlight selected option
+    if (i == cursor) 
+	{
+        draw_set_color(c_yellow);
+        draw_text(menu_y, hightlight_option, option_text);
+    } 	
+	else
+	{
+        draw_set_color(c_white);
+        draw_text(menu_y, hightlight_option, option_text);
     }
 }

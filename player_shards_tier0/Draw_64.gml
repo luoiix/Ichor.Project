@@ -1,24 +1,18 @@
-var menu_X = 55;
-var menu_Y = 55;
+var plat_str = string(global.plat_shars);
+var rhod_str = string(global.rhod_shars);
+var osm_str = string(global.osm_shars);
 
 //
-draw_set_font(publicpixel_menu);
+draw_set_font(Pressstart_menu);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 draw_text(menu_X, menu_Y - 8, "Shards");
 
-draw_text(menu_X, menu_Y + 32, "");
-draw_text(menu_X, menu_Y + 64, "");
-draw_text(menu_X, menu_Y + 96, "");
+draw_text(menu_X, menu_Y + 32, plat_str);
+draw_text(menu_X, menu_Y + 64, rhod_str);
+draw_text(menu_X, menu_Y + 96, osm_str);
 
-draw_text(menu_X, menu_Y + 128, "");
-draw_text(menu_X, menu_Y + 160, "");
-draw_text(menu_X, menu_Y + 192, "");
-
-draw_text(menu_X, menu_Y + 224, "");
-draw_text(menu_X, menu_Y + 256, "");
-draw_text(menu_X, menu_Y + 288, "");
 
 //draw sprites//
 

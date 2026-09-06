@@ -4,13 +4,13 @@ var diabox_y = room_height/2;
 var diabox_W = 250;
 var diabox_H = 300;
 
-var diabox_padding = 8;
+var diabox_margin = -5;
 
 //
 
 var text_x = 16;
 var text_y = 16;
-var text_spacing = 8;
+var text_spacing = 9;
 
 ///
 

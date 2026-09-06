@@ -28,12 +28,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playersoulspr_BPM_ani",
-    "path":"sprites/playersoulspr_BPM_ani/playersoulspr_BPM_ani.yy",
+    "name":"playersoul_spr_BPM_ani",
+    "path":"sprites/playersoul_spr_BPM_ani/playersoul_spr_BPM_ani.yy",
   },
   "spriteMaskId":{
-    "name":"playersoulspr_BPM_ani",
-    "path":"sprites/playersoulspr_BPM_ani/playersoulspr_BPM_ani.yy",
+    "name":"playersoul_spr_BPM_ani",
+    "path":"sprites/playersoul_spr_BPM_ani/playersoul_spr_BPM_ani.yy",
   },
   "visible":true,
 }

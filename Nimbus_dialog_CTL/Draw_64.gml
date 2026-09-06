@@ -1,16 +1,16 @@
 var diabox_x = 300;
-var diabox_y = 300;
+var diabox_y = 500;
 
 var diabox_W = 250;
-var diabox_H = 300;
+var diabox_H = 250;
 
-var diabox_padding = 8;
+var diabox_margin = -5;
 
 //
 
 var text_x = 16;
 var text_y = 16;
-var text_spacing = 8;
+var text_spacing = 9;
 
 //
 
@@ -42,7 +42,7 @@ if (lex_chara < string_length(current_dialog))
 
 ///Draw event///
 
-draw_set_font(publicpixel_dialog);
+draw_set_font(Pressstart_dialog);
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
@@ -51,3 +51,6 @@ draw_set_valign(fa_middle)
 draw_text_ext(text_x, text_y, draw_dialog, text_spacing, text_x);
 
 ///
+
+draw_sprite_ext(Nimbus_Dia_illistration_main, 0, 75, 75, 3, 3, 0, c_white, 1);
+draw_sprite_stretched(dialog_backdrop, 0, diabox_x, diabox_y, diabox_W, diabox_H);
