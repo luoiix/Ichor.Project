@@ -8,7 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_55DA19A4","path":"rooms/mainmenu/mainmenu.yy",},
     {"name":"inst_7B392469","path":"rooms/mainmenu/mainmenu.yy",},
-    {"name":"inst_212E874","path":"rooms/mainmenu/mainmenu.yy",},
+    {"name":"inst_7C1C06EC","path":"rooms/mainmenu/mainmenu.yy",},
   ],
   "isDnd":true,
   "layers":[
@@ -16,7 +16,7 @@
         {"$GMRInstanceLayer":"","%Name":"cam_menu","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v4","%Name":"inst_55DA19A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55DA19A4","objectId":{"name":"Window_exit_CTL_obj","path":"objects/Window_exit_CTL_obj/Window_exit_CTL_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-9.446603,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
             {"$GMRInstance":"v4","%Name":"inst_7B392469","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B392469","objectId":{"name":"Mainmenu_obj","path":"objects/Mainmenu_obj/Mainmenu_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-            {"$GMRInstance":"v4","%Name":"inst_212E874","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_212E874","objectId":{"name":"gotogame","path":"objects/gotogame/gotogame.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":64.0,},
+            {"$GMRInstance":"v4","%Name":"inst_7C1C06EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C1C06EC","objectId":{"name":"Cursor_CTL_OBJ","path":"objects/Cursor_CTL_OBJ/Cursor_CTL_OBJ.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":96.0,},
           ],"layers":[],"name":"cam_menu","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Overlayer","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Mainlayer","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[

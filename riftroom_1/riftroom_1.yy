@@ -7,9 +7,8 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_765AAB06","path":"rooms/riftroom_1/riftroom_1.yy",},
-    {"name":"inst_512509EC1","path":"rooms/riftroom_1/riftroom_1.yy",},
-    {"name":"inst_1797ADD7_1","path":"rooms/riftroom_1/riftroom_1.yy",},
-    {"name":"inst_1D2B1EEF1","path":"rooms/riftroom_1/riftroom_1.yy",},
+    {"name":"inst_41892273","path":"rooms/riftroom_1/riftroom_1.yy",},
+    {"name":"inst_4B490100","path":"rooms/riftroom_1/riftroom_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -69,9 +68,8 @@
                 {"name":"g_BlendExt_AlphaDest","type":0,"value":"2",},
               ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"riftroom_spr","path":"sprites/riftroom_spr/riftroom_spr.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
             {"$GMRInstanceLayer":"","%Name":"warpwalls","depth":1000,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-                {"$GMRInstance":"v4","%Name":"inst_512509EC1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_512509EC1","objectId":{"name":"collision_walls","path":"objects/collision_walls/collision_walls.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":80.0,"scaleY":28.0,"x":0.0,"y":0.0,},
-                {"$GMRInstance":"v4","%Name":"inst_1797ADD7_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1797ADD7_1","objectId":{"name":"collision_walls","path":"objects/collision_walls/collision_walls.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":90.0,"scaleY":10.0,"x":0.0,"y":560.0,},
-                {"$GMRInstance":"v4","%Name":"inst_1D2B1EEF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D2B1EEF1","objectId":{"name":"collision_walls","path":"objects/collision_walls/collision_walls.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":45.0,"x":1360.0,"y":0.0,},
+                {"$GMRInstance":"v4","%Name":"inst_41892273","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41892273","objectId":{"name":"room_goto_previous_obj","path":"objects/room_goto_previous_obj/room_goto_previous_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":1.0,"x":1264.0,"y":80.0,},
+                {"$GMRInstance":"v4","%Name":"inst_4B490100","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B490100","objectId":{"name":"room_goto_next_obj","path":"objects/room_goto_next_obj/room_goto_next_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":8.0,"x":-16.0,"y":448.0,},
               ],"layers":[],"name":"warpwalls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
           ],"name":"underlay","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"mainlay","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
