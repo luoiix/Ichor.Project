@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Asier_cattails",
+  "%Name":"Aseir_tree0",
   "eventList":[],
   "managed":true,
-  "name":"Asier_cattails",
+  "name":"Aseir_tree0",
   "overriddenProperties":[],
   "parent":{
     "name":"Asier_env_OBJs",
@@ -28,12 +28,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Glasscattails_spr_ani",
-    "path":"sprites/Glasscattails_spr_ani/Glasscattails_spr_ani.yy",
+    "name":"Asier_tree_spr_0",
+    "path":"sprites/Asier_tree_spr_0/Asier_tree_spr_0.yy",
   },
   "spriteMaskId":{
-    "name":"Glasscattails_spr_ani",
-    "path":"sprites/Glasscattails_spr_ani/Glasscattails_spr_ani.yy",
+    "name":"Asier_tree_spr_0",
+    "path":"sprites/Asier_tree_spr_0/Asier_tree_spr_0.yy",
   },
   "visible":true,
 }

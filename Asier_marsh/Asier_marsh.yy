@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Asier_cattails",
+  "%Name":"Asier_marsh",
   "eventList":[],
   "managed":true,
-  "name":"Asier_cattails",
+  "name":"Asier_marsh",
   "overriddenProperties":[],
   "parent":{
     "name":"Asier_env_OBJs",
@@ -26,14 +26,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"Glasscattails_spr_ani",
-    "path":"sprites/Glasscattails_spr_ani/Glasscattails_spr_ani.yy",
+    "name":"Marsh_spr",
+    "path":"sprites/Marsh_spr/Marsh_spr.yy",
   },
   "spriteMaskId":{
-    "name":"Glasscattails_spr_ani",
-    "path":"sprites/Glasscattails_spr_ani/Glasscattails_spr_ani.yy",
+    "name":"Marsh_spr",
+    "path":"sprites/Marsh_spr/Marsh_spr.yy",
   },
   "visible":true,
 }

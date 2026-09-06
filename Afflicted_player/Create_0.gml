@@ -1,6 +1,6 @@
 //Gloabal.vars//
 
-playerselection = "AfflictedArdor";
+playerselection = 0;
 AFLplayername = "Sliver";
 
 AFLplayerHP = 90;
@@ -23,17 +23,31 @@ AFLplayerSha = 0;
 AFLplayerX = 0;
 AFLplayery = 0;
 
-x_speed = hspeed;
-y_speed = vspeed;
+//basic four point direction//
 
-movement_speed = 2;
-null_speed = 0;
+NORTH = 90; //direction UP//
+EAST = 0; //direction RIGHT//
+WEST = 180; //direction LEFT//
+SOUTH = 270; //direction DOWN//
+
+//basic diagonal point direction//
+
+N_WEST = 135; //direction UP LEFT//
+N_EAST = 45;  //direction UP RIGHT//
+S_EAST = 315; //direction DOWN RIGHT//
+S_WEST = 225; //direction DOWN LEFT
 
 //testplayer arrays//
 
 AFL_Playermenu = player_mainmenu;
 AFLplayerinventory = player_inventory;
 AFLplayerequipment = player_equipment;
+
+//AFL player's equipment//
+
+AFL_ARM = "OBSpendant";
+AFL_WEP = "Duelchainedblades"
+AFL_TRK = "Mirrorfragment"
 
 //testplayer shards//
 

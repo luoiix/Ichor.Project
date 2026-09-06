@@ -1,16 +1,3 @@
-//speed varibles//
-
-AFLplayerX = 0;
-AFLplayery = 0;
-
-x_speed = hspeed;
-y_speed = vspeed;
-
-movement_speed = 2;
-null_speed = 0;
-
-///
-
 var Sliver_down;
 var STRIDE
 
@@ -20,7 +7,7 @@ if (Sliver_down)
 	vspeed = 2;
 	hspeed = 0;
     
-	direction = 270;
+	direction = SOUTH;
 	image_speed = 1.5;
     
 	sprite_index = warmhue_down_spr;
@@ -34,5 +21,5 @@ if (STRIDE)
     vspeed = 3;
     
     image_speed = 2;
-    direction =270;
+    direction = SOUTH;
 }

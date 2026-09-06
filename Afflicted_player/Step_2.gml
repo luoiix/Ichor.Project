@@ -1,14 +1,3 @@
-//speed varibles//
-
-AFLplayerX = 0;
-AFLplayery = 0;
-
-x_speed = hspeed;
-y_speed = vspeed;
-
-movement_speed = 2;
-null_speed = 0;
-
 //stop total movement//
 var Sliver_stop;
 
@@ -24,7 +13,7 @@ if (Sliver_stop)
 	sprite_index = warmhue_idle_spr;
     
 	image_index = 2;
-	direction = 0;
+	direction = NORTH;
 }
 
 ///
@@ -39,7 +28,7 @@ if (Sliver_stop)
 	sprite_index = warmhue_idle_spr;
     
 	image_index = 4;
-	direction = 0;
+	direction = SOUTH;
 }
 
 ///
@@ -55,7 +44,7 @@ if (Sliver_stop)
     
 	image_index = 1;
 	speed = 0;
-	direction = 0;
+	direction = WEST;
 }
 
 ///
@@ -70,7 +59,7 @@ if (Sliver_stop)
 	image_index = 3;
 	image_speed = 0;
     
-	direction = 0;
+	direction = EAST;
 }
 
 ///Stop sprinting///
